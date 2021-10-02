@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Layout from '../components/layout';
 import Welcome from '../components/sections/welcome';
@@ -14,11 +14,14 @@ export default () => (
 );
 
 const App = () => {
+
+  const [isLightTheme, updateIsLightTheme] = useState(false);
+
   return (
     <div>
-      <div className="home">
-        <Welcome />
-        <ThemeAnnouncement />
+      <div className={isLightTheme ? "home" : "home light"}>
+        <Welcome isLightTheme={isLightTheme} updateIsLightTheme={updateIsLightTheme} />
+        <ThemeAnnouncement /> 
         <AboutItem/>
         <FAQ />
         <Sponsors2021 />

@@ -4,6 +4,12 @@
   z-index: 20;
 }
 
+.light {
+  filter: invert(1)
+}
+
+
+
 body {
   @include body-text;
   background-color: $pale-blue;
@@ -62,3 +68,9 @@ button {
 .center-text {
   text-align: center;
 }
+
+$themes: (
+        light: (
+                filter: invert(1)
+        )
+);
