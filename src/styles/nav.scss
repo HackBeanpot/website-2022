@@ -15,13 +15,7 @@ nav.scrolled {
 }
 
 .nav__logo {
-  width: 50px;
-
-  svg {
-    width: 100%;
-    height: auto;
-  }
-
+  
   .opened & {
     padding: 3px;
   }
