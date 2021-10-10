@@ -6,8 +6,7 @@
   left: 0;
   width: 100%;
   height: $navbar-height;
-  z-index: 100;
-  background-color: $camp-pale-blue;
+  background: rgba(160, 178, 239, 0.24s);
 }
 
 nav.scrolled {
@@ -15,7 +14,6 @@ nav.scrolled {
 }
 
 .nav__logo {
-  
   .opened & {
     padding: 3px;
   }
@@ -50,7 +48,7 @@ nav.scrolled {
 .nav__link {
   @include body-text;
   font-weight: 700;
-
+  color: $white;
   &:hover {
     color: $hbp-navy;
     border-bottom: 2px solid $hbp-navy;
