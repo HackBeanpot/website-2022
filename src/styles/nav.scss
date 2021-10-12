@@ -6,11 +6,12 @@
   left: 0;
   width: 100%;
   height: $navbar-height;
+  z-index: 100;
   background: rgba(160, 178, 239, 0.24s);
 }
 
 nav.scrolled {
-  background-color: $white;
+  background: rgba(160, 178, 239, 0.24s);
 }
 
 .nav__logo {
