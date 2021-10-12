@@ -7,10 +7,9 @@
   width: 100%;
   height: $navbar-height;
   z-index: 100;
-  background: rgba(160, 178, 239, 0.24);
 }
 
-nav.scrolled {
+nav.scrolled, .nav, .nav-mobile {
   background: rgba(160, 178, 239, 0.24);
 }
 
@@ -120,4 +119,8 @@ nav.scrolled {
     color: $hbp-navy;
     text-decoration: none;
   }
+}
+
+.nav__item, .nav__link, .nav__list{
+  background: rgba(160, 178, 239, 0);
 }
