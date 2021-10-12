@@ -47,7 +47,7 @@
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
-
+  z-index: 0;
   @media (min-width: $sm) {
     font-size: 50px;
   }
