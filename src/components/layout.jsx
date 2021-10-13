@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Footer from '../components/footer';
+import Footer from '../components/footer2';
 import Nav from '../components/nav';
 import NavMobile from '../components/nav-mobile';
 
