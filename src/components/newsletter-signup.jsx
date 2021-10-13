@@ -35,7 +35,7 @@ const NewsletterSignup = () => {
         <div>
             <form onSubmit={handleSubmit} className='footer__form'>
                 <div>
-                    <div className="footer__form-heading">Join our newsletter!</div>
+                    <div className="footer__form-heading">Join our mailing list!</div>
                     <input
                         placeholder="Email address"
                         name="email"
@@ -46,7 +46,7 @@ const NewsletterSignup = () => {
                     <div className="footer__form-msg">{message}</div>
 
                     <button className="footer__form-btn" type="submit">
-                        Subscribe
+                        Join
                     </button>
                 </div>
             </form>

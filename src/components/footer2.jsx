@@ -12,7 +12,10 @@ const Footer = () => (
       <div className="footer__logo">
         <LogoIconWhite />
       </div>
-      <p className="footer_registered_text"> HackBeanpot, Inc. is a registered 501(c)(3) organization.&nbsp;</p>
+      <p className="footer_registered_text">
+        {' '}
+        HackBeanpot, Inc. is a registered 501(c)(3) organization.&nbsp;
+      </p>
       <DynamicLink className="footer__coc-link" to="/code-of-conduct">
         Code of Conduct
       </DynamicLink>
@@ -29,15 +32,31 @@ const Footer = () => (
       })}
     </div>
     <div className="footer_column3">
-      {NavLinks.slice(NavLinks.length - 4, NavLinks.length).map((link, index) => {
-        return (
-          <li key={`footer-item-${index}`} className="footer__item">
-            <DynamicLink className="footer__link" to={link.path}>
-              {link.name}
-            </DynamicLink>
-          </li>
-        );
-      })}
+      {NavLinks.slice(NavLinks.length - 4, NavLinks.length).map(
+        (link, index) => {
+          return (
+            <li key={`footer-item-${index}`} className="footer__item">
+              <DynamicLink className="footer__link" to={link.path}>
+                {link.name}
+              </DynamicLink>
+            </li>
+          );
+        }
+      )}
+    </div>
+    <div className="footer_column4">
+        <NewsletterSignup />
+      <ul className="footer__social">
+        {SocialLinks.map((item, index) => {
+          return (
+            <li key={`social-link-${index}`}>
+              <DynamicLink to={item.link} className="footer__social-link">
+                <i className={`mdi mdi-36px ${item.iconClass}`} />
+              </DynamicLink>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   </div>
 );

@@ -13,15 +13,12 @@
 }
 
 .footer__vercel {
-
 }
 
 .footer__social {
-
 }
 
 .footer__social-link {
-
 }
 
 .footer__coc-link {
@@ -34,11 +31,36 @@
 }
 
 input {
-
+  border: 0;
+  outline: 0;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .footer__form {
+  width: 100%;
+  padding: 1em 0;
 
+  .footer__form-heading {
+    @include h6-text;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .footer__form-msg {
+    margin-top: 0.5rem;
+  }
+
+  .footer__form-input {
+    border-radius: 10px;
+    padding: 0 0.5rem;
+  }
+
+     .footer__form-btn {
+       @include tertiary-cta;
+       margin-top: 10px;
+     }
 }
 
 .footer__legal {
@@ -60,16 +82,14 @@ input {
 
 .footer__item {
   list-style-type: none;
-  background: rgba(160, 178, 239, .24);
+  background: rgba(160, 178, 239, 0.24);
   padding-bottom: 35px;
   padding-right: 110px;
 }
 
-.footer_column1, .footer_column2 {
-
+.footer_column1,
+.footer_column2 {
 }
-
-
 
 // .footer {
 //   @include padding;
