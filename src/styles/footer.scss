@@ -1,10 +1,12 @@
 .footer {
   background: rgba(160, 178, 239, 0.24);
   display: flex;
+  padding: 60px 60px 60px 90px;
 }
 
 .footer__column1 {
   background: rgba(160, 178, 239, 0);
+  width: 13%;
 }
 
 .footer__logo {
@@ -24,6 +26,11 @@
 
 .footer__coc-link {
   color: $white;
+  background: rgba(160, 178, 239, 0);
+}
+
+.footer_registered_text {
+  background: rgba(160, 178, 239, 0);
 }
 
 input {
@@ -37,7 +44,30 @@ input {
 .footer__legal {
 }
 
+.footer__link {
+  @include body-text;
+  font-weight: 500;
+  color: $white;
+  font-size: 18px;
+  background: rgba(160, 178, 239, 0);
+  &:hover {
+    color: $hbp-navy;
+    border-bottom: 2px solid $hbp-navy;
+    margin-bottom: -2px;
+    text-decoration: none;
+  }
+}
 
+.footer__item {
+  list-style-type: none;
+  background: rgba(160, 178, 239, .24);
+  padding-bottom: 35px;
+  padding-right: 110px;
+}
+
+.footer_column1, .footer_column2 {
+
+}
 
 
 

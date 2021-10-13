@@ -22,5 +22,13 @@
   {
     "name": "Team",
     "path": "/#team"
+  },
+  {
+    "name": "Project Gallery",
+    "path": "/#project-gallery"
+  },
+  {
+    "name": "Archive",
+    "path": "/#archive"
   }
 ]
