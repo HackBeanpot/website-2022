@@ -48,10 +48,11 @@
 @mixin tertiary-cta {
   @include body-text;
   font-weight: 500;
-  border-radius: 20px;
+  border-radius: 18px;
   border-width: 2px 4px;
   background-color: $charles-river-blue;
-  width: 60%;
+  width: 38%;
+  height: 40px;
   @media (min-width: $md) {
     @include h6-text;
     padding: 12px 40px;
