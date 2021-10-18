@@ -17,7 +17,9 @@
 
 .footer__social {
   display: flex;
-   justify-content: space-between;
+  li {
+    padding-right: 1em;
+  }
 }
 
 .footer__social-link {
@@ -37,7 +39,6 @@
 input {
   border: 0;
   outline: 0;
-  width: 400px;
   height: 40px;
   box-sizing: border-box;
 }
@@ -58,11 +59,16 @@ input {
 
   .footer__form-input {
     border-radius: 18px;
+    width: 450px;
+    margin-right: 1em;
   }
 
   .footer__form-btn {
     @include tertiary-cta;
-    margin-top: 10px;
+  }
+
+  .footer__form-input-and-button {
+    display: flex;
   }
 }
 
