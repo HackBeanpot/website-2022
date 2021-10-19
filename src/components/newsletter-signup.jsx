@@ -37,7 +37,7 @@ const NewsletterSignup = () => {
         <div className="footer__form-heading">Join our mailing list!</div>
         <div className="footer__form-input-and-button">
           <input
-            placeholder="Email address"
+            placeholder="Enter email here"
             name="email"
             type="text"
             onChange={handleEmailChange}
