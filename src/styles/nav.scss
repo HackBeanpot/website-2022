@@ -7,6 +7,7 @@
   width: 100%;
   height: $navbar-height;
   z-index: 100;
+  border-bottom: 1px solid $blue-grey;
 }
 
 nav.scrolled, .nav, .nav-mobile {

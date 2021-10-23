@@ -1,12 +1,13 @@
 .footer {
   display: flex;
-  padding: 60px 60px 60px 90px;
+  padding: 60px 60px 5px 90px;
   border-top: 1px solid $blue-grey;
   backdrop-filter: blur(8px);
 }
 
 .footer__bg {
-  background: rgba(160, 178, 239, 0.24);
+  background: #a0b2ef3d;
+  position: relative;
 }
 
 .footer__column1 {
@@ -109,7 +110,9 @@ input {
 }
 
 .footer__core_team_note {
-
+  padding-bottom: 2em;
+  padding-left: 48%;
+  backdrop-filter: blur(8px);
 }
 
 // .footer {
