@@ -1,7 +1,10 @@
 .footer {
-  background: rgba(160, 178, 239, 0.24);
   display: flex;
   padding: 60px 60px 60px 90px;
+}
+
+.footer__bg {
+  background: rgba(160, 178, 239, 0.24);
 }
 
 .footer__column1 {
@@ -101,6 +104,10 @@ input {
 .footer_column3,
 .footer_column2 {
   margin-right: 3em;
+}
+
+.footer__core_team_note {
+
 }
 
 // .footer {
