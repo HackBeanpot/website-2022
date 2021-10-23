@@ -2,7 +2,6 @@
   font-family: $font-body;
   position: relative;
   z-index: 20;
-  background-image: url(../images//svg-2022/space-background.png);
 }
 
 .light {
@@ -10,7 +9,8 @@
 }
 
 body {
-  @include body-text;
+  @include small-body-text;
+  background-image: url(../images//svg-2022/space-background.png);
 }
 
 main {

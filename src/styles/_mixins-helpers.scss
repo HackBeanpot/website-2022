@@ -45,6 +45,20 @@
   }
 }
 
+@mixin tertiary-cta {
+  @include body-text;
+  font-weight: 500;
+  border-radius: 18px;
+  border-width: 2px 4px;
+  background-color: $charles-river-blue;
+  width: 30%;
+  height: 40px;
+  @media (min-width: $md) {
+    @include h6-text;
+    padding: 12px 40px;
+  }
+}
+
 @mixin drop-shadow {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);

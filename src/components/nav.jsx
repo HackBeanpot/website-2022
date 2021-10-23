@@ -4,7 +4,7 @@ import { useScrollYPosition } from 'react-use-scroll-position';
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from '../data/nav-links.json';
 
-import LogoIcon from '../images/svg/logo-icon.jsx';
+import LogoIcon from '../images/svg-2022/logo-icon-white.jsx';
 
 const Nav = () => {
   const hasScrolled = useScrollYPosition() > 0;
@@ -15,7 +15,7 @@ const Nav = () => {
       <LogoIcon />
     </DynamicLink>
     <ul className="nav__list">
-      {NavLinks.map((link, index) => {
+      {NavLinks.slice(0, NavLinks.length - 2).map((link, index) => {
         return (
           <li key={`nav-item-${index}`} className="nav__item">
             <DynamicLink className="nav__link" to={link.path}>

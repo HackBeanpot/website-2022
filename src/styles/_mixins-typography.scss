@@ -30,7 +30,7 @@
   }
 }
 
-@mixin small-body-text($color: $hbp-navy) {
+@mixin small-body-text($color: $white) {
   color: $color;
   font-family: $font-body;
   font-weight: normal;
@@ -38,7 +38,7 @@
   line-height: 1.62em;
 
   @media (min-width: $md) {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -120,16 +120,15 @@
   }
 }
 
-@mixin h6-text($color: $hbp-navy) {
+@mixin h6-text($color: $white) {
   color: $color;
   font-family: $font-body;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 
   @media (min-width: $md) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

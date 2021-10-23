@@ -1,95 +1,51 @@
 .footer {
-  @include padding;
-  @include grey-bg;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  padding: 60px 0 5px 90px;
+  border-top: 1px solid $blue-grey;
+  backdrop-filter: blur(8px);
 }
 
-.footer__row {
-  margin: 1em 0;
-  margin-bottom: 2em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.footer__bg {
+  background: #a0b2ef3d;
+  position: relative;
+}
 
-  @media (min-width: $md) {
-    flex-direction: row;
-  }
+.footer__column1 {
+  margin: 0 17em 0 2em;
+  width: 13%;
+}
+
+.footer_column3,
+.footer_column2 {
+  margin-right: 5em;
 }
 
 .footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  svg {
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (min-width: $md) {
-    margin-right: 80px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $lg) {
-    svg {
-      width: 200px;
-    }
-  }
-}
-
-.footer__vercel {
-  svg {
-    width: 150px;
-  }
-
-  @media (min-width: $md) {
-    margin-left: 80px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $lg) {
-    svg {
-      width: 200px;
-    }
-  }
+  margin-left: -4.8em;
 }
 
 .footer__social {
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-
   li {
-    margin: 0 0.5em;
-  }
-
-  @media (min-width: $md) {
-    margin-left: 0;
-    width: 90%;
+    padding-right: 1em;
   }
 }
 
 .footer__social-link {
-  color: $hbp-navy;
+  color: $pale-yellow;
   transition: color 0.2s ease;
 }
 
 .footer__coc-link {
-  color: $hbp-packet-blue;
-  transition: color 0.2s ease;
+  color: $white;
 }
 
 input {
   border: 0;
   outline: 0;
-  width: 300px;
   height: 40px;
-  box-sizing:border-box;
+  box-sizing: border-box;
+  
 }
 
 .footer__form {
@@ -107,16 +63,42 @@ input {
   }
 
   .footer__form-input {
-    border-radius: 10px;
-    padding: 0 0.5rem;
+    border-radius: 18px;
+    width: 450px;
+    margin-right: 1em;
+
   }
 
   .footer__form-btn {
-    @include secondary-cta;
-    margin-top: 10px;
+    @include tertiary-cta;
+  }
+
+  .footer__form-input-and-button {
+    display: flex;
   }
 }
 
-.footer__legal {
-  display: block;
+.footer__link {
+  @include body-text;
+  font-weight: 500;
+  color: $white;
+  font-size: 18px;
+  &:hover {
+    color: $hbp-navy;
+    border-bottom: 2px solid $hbp-navy;
+    margin-bottom: -2px;
+    text-decoration: none;
+  }
+}
+
+.footer__item {
+  list-style-type: none;
+  padding-bottom: 35px;
+  padding-right: 110px;
+}
+
+.footer__core_team_note {
+  padding-bottom: 2em;
+  padding-left: 46%;
+  backdrop-filter: blur(8px);
 }

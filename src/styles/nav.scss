@@ -7,21 +7,14 @@
   width: 100%;
   height: $navbar-height;
   z-index: 100;
-  background-color: $camp-pale-blue;
+  border-bottom: 1px solid $blue-grey;
 }
 
-nav.scrolled {
-  background-color: $white;
+nav.scrolled, .nav, .nav-mobile {
+  background: rgba(160, 178, 239, 0.24);
 }
 
 .nav__logo {
-  width: 50px;
-
-  svg {
-    width: 100%;
-    height: auto;
-  }
-
   .opened & {
     padding: 3px;
   }
@@ -55,8 +48,9 @@ nav.scrolled {
 
 .nav__link {
   @include body-text;
-  font-weight: 700;
-
+  font-weight: 500;
+  color: $white;
+  font-size: 18px;
   &:hover {
     color: $hbp-navy;
     border-bottom: 2px solid $hbp-navy;
