@@ -40,9 +40,7 @@
 }
 
 .sponsors-header__ps {
-  @include body-text($white);
-  margin: 40px 0;
-  font-style: italic;
+  @include body-text;
 }
 
 .sponsors__cta {
