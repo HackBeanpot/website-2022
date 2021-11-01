@@ -74,8 +74,7 @@
 }
 
 .sponsorship-model__subtitle {
-  @include h4-text($hbp-navy);
-  padding-bottom: 25px;
+  @include h4-text;
 }
 
 .sponsorship-model__cta-group {

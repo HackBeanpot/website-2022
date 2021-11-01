@@ -46,13 +46,11 @@
 }
 
 .header__event-date {
-  @include h4-text($camp-orange);
-  margin-bottom: 10px;
+  @include h4-text;
 }
 
 .header__description {
-  @include h4-text($camp-orange);
-  margin-bottom: 30px;
+  @include h4-text;
 }
 
 .header__newsletter-input {

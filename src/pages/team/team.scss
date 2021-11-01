@@ -83,11 +83,6 @@
 
 .team__title {
   @include h4-text;
-  margin-top: 50px;
-
-  @media (min-width: $md) {
-    margin-top: 100px;
-  }
 }
 
 .team-leaf {
