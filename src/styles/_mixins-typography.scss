@@ -77,15 +77,14 @@
 }
 
 
-@mixin h3-text($color: $hbp-navy) {
+@mixin h3-text($color: $white) {
   color: $color;
   font-family: $font-body;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.4em;
-
   @media (min-width: $lg) {
-    font-size: 40px;
+    font-size: 24px;
   }
 }
 
