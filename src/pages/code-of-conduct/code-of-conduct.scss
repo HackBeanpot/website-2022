@@ -25,18 +25,6 @@
     top: 50px;
   }
 }
-
-.coc__heading {
-  @include h1-text;
-  margin-top: 50px;
-  margin-bottom: 50px;
-
-  @media (min-width: $md) {
-    width: 80%;
-    @include left-padding;
-  }
-}
-
 .coc__body {
   @include margins;
   @include body-text;

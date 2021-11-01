@@ -30,11 +30,6 @@
   position: relative;
 }
 
-.sponsors-header__title {
-  @include h1-text($white);
-  margin-bottom: 30px;
-}
-
 .sponsors-header__description {
   @include large-body-text($white);
   width: 100%;

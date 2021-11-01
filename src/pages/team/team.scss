@@ -12,11 +12,6 @@
   }
 }
 
-.team-header__title {
-  @include h1-text;
-  margin-bottom: 30px;
-}
-
 .team-header__info-container {
   display: flex;
   flex-direction: column;
