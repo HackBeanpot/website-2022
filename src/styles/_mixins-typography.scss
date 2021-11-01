@@ -51,31 +51,31 @@
   font-family: $font-body;
   font-size: 20px;
   font-weight: 600;
-
+  z-index: 0;
   @media (min-width: $sm) {
     font-size: 30px;
   }
-  
+
   @media (min-width: $lg) {
     font-size: 36px;
   }
 }
 
-@mixin h2-text($color: $hbp-navy) {
+@mixin h2-text($color: $white) {
   color: $color;
   font-family: $font-body;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 1.4em;
+  font-size: 15px;
+  font-weight: 600;
 
   @media (min-width: $lg) {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   @media (min-width: $xxl) {
-    font-size: 50px;
+    font-size: 28px;
   }
 }
+
 
 @mixin h3-text($color: $hbp-navy) {
   color: $color;
