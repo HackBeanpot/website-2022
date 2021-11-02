@@ -23,7 +23,7 @@
 }
 
 .team-header__description {
-  @include large-body-text;
+  @include body-text;
   @include bottom-margin;
   width: 100%;
   display: inline-block;

@@ -14,19 +14,15 @@
   }
 }
 
-@mixin large-body-text($color: $hbp-navy) {
+@mixin xsmall-body-text($color: $white) {
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 1.62em;
+  font-size: 10px;
+  line-height: 44px;
 
   @media (min-width: $md) {
-    font-size: 20px;
-  }
-
-  @media (min-width: $xl) {
-    font-size: 22px;
+    font-size: 12px;
   }
 }
 
@@ -34,11 +30,11 @@
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 44px;
 
   @media (min-width: $md) {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 

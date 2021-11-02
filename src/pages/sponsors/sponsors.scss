@@ -31,7 +31,7 @@
 }
 
 .sponsors-header__description {
-  @include large-body-text($white);
+  @include body-text($white);
   width: 100%;
 
   @media (min-width: $lg) {
@@ -80,7 +80,7 @@
 }
 
 .sponsorship-model__cta-label {
-  @include large-body-text;
+  @include body-text;
   font-weight: 700;
   margin-bottom: 30px;
 }

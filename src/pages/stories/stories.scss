@@ -23,7 +23,7 @@
 }
 
 .stories__description {
-  @include large-body-text;
+  @include body-text;
   width: 100%;
 
   @media (min-width: $md) {

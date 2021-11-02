@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  padding: 60px 0 5px 90px;
+  padding: 40px 0 5px 90px;
   border-top: 1px solid $blue-grey;
   backdrop-filter: blur(8px);
 }
@@ -11,13 +11,12 @@
 }
 
 .footer__column1 {
-  margin: 0 17em 0 2em;
+  margin: 0 12em 0 3em;
   width: 13%;
 }
 
 .footer_column3,
 .footer_column2 {
-  margin-right: 5em;
 }
 
 .footer__logo {
@@ -32,12 +31,13 @@
 }
 
 .footer__social-link {
+  font-size: 18px;
   color: $pale-yellow;
   transition: color 0.2s ease;
 }
 
 .footer__coc-link {
-  color: $white;
+  @include small-body-text;
 }
 
 input {
@@ -98,7 +98,13 @@ input {
 }
 
 .footer__core_team_note {
+  @include small-body-text;
   padding-bottom: 2em;
   padding-left: 46%;
   backdrop-filter: blur(8px);
+}
+
+.footer_registered_text {
+  @include small-body-text;
+  line-height: 20px;
 }
