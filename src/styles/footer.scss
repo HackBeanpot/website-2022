@@ -54,7 +54,7 @@ input {
   padding: 1em 0;
 
   .footer__form-heading {
-    @include h6-text;
+    @include small-body-text;
     text-align: left;
     margin-bottom: 1rem;
   }
