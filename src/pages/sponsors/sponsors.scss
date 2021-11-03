@@ -149,7 +149,7 @@
 }
 
 .sponsor-kit__title {
-  @include h5-text($hbp-navy);
+  @include h3-text;
   margin: 30px 0;
   text-align: left;
 
