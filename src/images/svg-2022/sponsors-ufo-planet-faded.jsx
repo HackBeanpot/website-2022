@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SponsorsUfoplanetFaded = () => (
+const SponsorsUfoPlanetFaded = () => (
 
     <svg width="191" height="240" viewBox="0 0 191 240" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.2" clip-path="url(#clip0_451:1949)">
@@ -76,4 +76,4 @@ const SponsorsUfoplanetFaded = () => (
     </svg>
 );
 
-export default SponsorsUfoplanetFaded;
+export default SponsorsUfoPlanetFaded;

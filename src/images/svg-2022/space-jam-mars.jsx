@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SpacejamMars = () => (
+const SpaceJamMars = () => (
 
     <svg width="141" height="141" viewBox="0 0 141 141" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_451:1682)">
@@ -53,4 +53,4 @@ const SpacejamMars = () => (
     </svg>
 );
 
-export default SpacejamMars;
+export default SpaceJamMars;
