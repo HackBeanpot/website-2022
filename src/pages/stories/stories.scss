@@ -22,13 +22,8 @@
   opacity: 0.05;
 }
 
-.stories__title {
-  @include h1-text;
-  margin-bottom: 30px;
-}
-
 .stories__description {
-  @include large-body-text;
+  @include body-text;
   width: 100%;
 
   @media (min-width: $md) {
@@ -143,7 +138,6 @@
 
 .stories-tell__heading {
   @include h2-text($white);
-  margin-bottom: 50px;
 }
 
 .stories-tell__content {

@@ -42,29 +42,15 @@
 }
 
 .header__title {
-  font-family: $dosis;
-  color: $camp-burnt-red;
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  z-index: 0;
-  @media (min-width: $sm) {
-    font-size: 50px;
-  }
-
-  @media (min-width: $lg) {
-    font-size: 60px;
-  }
+  @include h1-text;
 }
 
 .header__event-date {
-  @include h4-text($camp-orange);
-  margin-bottom: 10px;
+  @include h4-text;
 }
 
 .header__description {
-  @include h4-text($camp-orange);
-  margin-bottom: 30px;
+  @include h4-text;
 }
 
 .header__newsletter-input {
@@ -152,13 +138,6 @@
 
 .theme__camp {
   @include h2-text;
-  text-align: center;
-  margin-bottom: 2rem;
-
-  @media (min-width: $md) {
-    margin-bottom: 1.9rem;
-    text-align: left;
-  }
 }
 
 .theme__content {
@@ -173,14 +152,7 @@
 // About
 // ---------------------------------------------------------------------------
 .about__title {
-  @include h2-text(#CFE8E8);
-  @include left-padding;
-
-  @media (max-width: $lg) {
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
+  @include h2-text;
 }
 
 .about-item{
@@ -227,11 +199,6 @@
 
 .faq__title {
   @include h2-text($white);
-  @include bottom-margin;
-
-  @media (max-width: $md) {
-    @include top-padding;
-  }
 }
 
 .faq__cta-group {
@@ -239,7 +206,7 @@
 }
 
 .faq__cta-label {
-  @include large-body-text;
+  @include body-text;
   font-weight: 700;
   margin-bottom: 30px;
 }

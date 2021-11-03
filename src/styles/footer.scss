@@ -1,8 +1,8 @@
 .footer {
   display: flex;
-  padding: 60px 0 5px 90px;
+  padding: 50px 0 0 90px;
   border-top: 1px solid $blue-grey;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 .footer__bg {
@@ -11,17 +11,17 @@
 }
 
 .footer__column1 {
-  margin: 0 17em 0 2em;
+  margin: 0 8em 0 3em;
   width: 13%;
 }
 
 .footer_column3,
 .footer_column2 {
-  margin-right: 5em;
+  padding-right: 2.5em;
 }
 
 .footer__logo {
-  margin-left: -4.8em;
+  margin-left: -2.8em;
 }
 
 .footer__social {
@@ -32,12 +32,13 @@
 }
 
 .footer__social-link {
+  font-size: 18px;
   color: $pale-yellow;
   transition: color 0.2s ease;
 }
 
 .footer__coc-link {
-  color: $white;
+  @include xsmall-body-text;
 }
 
 input {
@@ -53,7 +54,7 @@ input {
   padding: 1em 0;
 
   .footer__form-heading {
-    @include h6-text;
+    @include small-body-text;
     text-align: left;
     margin-bottom: 1rem;
   }
@@ -66,7 +67,8 @@ input {
     border-radius: 18px;
     width: 450px;
     margin-right: 1em;
-
+    font-style: italic;
+    padding-left: 12px;
   }
 
   .footer__form-btn {
@@ -82,7 +84,7 @@ input {
   @include body-text;
   font-weight: 500;
   color: $white;
-  font-size: 18px;
+  font-size: 18px !important;
   &:hover {
     color: $hbp-navy;
     border-bottom: 2px solid $hbp-navy;
@@ -93,12 +95,18 @@ input {
 
 .footer__item {
   list-style-type: none;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-right: 110px;
 }
 
 .footer__core_team_note {
-  padding-bottom: 2em;
+  @include xsmall-body-text;
+  padding-bottom: 1em;
   padding-left: 46%;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+}
+
+.footer_registered_text {
+  @include xsmall-body-text;
+  line-height: 20px;
 }

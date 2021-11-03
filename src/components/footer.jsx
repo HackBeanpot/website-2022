@@ -60,7 +60,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__core_team_note" >
-      <a>Made with &lt;3 in Beantown</a>
+      <a >Made with &lt;3 in Beantown</a>
     </div>
   </div>
 );

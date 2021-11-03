@@ -48,9 +48,8 @@ nav.scrolled, .nav, .nav-mobile {
 
 .nav__link {
   @include body-text;
+  font-size: 18px !important;
   font-weight: 500;
-  color: $white;
-  font-size: 18px;
   &:hover {
     color: $hbp-navy;
     border-bottom: 2px solid $hbp-navy;

@@ -12,11 +12,6 @@
   }
 }
 
-.team-header__title {
-  @include h1-text;
-  margin-bottom: 30px;
-}
-
 .team-header__info-container {
   display: flex;
   flex-direction: column;
@@ -28,7 +23,7 @@
 }
 
 .team-header__description {
-  @include large-body-text;
+  @include body-text;
   @include bottom-margin;
   width: 100%;
   display: inline-block;
@@ -62,7 +57,7 @@
 }
 
 .team-badge-leaf__content {
-  @include h6-text($white);
+  @include h3-text;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,11 +83,6 @@
 
 .team__title {
   @include h4-text;
-  margin-top: 50px;
-
-  @media (min-width: $md) {
-    margin-top: 100px;
-  }
 }
 
 .team-leaf {
@@ -131,7 +121,6 @@
 
 .team__cta-label {
   @include h3-text;
-  margin-bottom: 40px;
 }
 
 .team__cta {
@@ -234,6 +223,6 @@
 }
 
 .team-member__name {
-  @include h5-text;
+  @include h3-text;
   margin-bottom: 0;
 }

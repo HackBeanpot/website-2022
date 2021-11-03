@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $md) {
-    @include h5-text;
+    @include h3-text;
     padding: 12px 40px;
   }
 }
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $md) {
-    @include h5-text;
+    @include h3-text;
     padding: 12px 40px;
   }
 }
@@ -54,7 +54,7 @@
   width: 30%;
   height: 40px;
   @media (min-width: $md) {
-    @include h6-text;
+    @include h3-text;
     padding: 12px 40px;
   }
 }
