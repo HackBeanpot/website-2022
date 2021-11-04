@@ -2,47 +2,19 @@
 // Header
 // ---------------------------------------------------------------------------
 
-.header {
-  @include pale-blue-gradient-bg;
-  position: relative;
-}
-
-.header__skyline {
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  margin-bottom: -1px;
-  margin-top: -300px;
-
-  svg {
-    width: 100%;
-  }
-
-  @media (max-width: $sm) {
-    margin-top: -20px;
-  }
-
-  @media (min-width: $xl) {
-    margin-top: -350px;
-  }
-}
-
 .header__content {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-
-  @media (min-width: $lg) {
-    width: 60%;
-    margin-right: 50px;
-  }
-
-  @media (min-width: $xl) {
-    width: 45%;
-    margin-right: 50px;
-  }
+  padding: 170px 0 0 0;
+  position: absolute;
 }
 
 .header__title {
   @include h1-text;
+  margin-bottom: -70px;
 }
 
 .header__event-date {
@@ -50,7 +22,8 @@
 }
 
 .header__description {
-  @include h4-text;
+  @include body-text;
+  margin-top: -70px;
 }
 
 .header__newsletter-input {
@@ -69,6 +42,30 @@
 .header__cta {
   @include primary-cta;
   margin-top: 10px;
+}
+
+.space-jam-mars {
+  position: absolute;
+  top: 670px;
+  right: 545px;
+}
+
+.space-jam-saturn-orbit {
+  position: absolute;
+  top: 30px;
+  right: -140px;
+}
+
+.space-jam-earth {
+  position: absolute;
+  top: 120px;
+  left: 280px;
+}
+
+.space-jam-neptune {
+  position: absolute;
+  top: 470px;
+  left: -100px;
 }
 
 // ---------------------------------------------------------------------------
@@ -280,5 +277,11 @@
 
 .light-dark-toggle {
   float: right;
-  margin-top: -20px;
+  padding: 20px 20px 0 0;
+  z-index: 100;
+}
+
+.welcome__container {
+  height: 1000px;
+  overflow-x: hidden;
 }

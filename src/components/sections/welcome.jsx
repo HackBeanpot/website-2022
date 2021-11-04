@@ -1,17 +1,25 @@
 import React from 'react';
 
-import DaytimeScene from 'images/svg/daytime-scene.jsx';
+import SpaceJamTitle from '../../images/svg-2022/space-jam-title';
 import LightDarkModeToggle from '../../images/svg-2022/light-dark-mode-toggle';
+import SpaceJamMars from '../../images/svg-2022/space-jam-mars';
+import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit';
+import SpaceJamEarth from '../../images/svg-2022/space-jam-earth';
+import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune';
 
-const Welcome = ({ isLightTheme, updateIsLightTheme }) => (
-  <section className="header">
-    <div className="container header__content">
-      <div className="light-dark-toggle" onClick={() => updateIsLightTheme(!isLightTheme)}>
-        <LightDarkModeToggle />
-      </div>
+const Welcome = ({ isDarkTheme, updateIsDarkTheme }) => (
+  <div className="welcome__container">
+    <div
+      className="light-dark-toggle"
+      onClick={() => updateIsDarkTheme(!isDarkTheme)}
+    >
+      <LightDarkModeToggle />
+    </div>
+    <div className="header__content">
       <h1 className="header__title">HackBeanpot 2022</h1>
+      <SpaceJamTitle />
       <h4 className="header__description">
-        Join our mailing list to stay updated on our future adventures!
+        Coming to a galaxy near you February XX-XX
       </h4>
       <a
         href="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
@@ -20,13 +28,24 @@ const Welcome = ({ isLightTheme, updateIsLightTheme }) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Sign up Here
+        Join our mailing list
       </a>
     </div>
-    <div className="header__skyline">
-      <DaytimeScene />
-    </div>
-  </section>
+      <div className="space-jam-mars">
+        <SpaceJamMars />
+      </div>
+      <div className="space-jam-saturn-orbit">
+      <SpaceJamSaturnOrbit />
+      </div>
+
+      <div className="space-jam-earth">
+      <SpaceJamEarth />
+      </div>
+
+      <div className="space-jam-neptune">
+        <SpaceJamNeptune />
+      </div>
+  </div>
 );
 
 export default Welcome;
