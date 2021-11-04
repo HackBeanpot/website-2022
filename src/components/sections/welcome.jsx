@@ -1,22 +1,22 @@
 import React from 'react';
 
-import DaytimeScene from 'images/svg/daytime-scene.jsx';
+import SpaceJamTitle from '../../images/svg-2022/space-jam-title';
 import LightDarkModeToggle from '../../images/svg-2022/light-dark-mode-toggle';
 
 const Welcome = ({ isLightTheme, updateIsLightTheme }) => (
   <div className="welcome__container">
-    <section>
-      <div className="container header__content">
+      <div className="header__content">
         <div
           className="light-dark-toggle"
           onClick={() => updateIsLightTheme(!isLightTheme)}
         >
           <LightDarkModeToggle />
         </div>
-        <h1 className="header__title">HackBeanpot 2022</h1>
-        <h4 className="header__description">
-          Join our mailing list to stay updated on our future adventures!
-        </h4>
+          <h1 className="header__title">HackBeanpot 2022</h1>
+          <SpaceJamTitle />
+          <h4 className="header__description">
+            Coming to a galaxy near you February XX-XX
+          </h4>
         <a
           href="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
           role="button"
@@ -27,8 +27,7 @@ const Welcome = ({ isLightTheme, updateIsLightTheme }) => (
           Sign up Here
         </a>
       </div>
-    </section>
-    </div>
+  </div>
 );
 
 export default Welcome;

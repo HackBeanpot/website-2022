@@ -3,16 +3,12 @@
 // ---------------------------------------------------------------------------
 
 .header__content {
-  width: 100%;
 
+  text-align: center;
   @media (min-width: $lg) {
-    width: 60%;
-    margin-right: 50px;
   }
 
   @media (min-width: $xl) {
-    width: 45%;
-    margin-right: 50px;
   }
 }
 
@@ -25,7 +21,7 @@
 }
 
 .header__description {
-  @include h4-text;
+  @include body-text;
 }
 
 .header__newsletter-input {
