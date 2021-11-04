@@ -15,12 +15,12 @@ export default () => (
 
 const App = () => {
 
-  const [isLightTheme, updateIsLightTheme] = useState(false);
+  const [isDarkTheme, updateIsDarkTheme] = useState(true);
 
   return (
     <div>
-      <div className={isLightTheme ? "home" : "home light"}>
-        <Welcome isLightTheme={isLightTheme} updateIsLightTheme={updateIsLightTheme} />
+      <div className={isDarkTheme ? "home" : "home light"}>
+        <Welcome isDarkTheme={isDarkTheme} updateIsDarkTheme={updateIsDarkTheme} />
         <ThemeAnnouncement /> 
         <AboutItem/>
         <FAQ />
