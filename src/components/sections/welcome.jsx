@@ -5,13 +5,13 @@ import LightDarkModeToggle from '../../images/svg-2022/light-dark-mode-toggle';
 
 const Welcome = ({ isLightTheme, updateIsLightTheme }) => (
   <div className="welcome__container">
-      <div className="header__content">
-        <div
+     <div
           className="light-dark-toggle"
           onClick={() => updateIsLightTheme(!isLightTheme)}
         >
-          <LightDarkModeToggle />
+        <LightDarkModeToggle />
         </div>
+      <div className="header__content">
           <h1 className="header__title">HackBeanpot 2022</h1>
           <SpaceJamTitle />
           <h4 className="header__description">
