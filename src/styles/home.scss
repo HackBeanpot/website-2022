@@ -2,31 +2,6 @@
 // Header
 // ---------------------------------------------------------------------------
 
-.header {
-  @include pale-blue-gradient-bg;
-  position: relative;
-}
-
-.header__skyline {
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  margin-bottom: -1px;
-  margin-top: -300px;
-
-  svg {
-    width: 100%;
-  }
-
-  @media (max-width: $sm) {
-    margin-top: -20px;
-  }
-
-  @media (min-width: $xl) {
-    margin-top: -350px;
-  }
-}
-
 .header__content {
   width: 100%;
 
@@ -281,4 +256,8 @@
 .light-dark-toggle {
   float: right;
   margin-top: -20px;
+}
+
+.welcome__container {
+  height: 1000px;
 }
