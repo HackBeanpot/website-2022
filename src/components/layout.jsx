@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../components/footer';
 import Nav from '../components/nav';
@@ -8,8 +8,10 @@ import '../../node_modules/@mdi/font/css/materialdesignicons.min.css';
 import 'styles/main.scss';
 
 // Shows the header and footer on every page
-const Layout = ({ children }) => (
-  <div>
+const Layout = ({ children }) => {
+  const [isDarkTheme, updateIsDarkTheme] = useState(true);
+  
+  return <div className={`parent ${isDarkTheme ? "" : "light"}`}>
     <Helmet
       title="HackBeanpot 2021"
       meta={[
@@ -29,11 +31,11 @@ const Layout = ({ children }) => (
       ]}
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
     />
-    <Nav />
+    <Nav updateIsDarkTheme={updateIsDarkTheme} isDarkTheme={isDarkTheme} />
     <NavMobile />
     <main>{children}</main>
     <Footer />
   </div>
-);
+};
 
 export default Layout;

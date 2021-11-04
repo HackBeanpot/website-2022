@@ -1,7 +1,8 @@
 .nav,
 .nav-mobile {
   position: fixed;
-  transition: 0.3s ease-in-out;
+  // add this back if we can find a less-jank way to fix light mode header positioning
+  // transition: 0.3s ease-in-out;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,7 +26,6 @@ nav.scrolled, .nav, .nav-mobile {
 // ---------------------------------------------------------------------------
 
 .nav {
-  display: none;
   padding: 10px 30px;
 
   @media (min-width: $md) {
