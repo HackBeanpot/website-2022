@@ -28,10 +28,9 @@ const Welcome = ({ isDarkTheme, updateIsDarkTheme }) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Sign up Here
+        Join our mailing list
       </a>
     </div>
-    <div className="planets__layer">
       <div className="space-jam-mars">
         <SpaceJamMars />
       </div>
@@ -46,7 +45,6 @@ const Welcome = ({ isDarkTheme, updateIsDarkTheme }) => (
       <div className="space-jam-neptune">
         <SpaceJamNeptune />
       </div>
-    </div>
   </div>
 );
 
