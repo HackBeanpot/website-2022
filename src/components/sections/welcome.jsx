@@ -1,20 +1,13 @@
 import React from 'react';
 
 import SpaceJamTitle from '../../images/svg-2022/space-jam-title';
-import LightDarkModeToggle from '../../images/svg-2022/light-dark-mode-toggle';
 import SpaceJamMars from '../../images/svg-2022/space-jam-mars';
 import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit';
 import SpaceJamEarth from '../../images/svg-2022/space-jam-earth';
 import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune';
 
-const Welcome = ({ isDarkTheme, updateIsDarkTheme }) => (
+const Welcome = () => (
   <div className="welcome__container">
-    <div
-      className="light-dark-toggle"
-      onClick={() => updateIsDarkTheme(!isDarkTheme)}
-    >
-      <LightDarkModeToggle />
-    </div>
     <div className="header__content">
       <h1 className="header__title">HackBeanpot 2022</h1>
       <SpaceJamTitle />

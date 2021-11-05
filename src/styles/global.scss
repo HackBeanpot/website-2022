@@ -4,17 +4,17 @@
   z-index: 20;
 }
 
-.light {
-  filter: invert(1)
+.parent {
+  background-size: cover;
+  background-image: url(../images/svg-2022/space-background.png);
+
+  &.light {
+    filter: invert(1)
+  }
 }
 
 body {
   @include body-text;
-  background-image: url(../images//svg-2022/space-background.png);
-}
-
-main {
-  margin-top: $navbar-height;
 }
 
 ul {
