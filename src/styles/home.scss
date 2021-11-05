@@ -141,6 +141,13 @@
   margin-top: 30px;
 }
 
+.theme__disclaimer {
+  @include small-body-text;
+  font-style: italic;
+  color: $pale-yellow;
+  margin: 30px 0 50px 0;
+}
+
 .theme__space-jam {
   @include h1-text;
 }

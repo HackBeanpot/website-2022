@@ -24,6 +24,18 @@ const ThemeAnnouncement = () => (
             in-between, we’re excited for you to embark on this adventure with
             us!
           </p>
+          <p className="theme__disclaimer">
+          *no actual astronaut training or experience necessary 
+          </p>
+          <a
+        href="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
+        role="button"
+        className="header__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join our mailing list
+      </a>
         </div>
       </div>
     </div>
