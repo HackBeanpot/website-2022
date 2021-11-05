@@ -9,7 +9,7 @@ import 'styles/main.scss';
 
 // Shows the header and footer on every page
 const Layout = ({ children }) => {
-  const [isDarkTheme, updateIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   
   return <div className={`parent ${isDarkTheme ? "" : "light"}`}>
     <Helmet
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       ]}
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
     />
-    <Nav updateIsDarkTheme={updateIsDarkTheme} isDarkTheme={isDarkTheme} />
+    <Nav setIsDarkTheme={setIsDarkTheme} isDarkTheme={isDarkTheme} />
     <NavMobile />
     <main>{children}</main>
     <Footer />

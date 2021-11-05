@@ -1,14 +1,19 @@
 .nav,
 .nav-mobile {
-  position: fixed;
-  // add this back if we can find a less-jank way to fix light mode header positioning
-  // transition: 0.3s ease-in-out;
+  position: sticky;
+  transition: 0.3s ease-in-out;
   top: 0;
-  left: 0;
   width: 100%;
   height: $navbar-height;
   z-index: 100;
   border-bottom: 1px solid $blue-grey;
+}
+
+.light-dark-toggle {
+  position: absolute;
+  top: calc(20px + #{$navbar-height});
+  right: 20px;
+  z-index: 100;
 }
 
 nav.scrolled, .nav, .nav-mobile {
