@@ -119,11 +119,11 @@
 // ---------------------------------------------------------------------------
 .about__title {
   @include h1-text;
-  height: 1000px;
 }
 
 .about__container {
   text-align: center;
+  height: 1000px;
 }
 
 .about-content{
