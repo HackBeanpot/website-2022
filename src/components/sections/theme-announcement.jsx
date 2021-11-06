@@ -1,6 +1,6 @@
 import React from 'react';
-
-import BlueTransition from 'images/svg/blue-transition.jsx';
+import BlastoffNeptune from '../../images/svg-2022/blastoff-neptune';
+import BlastoffAstronaut from '../../images/svg-2022/blastoff-astronaut';
 
 const ThemeAnnouncement = () => (
   <section className="theme-announcement">
@@ -39,6 +39,12 @@ const ThemeAnnouncement = () => (
         </div>
       </div>
     </div>
+    <div className="blastoff-neptune">
+        <BlastoffNeptune />
+      </div>
+      <div className="blastoff-astronaut">
+        <BlastoffAstronaut />
+      </div>
   </section>
 );
 
