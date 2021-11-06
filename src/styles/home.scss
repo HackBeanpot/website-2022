@@ -1,6 +1,10 @@
 // ---------------------------------------------------------------------------
 // Header
 // ---------------------------------------------------------------------------
+.header__container {
+  height: 1000px;
+  overflow-x: hidden;
+}
 
 .header__content {
   z-index: 0;
@@ -17,26 +21,9 @@
   margin-bottom: -70px;
 }
 
-.header__event-date {
-  @include h4-text;
-}
-
 .header__description {
   @include body-text;
   margin-top: -70px;
-}
-
-.header__newsletter-input {
-  border: 0;
-  outline: 0;
-  width: 290px;
-  height: 40px;
-  border-radius: 10px;
-  padding: 0 0.5rem;
-}
-
-.header__form-msg {
-  margin-top: 0.5rem;
 }
 
 .header__cta {
@@ -73,7 +60,7 @@
 // ---------------------------------------------------------------------------
 
 .theme-announcement {
-  @include orange-gradient-bg;
+  height: 1000px;
 }
 
 .theme__content-wrapper {
@@ -87,62 +74,44 @@
   }
 }
 
-.theme__transition {
-  margin-top: -1px;
-  width: 100vw;
-
-  @media (max-width: $md) {
-    margin-bottom: 1rem;
-  }
-}
-
-.theme__logo {
-  @media (max-width: $lg) {
-    display: none;
-  }
-}
-
-.theme__sunset-scene {
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  margin-top: -250px;
-
-  svg {
-    width: 100%;
-  }
-
-  @media (max-width: $sm) {
-    margin-top: -150px;
-  }
-
-  @media (min-width: $lg) {
-    margin-top: -400px;
-  }
-
-  @media (min-width: $xl) {
-    margin-top: -500px;
-  }
-
-  @media (min-width: $xxl) {
-    margin-top: -570px;
-  }
-
-  @media (min-width: $xxxl) {
-    margin-top: -650px;
-  }
-}
-
-.theme__camp {
-  @include h2-text;
-}
-
 .theme__content {
   width: 100%;
-
   @media (min-width: $lg) {
-    width: 60%;
+    width: 56%;
+    margin: 130px 0 0 -180px;
   }
+}
+
+.theme__header {
+  @include h4-text;
+  color: $pale-yellow !important;
+}
+
+.theme__space-jam {
+  @include h1-text;
+}
+
+.theme__description {
+  margin-top: 30px;
+}
+
+.theme__disclaimer {
+  @include small-body-text;
+  font-style: italic;
+  color: $pale-yellow;
+  margin: 30px 0 50px 0;
+}
+
+.blastoff-neptune {
+  position: absolute;
+  right: 580px;
+  top: 180px;
+}
+
+.blastoff-astronaut {
+  position: absolute;
+  right: -100px;
+  top: 200px;
 }
 
 // ---------------------------------------------------------------------------
@@ -269,13 +238,4 @@
   to {
     transform: translateX(100vw);
   }
-}
-
-// ---------------------------------------------------------------------------
-// Other
-// ---------------------------------------------------------------------------
-
-.welcome__container {
-  height: 1000px;
-  overflow-x: hidden;
 }

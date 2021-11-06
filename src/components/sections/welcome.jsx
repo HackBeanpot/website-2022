@@ -7,7 +7,7 @@ import SpaceJamEarth from '../../images/svg-2022/space-jam-earth';
 import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune';
 
 const Welcome = () => (
-  <div className="welcome__container">
+  <div className="header__container">
     <div className="header__content">
       <h1 className="header__title">HackBeanpot 2022</h1>
       <SpaceJamTitle />
@@ -30,11 +30,9 @@ const Welcome = () => (
       <div className="space-jam-saturn-orbit">
       <SpaceJamSaturnOrbit />
       </div>
-
       <div className="space-jam-earth">
       <SpaceJamEarth />
       </div>
-
       <div className="space-jam-neptune">
         <SpaceJamNeptune />
       </div>
