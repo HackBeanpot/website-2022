@@ -119,11 +119,10 @@
 // ---------------------------------------------------------------------------
 .about__title {
   @include h1-text;
+  height: 1000px;
 }
 
 .about-item{
-  @include top-padding;
-  @include green-blue-gradient-bg;
   text-align: center;
 }
 

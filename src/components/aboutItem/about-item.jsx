@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import AboutLeftFoot from "../../images/svg/about-leftfoot";
 const AboutItem = props => {
 
   return (
@@ -8,9 +7,6 @@ const AboutItem = props => {
         HackBeanpot is about...
       </h2>
       <div className='about-content'>
-        <div className="about-footsteps">
-          <AboutLeftFoot/>
-        </div>
       </div>
     </div>
   )
