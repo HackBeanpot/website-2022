@@ -127,13 +127,6 @@
 }
 
 .about-content{
-  @include bottom-padding;
-  padding-top: 5%;
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: $lg){
-    justify-content: center;
-  }
 }
 // ---------------------------------------------------------------------------
 // FAQ
