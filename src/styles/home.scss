@@ -149,30 +149,13 @@
 // About
 // ---------------------------------------------------------------------------
 .about__title {
-  @include h2-text;
+  @include h1-text;
 }
 
 .about-item{
   @include top-padding;
   @include green-blue-gradient-bg;
-}
-
-.about-paragraph {
-  color: #CFE8E8;
-  width: 30vw;
   text-align: center;
-  font-size: 2vw;
-  @media (max-width: $lg){
-    width: revert;
-    font-size: 4vw;
-  }
-}
-
-.about-footsteps{
-  width: 20vw;
-  @media (max-width: $lg){
-    display: none;
-  }
 }
 
 .about-content{
