@@ -3,7 +3,6 @@
 // ---------------------------------------------------------------------------
 .header__container {
   height: 1000px;
-  overflow-x: hidden;
 }
 
 .header__content {
@@ -119,7 +118,7 @@
 // ---------------------------------------------------------------------------
 .about__title {
   @include h1-text;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .about__container {
@@ -129,6 +128,8 @@
 
 .about-content{
   display: flex;
+  justify-content: center;
+  align-self: center;
 }
 // ---------------------------------------------------------------------------
 // FAQ
@@ -215,4 +216,10 @@
   to {
     transform: translateX(100vw);
   }
+}
+
+// Other
+
+.home {
+  overflow-x: hidden;
 }
