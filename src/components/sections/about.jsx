@@ -30,7 +30,6 @@ const About = props => {
       </h2>
       <div className='about-content'>
         {aboutInfo.map(info => <AboutItem img={info.img} title={info.title} description={info.description}/>)}
-
       </div>
     </div>
   )
