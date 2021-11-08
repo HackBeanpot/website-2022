@@ -3,7 +3,6 @@
 // ---------------------------------------------------------------------------
 .header__container {
   height: 1000px;
-  overflow-x: hidden;
 }
 
 .header__content {
@@ -112,6 +111,48 @@
   position: absolute;
   right: -100px;
   top: 200px;
+}
+
+
+// ---------------------------------------------------------------------------
+// Covid Precautions
+// ---------------------------------------------------------------------------
+
+
+.covid-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.covid__content {
+  position: absolute;
+  right: 0;
+  @media (min-width: $lg) {
+    width: 56%;
+    margin: 130px -100px 0 0;
+  }
+}
+
+.covid__header {
+  @include h4-text;
+  color: $pale-yellow !important;
+}
+
+.covid__space-jam {
+  @include h1-text;
+}
+
+.covid__description {
+  margin: 30px 0 40px 0;
+}
+
+.covid__container {
+  height: 1000px;
 }
 
 // ---------------------------------------------------------------------------
@@ -238,4 +279,9 @@
   to {
     transform: translateX(100vw);
   }
+}
+
+// Other 
+.home {
+  overflow-x: hidden;
 }
