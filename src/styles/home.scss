@@ -3,7 +3,6 @@
 // ---------------------------------------------------------------------------
 .header__container {
   height: 1000px;
-  overflow-x: hidden;
 }
 
 .header__content {
@@ -118,40 +117,19 @@
 // About
 // ---------------------------------------------------------------------------
 .about__title {
-  @include h2-text;
+  @include h1-text;
+  padding-bottom: 40px;
 }
 
-.about-item{
-  @include top-padding;
-  @include green-blue-gradient-bg;
-}
-
-.about-paragraph {
-  color: #CFE8E8;
-  width: 30vw;
+.about__container {
   text-align: center;
-  font-size: 2vw;
-  @media (max-width: $lg){
-    width: revert;
-    font-size: 4vw;
-  }
-}
-
-.about-footsteps{
-  width: 20vw;
-  @media (max-width: $lg){
-    display: none;
-  }
+  height: 1000px;
 }
 
 .about-content{
-  @include bottom-padding;
-  padding-top: 5%;
   display: flex;
-  justify-content: space-between;
-  @media (max-width: $lg){
-    justify-content: center;
-  }
+  justify-content: center;
+  align-self: center;
 }
 // ---------------------------------------------------------------------------
 // FAQ
@@ -238,4 +216,10 @@
   to {
     transform: translateX(100vw);
   }
+}
+
+// Other
+
+.home {
+  overflow-x: hidden;
 }
