@@ -5,6 +5,7 @@ import SpaceJamMars from '../../images/svg-2022/space-jam-mars';
 import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit';
 import SpaceJamEarth from '../../images/svg-2022/space-jam-earth';
 import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune';
+import CtaRocketship from '../../images/svg-2022/cta-rocketship';
 
 const Welcome = () => (
   <div className="header__container">
@@ -21,21 +22,21 @@ const Welcome = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Join our mailing list
+        Join our mailing list<CtaRocketship />
       </a>
     </div>
-      <div className="space-jam-mars">
-        <SpaceJamMars />
-      </div>
-      <div className="space-jam-saturn-orbit">
+    <div className="space-jam-mars">
+      <SpaceJamMars />
+    </div>
+    <div className="space-jam-saturn-orbit">
       <SpaceJamSaturnOrbit />
-      </div>
-      <div className="space-jam-earth">
+    </div>
+    <div className="space-jam-earth">
       <SpaceJamEarth />
-      </div>
-      <div className="space-jam-neptune">
-        <SpaceJamNeptune />
-      </div>
+    </div>
+    <div className="space-jam-neptune">
+      <SpaceJamNeptune />
+    </div>
   </div>
 );
 

@@ -6,14 +6,14 @@
   @include body-text;
   @include drop-shadow;
   font-weight: 700;
-  background-color: $camp-yellow;
+  background-color: #4366e1;
   padding: 12px 35px;
   border-radius: 50px;
   transition: background-color 0.3s ease;
 
   &:hover {
     color: $hbp-navy;
-    background-color: $camp-yellow;
+    background-color: #4366e1;
     opacity: 1;
     text-decoration: none;
   }
@@ -106,7 +106,12 @@
 
 @mixin green-blue-gradient-bg {
   @include inline-link;
-  background: linear-gradient(180deg, #386A3F 3.65%, #0C4124 57.29%, #102137 100%);
+  background: linear-gradient(
+    180deg,
+    #386a3f 3.65%,
+    #0c4124 57.29%,
+    #102137 100%
+  );
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: fit-content;
   overflow: hidden;
@@ -114,7 +119,7 @@
 
 @mixin green-gradient-bg {
   @include inline-link;
-  background: linear-gradient(180deg, #17331B 27.08%, #1D8A4F 85.42%);
+  background: linear-gradient(180deg, #17331b 27.08%, #1d8a4f 85.42%);
   color: $white;
   overflow: hidden;
 }
@@ -128,7 +133,7 @@
 
 @mixin orange-gradient-bg {
   @include inline-link;
-  background: linear-gradient(#334171 0%, #E56138 38%, #FFED8E 59%);
+  background: linear-gradient(#334171 0%, #e56138 38%, #ffed8e 59%);
   color: $hbp-navy;
   overflow: hidden;
 }
