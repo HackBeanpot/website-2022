@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------
 
 @mixin primary-cta {
-  @include body-text;
+  @include body-text; 
   @include drop-shadow;
   font-weight: 700;
   background-color: #4366e1;
