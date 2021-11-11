@@ -1,6 +1,7 @@
 import React from 'react';
 import BlastoffNeptune from '../../images/svg-2022/blastoff-neptune';
 import BlastoffAstronaut from '../../images/svg-2022/blastoff-astronaut';
+import PrimaryCta from '../primary-cta';
 
 const ThemeAnnouncement = () => (
   <section className="theme-announcement">
@@ -25,26 +26,18 @@ const ThemeAnnouncement = () => (
             us!
           </p>
           <p className="theme__disclaimer">
-          *no actual astronaut training or experience necessary 
+            *no actual astronaut training or experience necessary
           </p>
-          <a
-        href="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
-        role="button"
-        className="header__cta"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Join our mailing list
-      </a>
+          <PrimaryCta link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431" textDescription="Join our mailing list" />
         </div>
       </div>
     </div>
     <div className="blastoff-neptune">
-        <BlastoffNeptune />
-      </div>
-      <div className="blastoff-astronaut">
-        <BlastoffAstronaut />
-      </div>
+      <BlastoffNeptune />
+    </div>
+    <div className="blastoff-astronaut">
+      <BlastoffAstronaut />
+    </div>
   </section>
 );
 

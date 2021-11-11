@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PrimaryCta from '../primary-cta';
 import FAQItems from 'components/faqItems/faq-items';
 import FourFootsteps from 'images/svg/four-footsteps';
 
@@ -13,13 +13,7 @@ const FAQ = () => (
             <FAQItems />
             <div className="faq__cta-group">
                 <p className="faq__cta-label">Don't see your question?</p>
-                <a
-                href="mailto:team@hackbeanpot.com"
-                role="button"
-                className="faq__cta"
-                >
-                Let us know!
-                </a>
+                <PrimaryCta link="mailto:team@hackbeanpot.com" textDescription="Let us know!" />
             </div>
         </div>
     </section>
