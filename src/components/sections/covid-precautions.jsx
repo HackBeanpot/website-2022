@@ -15,15 +15,6 @@ const CovidPrecautions = () => (
         education to hackers on the best way to maintain COVID safety throughout
         the event as per the latest CDC guidelines.
       </p>
-      <a
-        href="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
-        role="button"
-        className="header__cta"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Our Covid Policies
-      </a>
     </div>
     <div className="covid-astronaut-purple">
       <CovidAstronautPurple />
