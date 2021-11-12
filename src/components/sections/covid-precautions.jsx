@@ -4,7 +4,7 @@ import CovidAstronautRed from '../../images/svg-2022/covid-astronaut-red';
 import CovidEarth from '../../images/svg-2022/covid-earth';
 
 const CovidPrecautions = () => (
-  <div className="container covid__container">
+  <div id="covid-safety" className="container covid__container">
     <div className="covid__content">
       <a className="covid__header">Covid Precautions</a>
       <h2 className="covid__space-jam">Safety First!</h2>
