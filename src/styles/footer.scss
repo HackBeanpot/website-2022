@@ -17,7 +17,8 @@
   @media (min-width: $md) {
   }
   @media (min-width: $lg) {
-    margin: 0 8em 0 3em;
+    margin-right: clamp(3em, 6.1vw, 9em);
+    margin-left: 3em;
     width: 13%;
   }
 }
@@ -120,7 +121,7 @@ input {
   list-style-type: none;
   @media (min-width: $lg) {
     padding-bottom: 30px;
-    padding-right: clamp(1.5em, 4.3vw, 6em);
+    padding-right: clamp(1.5em, 7vw, 10em);
   }
 }
 
