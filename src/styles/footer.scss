@@ -2,6 +2,7 @@
   border-top: 1px solid $blue-grey;
   backdrop-filter: blur(12px);
   text-align: center;
+  padding-top: 30px;
   @media (min-width: $lg) {
     display: flex;
     padding-left: 7em;
@@ -19,7 +20,10 @@
 }
 
 .footer__column1 {
+  width: 8em;
+  margin: auto;
   @media (min-width: $lg) {
+    margin:initial;
     margin-right: clamp(3em, 6.1vw, 9em);
     margin-left: 3em;
     width: 13%;
@@ -39,6 +43,7 @@
 }
 
 .footer__logo {
+  margin-left: -.2em;
   @media (min-width: $lg) {
     margin-left: -2.8em;
   }
@@ -51,6 +56,7 @@
     padding-right: 1em;
   }
   padding-left: 1em;
+  margin-top: 0.8em;
   @media (min-width: $lg) {
     justify-content: initial;
     padding-left: 0;
@@ -77,6 +83,9 @@ input {
 .footer__form {
   @media (min-width: $lg) {
     width: 100%;
+    padding: 0.5em 0;
+  }
+  @media (min-width: $xl) {
     padding: 1em 0;
   }
 
@@ -95,15 +104,16 @@ input {
 
   .footer__form-input {
     border-radius: 18px;
-    width: clamp(10em, 29vw, 30em);
     font-style: italic;
     padding-left: 12px;
     margin-right: 0;
     margin-bottom: 1em;
     font-size: 18px;
+    width: 15em;
     @media (min-width: $lg) {
       margin-right: 1em;
       margin-bottom: 0;
+      width: clamp(10em, 29vw, 30em);
     }
   }
 
@@ -151,5 +161,6 @@ input {
 
 .footer_registered_text {
   @include xsmall-body-text;
+  margin-bottom: 0;
   line-height: 20px;
 }
