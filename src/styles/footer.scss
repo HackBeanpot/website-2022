@@ -47,8 +47,14 @@
 
 .footer__social {
   display: flex;
+  justify-content: center;
   li {
     padding-right: 1em;
+  }
+  padding-left: 1em;
+  @media (min-width: $lg) {
+    justify-content:initial;
+    padding-left: 0;
   }
 }
 
@@ -94,8 +100,11 @@ input {
     font-style: italic;
     padding-left: 12px;
     margin-right: 0;
+    margin-bottom: 1em;
+    font-size: 18px;
     @media (min-width: $lg) {
       margin-right: 1em;
+      margin-bottom: 0;
     }
   }
 
@@ -137,7 +146,7 @@ input {
 .footer__core_team_note {
   @include xsmall-body-text;
   padding-bottom: 1em;
-  padding-left: 46%;
+  text-align: center;
   backdrop-filter: blur(12px);
 }
 
