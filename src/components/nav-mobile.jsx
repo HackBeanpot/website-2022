@@ -26,8 +26,8 @@ const NavMobile = () => {
           <i
             className={
               isNavOpen
-                ? 'mdi mdi-24px mdi-close close-icon'
-                : 'mdi mdi-24px mdi-menu menu-icon'
+                ? 'mdi mdi-48px mdi-close close-icon'
+                : 'mdi mdi-48px mdi-menu menu-icon'
             }
           />
         </button>
