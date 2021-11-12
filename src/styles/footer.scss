@@ -56,7 +56,6 @@
     padding-right: 1em;
   }
   padding-left: 1em;
-  margin-top: 0.8em;
   @media (min-width: $lg) {
     justify-content: initial;
     padding-left: 0;
@@ -71,6 +70,7 @@
 
 .footer__coc-link {
   @include xsmall-body-text;
+  text-decoration: underline;
 }
 
 input {
@@ -81,6 +81,7 @@ input {
 }
 
 .footer__form {
+  padding: 1em 0;
   @media (min-width: $lg) {
     width: 100%;
     padding: 0.5em 0;
@@ -93,8 +94,10 @@ input {
     @include small-body-text;
     margin-bottom: 1rem;
     text-align: center;
+    margin-left: -7.8em;
     @media (min-width: $lg) {
       text-align: left;
+      margin-left: 0;
     }
   }
 
