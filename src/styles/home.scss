@@ -6,6 +6,8 @@
 }
 
 .header__content {
+  display: none;
+  @media (min-width: $lg) {
   z-index: 0;
   display: flex;
   flex-direction: column;
@@ -13,6 +15,7 @@
   width: 100%;
   padding: 170px 0 0 0;
   position: absolute;
+  }
 }
 
 .header__title {

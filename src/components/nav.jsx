@@ -17,7 +17,7 @@ const Nav = ({ setIsDarkTheme }) => {
         <LogoIcon />
       </DynamicLink>
       <ul className="nav__list">
-        {NavLinks.slice(0, NavLinks.length - 2).map((link, index) => {
+        {NavLinks.map((link, index) => {
           return (
             <li key={`nav-item-${index}`} className="nav__item">
               <DynamicLink className="nav__link" to={link.path}>

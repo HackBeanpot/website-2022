@@ -5,8 +5,7 @@ import { useScrollYPosition } from 'react-use-scroll-position';
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from 'data/nav-links.json';
 
-import LogoIcon from 'images/svg/logo-icon.jsx';
-import LogoIconWhite from 'images/svg/logo-icon-white.jsx';
+import LogoIcon from '../images/svg-2022/logo-icon-white.jsx';
 
 const NavMobile = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -20,14 +19,14 @@ const NavMobile = () => {
     <nav className={`nav-mobile ${isNavOpen ? 'opened' : 'closed'} ${hasScrolled ? 'scrolled' : ''}`}>
       <div className="nav-mobile__top">
         <DynamicLink to="/" className="nav__logo">
-          {isNavOpen ? <LogoIconWhite /> : <LogoIcon />}
+          <LogoIcon />
         </DynamicLink>
         <button onClick={menuToggle} className="nav-mobile__toggle-btn">
           <i
             className={
               isNavOpen
-                ? 'mdi mdi-24px mdi-close close-icon'
-                : 'mdi mdi-24px mdi-menu menu-icon'
+                ? 'mdi mdi-48px mdi-close close-icon'
+                : 'mdi mdi-48px mdi-menu menu-icon'
             }
           />
         </button>

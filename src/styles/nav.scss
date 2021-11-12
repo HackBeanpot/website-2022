@@ -4,9 +4,20 @@
   transition: 0.3s ease-in-out;
   top: 0;
   width: 100%;
-  height: $navbar-height;
   z-index: 100;
   border-bottom: 1px solid $blue-grey;
+}
+
+.nav-mobile {
+  height: $navbar-mobile-height;
+}
+
+.nav {
+  display: none;
+  height: $navbar-height;
+  @media (min-width: $md) {
+    display: block
+  }
 }
 
 .light-dark-toggle {
@@ -21,9 +32,13 @@ nav.scrolled, .nav, .nav-mobile {
 }
 
 .nav__logo {
+  margin-left: -.5em;
+  @media (min-width: $lg) {
+  margin: 0;
   .opened & {
     padding: 3px;
   }
+}
 }
 
 // ---------------------------------------------------------------------------
@@ -53,13 +68,16 @@ nav.scrolled, .nav, .nav-mobile {
 
 .nav__link {
   @include body-text;
-  font-size: 18px !important;
-  font-weight: 500;
+  font-size: clamp(12px, 1.6vw, 18px);
+  font-weight: 400;
   &:hover {
     color: $hbp-navy;
     border-bottom: 2px solid $hbp-navy;
     margin-bottom: -2px;
     text-decoration: none;
+  }
+  @media (min-width: $xl) {
+    font-size: 18px !important;
   }
 }
 
@@ -93,14 +111,13 @@ nav.scrolled, .nav, .nav-mobile {
 }
 
 .nav-mobile__toggle-btn {
-  width: 50px;
-
+  margin-top: .4em;
   > .close-icon {
     color: $white;
   }
 
   > .menu-icon {
-    color: $hbp-navy;
+    color: $white;
   }
 }
 
@@ -120,7 +137,7 @@ nav.scrolled, .nav, .nav-mobile {
   width: 100%;
   padding: 10px 40px;
   color: background-color 0.2s ease;
-
+  text-transform: none;
   &:hover {
     color: $hbp-navy;
     text-decoration: none;
