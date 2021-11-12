@@ -1,10 +1,12 @@
 .footer {
   border-top: 1px solid $blue-grey;
   backdrop-filter: blur(12px);
+  text-align: center;
   @media (min-width: $lg) {
     display: flex;
     padding-top: 50px;
     padding-left: clamp(1em, 3vw, 5em);
+    text-align: inherit;
   }
 }
 
@@ -38,7 +40,9 @@
 }
 
 .footer__logo {
-  margin-left: -2.8em;
+  @media (min-width: $lg) {
+    margin-left: -2.8em;
+  }
 }
 
 .footer__social {
@@ -73,8 +77,11 @@ input {
 
   .footer__form-heading {
     @include small-body-text;
-    text-align: left;
     margin-bottom: 1rem;
+    text-align: center;
+    @media (min-width: $lg) {
+      text-align: left;
+    }
   }
 
   .footer__form-msg {
@@ -84,9 +91,12 @@ input {
   .footer__form-input {
     border-radius: 18px;
     width: clamp(10em, 29vw, 30em);
-    margin-right: 1em;
     font-style: italic;
     padding-left: 12px;
+    margin-right: 0;
+    @media (min-width: $lg) {
+      margin-right: 1em;
+    }
   }
 
   .footer__form-btn {
@@ -95,9 +105,8 @@ input {
 
   .footer__form-input-and-button {
     display: flex;
-    @media (min-width: $sm) {
-      flex-direction: column;
-    }
+    align-items: center;
+    flex-direction: column;
     @media (min-width: $lg) {
       flex-direction: row;
     }
