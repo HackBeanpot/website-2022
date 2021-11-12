@@ -3,7 +3,8 @@
   backdrop-filter: blur(12px);
   @media (min-width: $lg) {
     display: flex;
-    padding: 50px 0 0 90px;
+    padding-top: 50px;
+    padding-left: clamp(1em, 3vw, 5em);
   }
 }
 
@@ -81,7 +82,7 @@ input {
 
   .footer__form-input {
     border-radius: 18px;
-    width: clamp(10em, 25vw, 25em);
+    width: clamp(10em, 29vw, 30em);
     margin-right: 1em;
     font-style: italic;
     padding-left: 12px;
@@ -117,8 +118,10 @@ input {
 
 .footer__item {
   list-style-type: none;
-  padding-bottom: 30px;
-  padding-right: 110px;
+  @media (min-width: $lg) {
+    padding-bottom: 30px;
+    padding-right: clamp(1.5em, 4.3vw, 6em);
+  }
 }
 
 .footer__core_team_note {
