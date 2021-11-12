@@ -111,9 +111,11 @@ input {
     padding-left: 12px;
     margin-right: 0;
     margin-bottom: 1em;
-    font-size: 18px;
-    width: 15em;
+    font-size: 16px;
+    width: 17em;
+    height: 2em;
     @media (min-width: $lg) {
+      height: 2.35em;
       margin-right: 1em;
       margin-bottom: 0;
       width: clamp(10em, 29vw, 30em);
