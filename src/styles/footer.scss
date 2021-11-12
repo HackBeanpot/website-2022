@@ -17,7 +17,13 @@
 
 .footer_column3,
 .footer_column2 {
-  padding-right: 2.5em;
+  @media (min-width: $sm) {
+    display: none;
+  }
+  @media (min-width: $lg) {
+    display:block;
+    padding-right: 2.5em;
+  }
 }
 
 .footer__logo {
@@ -50,8 +56,11 @@ input {
 }
 
 .footer__form {
-  width: 100%;
-  padding: 1em 0;
+
+  @media (min-width: $lg) {
+    width: 100%;
+    padding: 1em 0;
+  }
 
   .footer__form-heading {
     @include small-body-text;
@@ -77,6 +86,12 @@ input {
 
   .footer__form-input-and-button {
     display: flex;
+    @media (min-width: $sm) {
+      flex-direction: column;
+    }
+    @media (min-width: $lg) {
+      flex-direction: row;
+    }
   }
 }
 
