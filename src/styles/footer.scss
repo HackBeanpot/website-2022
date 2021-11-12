@@ -1,8 +1,17 @@
 .footer {
-  display: flex;
-  padding: 50px 0 0 90px;
   border-top: 1px solid $blue-grey;
   backdrop-filter: blur(12px);
+  text-align: center;
+  padding-top: 30px;
+  @media (min-width: $lg) {
+    display: flex;
+    padding-left: 7em;
+    text-align: inherit;
+    padding-top: 50px;
+  }
+  @media (min-width: $xl) {
+    padding-left: clamp(1em, 3vw, 5em);
+  }
 }
 
 .footer__bg {
@@ -11,23 +20,45 @@
 }
 
 .footer__column1 {
-  margin: 0 8em 0 3em;
-  width: 13%;
+  width: 8em;
+  margin: auto;
+  @media (min-width: $lg) {
+    margin:initial;
+    margin-right: clamp(3em, 6.1vw, 9em);
+    margin-left: 3em;
+    width: 13%;
+  }
 }
 
 .footer_column3,
 .footer_column2 {
-  padding-right: 2.5em;
+  display: none;
+  @media (min-width: $lg) {
+    padding-right: 0em;
+  }
+  @media (min-width: $xl) {
+    display: block;
+    padding-right: clamp(0.1em, 1.5vw, 2.5em);
+  }
 }
 
 .footer__logo {
-  margin-left: -2.8em;
+  margin-left: -.2em;
+  @media (min-width: $lg) {
+    margin-left: -2.8em;
+  }
 }
 
 .footer__social {
   display: flex;
+  justify-content: center;
   li {
     padding-right: 1em;
+  }
+  padding-left: 1em;
+  @media (min-width: $lg) {
+    justify-content: initial;
+    padding-left: 0;
   }
 }
 
@@ -39,6 +70,7 @@
 
 .footer__coc-link {
   @include xsmall-body-text;
+  text-decoration: underline;
 }
 
 input {
@@ -46,17 +78,27 @@ input {
   outline: 0;
   height: 40px;
   box-sizing: border-box;
-  
 }
 
 .footer__form {
-  width: 100%;
   padding: 1em 0;
+  @media (min-width: $lg) {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  @media (min-width: $xl) {
+    padding: 1em 0;
+  }
 
   .footer__form-heading {
     @include small-body-text;
-    text-align: left;
     margin-bottom: 1rem;
+    text-align: center;
+    margin-left: -7.8em;
+    @media (min-width: $lg) {
+      text-align: left;
+      margin-left: 0;
+    }
   }
 
   .footer__form-msg {
@@ -65,10 +107,19 @@ input {
 
   .footer__form-input {
     border-radius: 18px;
-    width: 450px;
-    margin-right: 1em;
     font-style: italic;
     padding-left: 12px;
+    margin-right: 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+    width: 17em;
+    height: 2em;
+    @media (min-width: $lg) {
+      height: 2.35em;
+      margin-right: 1em;
+      margin-bottom: 0;
+      width: clamp(10em, 29vw, 30em);
+    }
   }
 
   .footer__form-btn {
@@ -77,6 +128,11 @@ input {
 
   .footer__form-input-and-button {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $lg) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -95,18 +151,21 @@ input {
 
 .footer__item {
   list-style-type: none;
-  padding-bottom: 30px;
-  padding-right: 110px;
+  @media (min-width: $lg) {
+    padding-bottom: 30px;
+    padding-right: clamp(1.5em, 7vw, 10em);
+  }
 }
 
 .footer__core_team_note {
   @include xsmall-body-text;
   padding-bottom: 1em;
-  padding-left: 46%;
+  text-align: center;
   backdrop-filter: blur(12px);
 }
 
 .footer_registered_text {
   @include xsmall-body-text;
+  margin-bottom: 0;
   line-height: 20px;
 }

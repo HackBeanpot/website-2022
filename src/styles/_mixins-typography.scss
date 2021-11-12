@@ -6,7 +6,7 @@
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.62em;
 
   @media (min-width: $xl) {
@@ -18,24 +18,16 @@
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 44px;
-
-  @media (min-width: $md) {
-    font-size: 12px;
-  }
 }
 
 @mixin small-body-text($color: $white) {
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
-
-  @media (min-width: $md) {
-    font-size: 16px;
-  }
 }
 
 // ---------------------------------------------------------------------------
@@ -76,7 +68,7 @@
   color: $color;
   font-family: $font-body;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.4em;
   @media (min-width: $lg) {
     font-size: 24px;
