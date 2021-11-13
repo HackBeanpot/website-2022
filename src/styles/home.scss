@@ -60,8 +60,11 @@
 
 .theme__content {
   width: 100%;
-  @media (min-width: $lg) {
-    width: 56%;
+  margin: 130px 0 0 0;
+  @media (min-width: $xl) {
+  width: 56%;
+  }
+  @media (min-width: $xxl) {
     margin: 130px 0 0 -180px;
   }
 }
@@ -84,18 +87,6 @@
   font-style: italic;
   color: $pale-yellow;
   margin: 30px 0 50px 0;
-}
-
-.blastoff-neptune {
-  position: absolute;
-  right: 580px;
-  top: 180px;
-}
-
-.blastoff-astronaut {
-  position: absolute;
-  right: -100px;
-  top: 200px;
 }
 
 // ---------------------------------------------------------------------------
