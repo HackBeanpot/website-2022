@@ -65,11 +65,14 @@
   right: 200px;
   top: -80px;
   width: 2.5em;
+  display: none;
   @media (min-width: $sm) {
     width: 3em;
     right: 300px;
+    display: block;
   }
   @media (min-width: $xl) {
+
     top: 100px;
     width: 8em;
     right: 580px;

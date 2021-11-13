@@ -2,7 +2,10 @@
 // Header
 // ---------------------------------------------------------------------------
 .header__container {
+  height: 850px;
+  @media (min-width: $md) {
   height: 1000px;
+  }
 }
 
 .header__content {
@@ -87,6 +90,16 @@
   font-style: italic;
   color: $pale-yellow;
   margin: 30px 0 50px 0;
+}
+
+.theme__cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.3em;
+  @media (min-width: $sm) {
+    margin-top: 0;
+    display: block;
+  }
 }
 
 // ---------------------------------------------------------------------------
