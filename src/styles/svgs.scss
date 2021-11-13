@@ -1,0 +1,61 @@
+.space-jam-title {
+  width: 100%;
+}
+
+.space-jam-saturn-orbit {
+  position: absolute;
+  top: 30px;
+  right: -140px;
+  width: 10em;
+  @media (min-width: $md) {
+    width: 10em;
+  }
+  @media (min-width: $lg) {
+    width: 15em;
+  }
+  @media (min-width: $xl) {
+    width: 22em;
+  }
+}
+
+.space-jam-mars {
+  position: absolute;
+  top: 670px;
+  right: 545px;
+  display: none;
+  @media (min-width: $lg) {
+    width: 15em;
+  }
+  @media (min-width: $xl) {
+    display: block;
+    width: 22em;
+  }
+}
+
+.space-jam-earth {
+  position: absolute;
+  top: 120px;
+  left: 280px;
+  display: none;
+  @media (min-width: $lg) {
+    width: 15em;
+  }
+  @media (min-width: $xl) {
+    width: 22em;
+  }
+}
+
+.space-jam-neptune {
+  position: absolute;
+  top: 470px;
+  left: -100px;
+  @media (min-width: $md) {
+    width: 10em;
+  }
+  @media (min-width: $lg) {
+    width: 15em;
+  }
+  @media (min-width: $xl) {
+    width: 22em;
+  }
+}

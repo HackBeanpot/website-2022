@@ -14,20 +14,15 @@ const Welcome = () => (
       <h4 className="header__description">
         Coming to a galaxy near you February XX-XX
       </h4>
-      <PrimaryCta link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431" textDescription="Join our mailing list" />
+      <PrimaryCta
+        link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
+        textDescription="Join our mailing list"
+      />
     </div>
-    <div className="space-jam-mars">
-      <SpaceJamMars />
-    </div>
-    <div className="space-jam-saturn-orbit">
-      <SpaceJamSaturnOrbit />
-    </div>
-    <div className="space-jam-earth">
-      <SpaceJamEarth />
-    </div>
-    <div className="space-jam-neptune">
-      <SpaceJamNeptune />
-    </div>
+    <SpaceJamMars />
+    <SpaceJamSaturnOrbit />
+    <SpaceJamEarth />
+    <SpaceJamNeptune />
   </div>
 );
 

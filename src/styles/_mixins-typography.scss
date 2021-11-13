@@ -6,12 +6,8 @@
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.62em;
-
-  @media (min-width: $xl) {
-    font-size: 20px;
-  }
 }
 
 @mixin xsmall-body-text($color: $white) {
@@ -37,15 +33,11 @@
 @mixin h1-text($color: $white) {
   color: $color;
   font-family: $font-body;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   z-index: 0;
   @media (min-width: $sm) {
     font-size: 30px;
-  }
-
-  @media (min-width: $lg) {
-    font-size: 36px;
   }
 }
 
