@@ -16,15 +16,9 @@ const CovidPrecautions = () => (
         the event as per the latest CDC guidelines.
       </p>
     </div>
-    <div className="covid-astronaut-purple">
       <CovidAstronautPurple />
-    </div>
-    <div className="covid-astronaut-red">
       <CovidAstronautRed />
-    </div>
-    <div className="covid-earth">
       <CovidEarth />
-    </div>
   </div>
 );
 

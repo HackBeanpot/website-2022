@@ -4,7 +4,7 @@
 .header__container {
   height: 850px;
   @media (min-width: $md) {
-  height: 1000px;
+    height: 1000px;
   }
 }
 
@@ -65,7 +65,7 @@
   width: 100%;
   margin: 130px 0 0 0;
   @media (min-width: $xl) {
-  width: 56%;
+    width: 56%;
   }
   @media (min-width: $xxl) {
     margin: 130px 0 0 -180px;
@@ -119,8 +119,12 @@
 .covid__content {
   position: absolute;
   right: 0;
+  margin: 130px 0px 0 0;
+  width: 100%;
   @media (min-width: $lg) {
     width: 56%;
+  }
+  @media (min-width: $xxl) {
     margin: 130px -170px 0 0;
   }
 }
@@ -140,23 +144,6 @@
 
 .covid__container {
   height: 800px;
-}
-
-.covid-astronaut-purple {
-  position: absolute;
-  left: -340px;
-}
-
-.covid-astronaut-red {
-  position: absolute;
-  left: 0;
-  top: 220px;
-}
-
-.covid-earth {
-  position: absolute;
-  left: -160px;
-  top: 420px;
 }
 
 // ---------------------------------------------------------------------------

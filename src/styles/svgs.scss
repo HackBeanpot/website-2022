@@ -72,7 +72,6 @@
     display: block;
   }
   @media (min-width: $xl) {
-
     top: 100px;
     width: 8em;
     right: 580px;
@@ -92,5 +91,40 @@
     right: -180px;
     top: 200px;
     width: 40em;
+  }
+}
+
+.covid-astronaut-purple {
+  position: absolute;
+  display: none;
+  @media (min-width: $lg) {
+    left: -250px;
+    top: 100px;
+    display: block;
+  }
+  @media (min-width: $xl) {
+    top: 0;
+    left: -340px;
+    display: block;
+  }
+}
+
+.covid-astronaut-red {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+  }
+}
+
+.covid-earth {
+  position: absolute;
+  left: -160px;
+  top: 420px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
   }
 }
