@@ -17,7 +17,10 @@
 
 .header__title {
   @include h1-text;
-  margin-bottom: -70px;
+  margin-bottom: -90px;
+  @media (min-width: $sm) {
+    margin-bottom: -70px;
+  }
 }
 
 .header__description {
@@ -25,6 +28,10 @@
   margin-top: -70px;
   width: 80%;
   text-align: center;
+  margin-bottom: 30px;
+  @media (min-width: $sm) {
+    margin-bottom: 0;
+  }
 }
 
 .header__cta {
@@ -91,11 +98,9 @@
   top: 200px;
 }
 
-
 // ---------------------------------------------------------------------------
 // Covid Precautions
 // ---------------------------------------------------------------------------
-
 
 .covid-wrapper {
   display: flex;
@@ -163,7 +168,7 @@
   height: 800px;
 }
 
-.about-content{
+.about-content {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -226,7 +231,7 @@
     display: flex;
     max-height: 12vw;
     margin-top: 15px;
-    
+
     @media (max-width: $md) {
       max-height: 150px;
     }
