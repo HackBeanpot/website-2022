@@ -27,6 +27,22 @@ const Layout = ({ children }) => {
         {
           name: 'theme-color',
           content: '#A4DBE8'
+        },
+        {
+          property: 'og:title',
+          content: 'HackBeanpot 2022'
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:image',
+          content: 'https://hackbeanpot.com/website-preview'
+        },
+        {
+          property: 'og:url',
+          content: 'https://hackbeanpot.com/'
         }
       ]}
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
