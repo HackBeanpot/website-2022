@@ -1,0 +1,130 @@
+.space-jam-title {
+  width: 100%;
+}
+
+.space-jam-saturn-orbit {
+  position: absolute;
+  right: -120px;
+  width: 10em;
+  top: -20px;
+  @media (min-width: $sm) {
+    right: -70px;
+  }
+  @media (min-width: $lg) {
+    top: 30px;
+    width: 15em;
+    right: -140px;
+  }
+  @media (min-width: $xl) {
+    width: 22em;
+  }
+}
+
+.space-jam-mars {
+  position: absolute;
+  top: 670px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+    width: 22em;
+    right: clamp(100px, 17vw, 545px);
+  }
+}
+
+.space-jam-earth {
+  position: absolute;
+  top: 120px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+    width: 22em;
+    left: clamp(100px, 8vw, 280px);
+  }
+}
+
+.space-jam-neptune {
+  position: absolute;
+  top: 440px;
+  left: -60px;
+  width: 13em;
+  @media (min-width: $sm) {
+    width: 20em;
+    top: 470px;
+  }
+  @media (min-width: $lg) {
+    left: -100px;
+    width: 20em;
+  }
+  @media (min-width: $xl) {
+    width: 22em;
+  }
+}
+
+.blastoff-neptune {
+  position: absolute;
+  right: 200px;
+  top: -80px;
+  width: 2.5em;
+  display: none;
+  @media (min-width: $sm) {
+    width: 3em;
+    right: 300px;
+    display: block;
+  }
+  @media (min-width: $xl) {
+    top: 100px;
+    width: 8em;
+    right: 580px;
+  }
+}
+
+.blastoff-astronaut {
+  position: absolute;
+  right: -100px;
+  top: -200px;
+  width: 14em;
+  @media (min-width: $sm) {
+    top: -180px;
+    width: 18em;
+  }
+  @media (min-width: $xl) {
+    right: -180px;
+    top: 200px;
+    width: 40em;
+  }
+}
+
+.covid-astronaut-purple {
+  position: absolute;
+  display: none;
+  @media (min-width: $lg) {
+    left: -250px;
+    top: 100px;
+    display: block;
+  }
+  @media (min-width: $xl) {
+    top: 0;
+    left: -340px;
+    display: block;
+  }
+}
+
+.covid-astronaut-red {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+  }
+}
+
+.covid-earth {
+  position: absolute;
+  left: -160px;
+  top: 420px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+  }
+}

@@ -28,16 +28,18 @@ const ThemeAnnouncement = () => (
           <p className="theme__disclaimer">
             *no actual astronaut training or experience necessary
           </p>
-          <PrimaryCta link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431" textDescription="Join our mailing list" />
+          <div className="theme__cta-container">
+          <PrimaryCta
+            link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
+            textDescription="Join our mailing list"
+          />
+          </div>
+
         </div>
       </div>
     </div>
-    <div className="blastoff-neptune">
-      <BlastoffNeptune />
-    </div>
-    <div className="blastoff-astronaut">
-      <BlastoffAstronaut />
-    </div>
+    <BlastoffNeptune />
+    <BlastoffAstronaut />
   </section>
 );
 

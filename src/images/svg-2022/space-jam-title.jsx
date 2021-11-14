@@ -7,6 +7,7 @@ const SpaceJamTitle = () => (
     viewBox="0 0 882 257"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="space-jam-title"
   >
     <g filter="url(#filter0_d_3:3788)">
       <path
