@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         },
         {
           property: 'og:image',
-          content: 'https://hackbeanpot.com/website-preview'
+          content: 'https://hackbeanpot.com/website-preview.png'
         },
         {
           property: 'og:url',
