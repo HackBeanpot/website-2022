@@ -149,20 +149,30 @@
 // ---------------------------------------------------------------------------
 // About
 // ---------------------------------------------------------------------------
-.about__title {
-  @include h1-text;
-  padding-bottom: 40px;
-}
-
-.about__container {
+.about {
+  $about-breakpoint: $lg;
   text-align: center;
   height: 800px;
-}
 
-.about-content {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  &__mobile {
+    @media (min-width: $about-breakpoint) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include h1-text;
+    padding-bottom: 40px;
+  }
+
+  &__desktop {
+    @media(max-width: $about-breakpoint) {
+      display: none;
+    }
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 // ---------------------------------------------------------------------------
 // FAQ
