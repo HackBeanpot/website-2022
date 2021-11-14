@@ -119,9 +119,13 @@
 .covid__content {
   position: absolute;
   right: 0;
-  margin: 130px 0px 0 0;
+  margin-bottom: 40px;
   width: 100%;
+  @media (min-width: $sm) {
+    margin: 10px 0 30px 0;
+  }
   @media (min-width: $lg) {
+    margin: 130px 0 0 0;
     width: 56%;
   }
   @media (min-width: $xxl) {
@@ -143,7 +147,10 @@
 }
 
 .covid__container {
-  height: 800px;
+  height: 500px;
+  @media (min-width: $lg) {
+    height: 800px;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -166,7 +173,7 @@
   }
 
   &__desktop {
-    @media(max-width: $about-breakpoint) {
+    @media (max-width: $about-breakpoint) {
       display: none;
     }
     display: flex;
