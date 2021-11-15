@@ -3,7 +3,6 @@ import AboutItem from '../about/about-item';
 import Growth from '../../images/growth.jpg';
 import Exploration from '../../images/exploration.jpg';
 import Community from '../../images/community.jpg';
-import Flickity from 'react-flickity-component';
 import Carousel from 'react-elastic-carousel';
 
 const aboutInfo = [
@@ -26,12 +25,6 @@ const aboutInfo = [
       'Expand beyond your horizons and grow your current skill set in a safe and supportive environment. '
   }
 ];
-
-const flickityOptions = {
-  wrapAround: true,
-  prevNextButtons: true,
-  pageDots: true
-};
 
 const About = props => {
   const aboutChildren = aboutInfo.map(info => (
