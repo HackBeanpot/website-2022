@@ -134,6 +134,10 @@
     margin: 130px 0 0 0;
     width: 56%;
   }
+  @media (min-width: $lg) {
+    margin: 130px 0 0 0;
+    width: 56%;
+  }
   @media (min-width: $xxl) {
     margin: 130px -100px 0 0;
   }
@@ -163,8 +167,15 @@
   @media (min-width: $sm) {
     height: 680px;
   }
+  @media (min-width: $md) {
+    margin-top: 40px;
+  }
   @media (min-width: $lg) {
     height: 800px;
+  }
+  @media (min-width: $xl) {
+    height: 1000px;
+    margin-top: 110px;
   }
 }
 
@@ -176,7 +187,10 @@
   text-align: center;
   padding-top: 130px;
   @media (min-width: $xxs) {
-    padding-top: 0;
+    padding-top: 150px;
+  }
+  @media (min-width: $xs) {
+    padding-top: 70px;
   }
   @media (min-width: $lg) {
     height: 800px;
