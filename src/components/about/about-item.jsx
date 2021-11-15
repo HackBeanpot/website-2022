@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './about-item.scss';
 
 const AboutItem = ({ img, title, description }) => {
   return (
