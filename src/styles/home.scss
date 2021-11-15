@@ -74,7 +74,7 @@
     width: 56%;
   }
   @media (min-width: $xxl) {
-    margin: 130px 0 0 -180px;
+    margin: 130px 0 0 -100px;
   }
 }
 
@@ -125,7 +125,7 @@
 .covid__content {
   position: absolute;
   right: 0;
-  margin-bottom: 40px;
+  margin: 120px 0 40px 0;
   width: 100%;
   @media (min-width: $sm) {
     margin: 130px 0 30px 0;
@@ -135,7 +135,7 @@
     width: 56%;
   }
   @media (min-width: $xxl) {
-    margin: 130px -170px 0 0;
+    margin: 130px -100px 0 0;
   }
 }
 
@@ -153,15 +153,15 @@
 }
 
 .covid__container {
-  height: 500px;
+  height: 900px;
+  @media (min-width: $xxs) {
+    height: 700px;
+  }
   @media (min-width: $xs) {
-    height: 500px;
+    height: 600px;
   }
   @media (min-width: $sm) {
     height: 680px;
-  }
-  @media (min-width: $md) {
-    height: 700px;
   }
   @media (min-width: $lg) {
     height: 800px;
