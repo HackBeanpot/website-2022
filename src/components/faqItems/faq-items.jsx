@@ -3,6 +3,7 @@ import Masonry from 'react-masonry-component'; // https://github.com/eiriklv/rea
 import FAQs from 'data/faqs.json';
 
 import LeafNode from 'images/svg/leaf-node.jsx';
+import FAQItem from '../faqItem/faq-item';
 
 const masonryOptions = {
   columnWidth: '.faq-sizer',
@@ -16,16 +17,17 @@ const FAQItems = props => {
     <div key={`faq-sizer-${index}`} className="faq-sizer" />,
     <div key={`faq-gutter-${index}`} className="faq-gutter-sizer" />,
     <div key={`faq-item-${index}`} className="faq-item">
-      <span className="faq-item__leaf">
+      {/* <span className="faq-item__leaf">
         <LeafNode />
-      </span>
-      <div>
+      </span> */}
+      {/* <div>
         <p className="faq-item__question">{FAQ.question}</p>
         <div
           className="faq-item__answer"
           dangerouslySetInnerHTML={{ __html: FAQ.answer }}
         />
-      </div>
+      </div> */}
+      <FAQItem question={FAQ.question} answer={FAQ.answer} />
     </div>
   ]);
 

@@ -186,7 +186,6 @@
 // ---------------------------------------------------------------------------
 
 .faq {
-  @include green-gradient-bg;
   @include top-padding;
   @include bottom-padding;
 }
@@ -207,14 +206,6 @@
 
 .faq__cta {
   @include primary-cta;
-}
-
-.faq__footsteps {
-  float: right;
-
-  @media (max-width: $lg) {
-    display: none;
-  }
 }
 
 // ---------------------------------------------------------------------------
