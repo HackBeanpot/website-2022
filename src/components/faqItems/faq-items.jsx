@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Masonry from 'react-masonry-component'; // https://github.com/eiriklv/react-masonry-component
 import FAQs from 'data/faqs.json';
 
@@ -13,28 +13,21 @@ const masonryOptions = {
 };
 
 const FAQItems = props => {
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
   const childElements = FAQs.map((FAQ, index) => [
-    <div key={`faq-sizer-${index}`} className="faq-sizer" />,
-    <div key={`faq-gutter-${index}`} className="faq-gutter-sizer" />,
-    <div key={`faq-item-${index}`} className="faq-item">
-      {/* <span className="faq-item__leaf">
-        <LeafNode />
-      </span> */}
-      {/* <div>
-        <p className="faq-item__question">{FAQ.question}</p>
-        <div
-          className="faq-item__answer"
-          dangerouslySetInnerHTML={{ __html: FAQ.answer }}
-        />
-      </div> */}
-      <FAQItem question={FAQ.question} answer={FAQ.answer} />
-    </div>
+      <FAQItem
+        question={FAQ.question}
+        answer={FAQ.answer}
+        selectedQuestion={selectedQuestion}
+        setSelectedQuestion={setSelectedQuestion}
+      />
   ]);
 
   return (
-    <Masonry options={masonryOptions} className="faq-masonry-wrapper">
-      {childElements}
-    </Masonry>
+    <div className="faq-columns-container">
+      <div className="faq-column1"> {childElements}</div>
+      <div className="faq-column2"> {childElements}</div>
+    </div>
   );
 };
 

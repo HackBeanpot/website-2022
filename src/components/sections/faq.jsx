@@ -4,7 +4,7 @@ import FAQItems from 'components/faqItems/faq-items';
 
 const FAQ = () => (
     <section id="faq" className="faq">
-        <div className="container">
+        <div className="faq-container">
             <h2 className="faq__title">FAQ</h2>
             <FAQItems />
             <div className="faq__cta-group">

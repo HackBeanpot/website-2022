@@ -185,11 +185,25 @@
 // FAQ
 // ---------------------------------------------------------------------------
 
-.faq {
-  @include top-padding;
-  @include bottom-padding;
+.faq-container {
+  height: 2000px;
 }
 
+.faq-columns-container {
+  display: flex;
+}
+
+.faq-column1 {
+  width: 100%;
+  padding: 0 130px;
+  margin-right: -100px;
+  
+}
+.faq-column2 {
+  width: 100%;
+  padding: 0 130px;
+  margin-left: 0;
+}
 .faq__title {
   @include h2-text($white);
 }
