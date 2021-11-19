@@ -20,7 +20,7 @@ const Welcome = () => (
       {/*/>*/}
       <PrimaryCta
         link="https://apply.hackbeanpot.com"
-        textDescription="Applications Open! Apply now"
+        textDescription="Applications are now open"
       />
     </div>
     <SpaceJamMars />
