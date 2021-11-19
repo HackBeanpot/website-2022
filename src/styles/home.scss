@@ -194,15 +194,11 @@
 }
 
 .faq-column1 {
-  width: 100%;
-  padding: 0 130px;
-  margin-right: -100px;
+margin-left: 400px;
   
 }
 .faq-column2 {
-  width: 100%;
-  padding: 0 130px;
-  margin-left: 0;
+
 }
 .faq__title {
   @include h2-text($white);
