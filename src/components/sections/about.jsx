@@ -3,7 +3,7 @@ import AboutItem from '../about/about-item';
 import Growth from '../../images/growth.jpg';
 import Exploration from '../../images/exploration.jpg';
 import Community from '../../images/community.jpg';
-import Flickity from 'react-flickity-component';
+import Carousel from 'react-elastic-carousel';
 
 const aboutInfo = [
   {
@@ -26,12 +26,6 @@ const aboutInfo = [
   }
 ];
 
-const flickityOptions = {
-  wrapAround: true,
-  prevNextButtons: true,
-  pageDots: true,
-};
-
 const About = props => {
   const aboutChildren = aboutInfo.map(info => (
     <AboutItem
@@ -42,24 +36,19 @@ const About = props => {
     />
   ));
   return (
-    <div id='about' className='about'>
-      <h2 className='about__title'>HackBeanpot is about...</h2>
-      <Flickity
-        className={'about__mobile'}
-        options={flickityOptions} // takes flickity options {}
-      >
-        {aboutInfo.map(({ img, title, description}) => (
-          <div className="about-item-mobile">
-            <img className="about-item-img" src={img} alt="ooga booga" />
-            <div className="about-item-text-container">
-              <h2 className="about-item-title">{title}</h2>
-              <p>{description}</p>
-            </div>
-          </div>
-        ))}
-      </Flickity>
-      <div className="about__desktop">
-        {aboutChildren}
+    <div id="about" className="about">
+      <div className="about__desktop">{aboutChildren}</div>
+      <div className="about__mobile">
+        <Carousel itemsToShow={1} itemPadding={[0]}>
+          {aboutInfo.map(info => (
+            <AboutItem
+              key={info.title}
+              img={info.img}
+              title={info.title}
+              description={info.description}
+            />
+          ))}
+        </Carousel>
       </div>
     </div>
   );
