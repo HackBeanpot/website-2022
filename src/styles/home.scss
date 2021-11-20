@@ -233,8 +233,15 @@
 
 .faq-column1 {
   width: 100%;
+  margin-left: 40px;
+  @media (min-width: $xxs) {
+    margin-left: 40px;
+  }
+  @media (min-width: $xs) {
+    margin-left: 60px;
+  }
   @media (min-width: $sm) {
-    margin-left: 100px;
+    margin-left: 80px;
   }
   @media (min-width: $md) {
     margin-left: 100px;
@@ -248,6 +255,19 @@
 }
 .faq-column2 {
 width: 100%;
+margin-left: 40px;
+@media (min-width: $xxs) {
+  margin-left: 40px;
+}
+@media (min-width: $xs) {
+  margin-left: 60px;
+}
+@media (min-width: $sm) {
+  margin-left: 80px;
+}
+@media (min-width: $md) {
+  margin-left: 0;
+}
 }
 .faq__title {
   @include h2-text($white);
