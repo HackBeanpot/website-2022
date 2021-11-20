@@ -1,4 +1,5 @@
 import React from 'react';
+import PurplePlusSign from '../../images/svg-2022/purple-plus-sign';
 const FAQItem = ({
   question,
   answer,
@@ -8,12 +9,11 @@ const FAQItem = ({
   const isSelected = selectedQuestion === question;
   return (
     <div className="faq-item">
-      <p
-        className="faq-item__question"
-        onClick={() => setSelectedQuestion(question)}
-      >
-        {question}
+      <p className="faq-item__question">
+        {question + ' '}
+        <PurplePlusSign onClick={() => setSelectedQuestion(question)} />
       </p>
+      <div className="purple-line" />
       {isSelected && (
         <div
           className="faq-item__answer"

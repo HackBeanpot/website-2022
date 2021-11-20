@@ -17,11 +17,12 @@
 
 .faq-item {
  // align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 80%;
-  @media (min-width: $md) {
-    margin-bottom: 60px;
-  }
+}
+
+.faq-item__question-container {
+  display: flex;
 }
 
 .faq-item__leaf {
@@ -34,4 +35,13 @@
 .faq-item__question {
   @include h3-text;
   margin-bottom: 30px;
+}
+
+.faq-item__answer {
+  margin-top: 20px;
+}
+
+.purple-line {
+  margin-top: -20px;
+  border: 2px solid $light-purple;
 }
