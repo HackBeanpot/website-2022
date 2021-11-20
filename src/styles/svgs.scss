@@ -148,20 +148,21 @@
 
 .contact-astronaut {
   position: absolute;
-  top: 500px;
+  top: 700px;
   right: -40px;
+  @media (min-width: $xxl) {
+    top: 500px;
+    right: -40px;
+  }
 }
 
 .contact-jupiter-faded {
   position: absolute;
   left: -40px;
   bottom: 450px;
-
 }
 
 .contact-moon-faded {
   position: absolute;
   right: 450px;
-
-
 }

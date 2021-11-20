@@ -1,47 +1,45 @@
-.faq-sizer,
-.faq-item {
+.faq-columns-container {
+  display: block;
+  @media (min-width: $md) {
+    display: flex;
+  }
+}
+
+.faq-column1 {
   width: 100%;
-
+  margin-left: 40px;
+  @media (min-width: $xxs) {
+    margin-left: 40px;
+  }
+  @media (min-width: $xs) {
+    margin-left: 60px;
+  }
+  @media (min-width: $sm) {
+    margin-left: 80px;
+  }
   @media (min-width: $md) {
-    width: 45%;
+    margin-left: 100px;
+  }
+  @media (min-width: $lg) {
+    margin-left: 130px;
+  }
+  @media (min-width: $xl) {
+    margin-left: 150px;
   }
 }
-
-.faq-gutter-sizer {
-  width: 0;
-
+.faq-column2 {
+  width: 100%;
+  margin-left: 40px;
+  @media (min-width: $xxs) {
+    margin-left: 40px;
+  }
+  @media (min-width: $xs) {
+    margin-left: 60px;
+  }
+  @media (min-width: $sm) {
+    margin-left: 80px;
+  }
   @media (min-width: $md) {
-    width: 5%;
+    margin-left: 0;
   }
-}
-
-.faq-item {
- // align-items: flex-start;
-  margin-bottom: 20px;
-  width: 80%;
-}
-
-.faq-item__question-container {
-  display: flex;
-}
-
-.faq-item__leaf {
-  margin-right: 20px;
-  svg {
-    width: 30px;
-  }
-}
-
-.faq-item__question {
-  @include h3-text;
-  margin-bottom: 30px;
-}
-
-.faq-item__answer {
-  margin-top: 20px;
-}
-
-.purple-line {
-  margin-top: -20px;
-  border: 2px solid $light-purple;
 }
