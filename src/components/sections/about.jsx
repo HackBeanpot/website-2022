@@ -37,6 +37,7 @@ const About = props => {
   ));
   return (
     <div id="about" className="about">
+          <h2 className="about__title">HackBeanpot is about...</h2>
       <div className="about__desktop">{aboutChildren}</div>
       <div className="about__mobile">
         <Carousel itemsToShow={1} itemPadding={[0]}>
