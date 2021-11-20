@@ -1,42 +1,46 @@
 [
   {
-    "question": "Who can attend?",
-    "answer": "HackBeanpot is open to all high school, undergraduate, and graduate school students. You must be 13 years or older to apply. Please note that any student under 18 years old will have to have a form signed by a parent or guardian in order to attend. All attendees must abide by our <a href=\"/code-of-conduct\" target=\"_blank\" title=\"Code of Conduct\">Code of Conduct</a>."
+    "question": "How do I apply to attend HackBeanpot?",
+    "answer": "Applications for HackBeanpot 2022 will be open from November 15th - January 7th. Apply through our [registration portal here]! [LINK] Keep an eye in your inbox for acceptance details in mid-January. "
   },
   {
-    "question": "Why should I attend a virtual hackathon?",
-    "answer": "The organizing team at HackBeanpot is hard at work making sure we bring the ✨ HackBeanpot spirit ✨ to our attendees in the virtual setting with lots of interactive activities planned. Perks of attending include (but are not limited to): <br/><b>Become a Camper:</b> Connect with other students through camper cabins, friendly competition, and campfire storytelling. <br/><b>Advance Your Career:</b> Network with companies to secure that 💰 by attending the sponsor tabling session and meeting with mentors. <br/><b>Learn New Skills:</b> Build cool projects, attend exciting workshops, and be inspired to learn!"
+    "question": "Will HackBeanpot 2022 be in-person or virtual? ",
+    "answer": "We are bringing back in person hacking! As HackBeanpot transitions back to an in-person event, we are adopting an in-person first model to maintain the HackBeanpot experience of a close-knit, supportive community to help students explore and learn about tech-related skills and interact with tech companies in a safe in-person s"
+  },
+  {
+    "question": "When and where is HackBeanpot 2022?",
+    "answer": "Check back in a few months for an exact date and location!"
+  },
+  {
+    "question": "What is HackBeanpot doing about COVID safety?",
+    "answer": "Our Hacker Experience team will work on incorporating the appropriate COVID protocols to maintain safety at an in-person event. Some examples will be maintaining hygiene and sanitizing the event space and providing education to hackers on the best way to maintain COVID safety throughout the event as per the latest CDC guidelines. Check out our COVID guideline section to learn more about our COVID precautions!"
+  },
+  {
+    "question": "How long is the event?/What will the schedule be like?",
+    "answer": "The event will start around 7 pm EST on Friday and will go until Sunday 3:30 pm EST (currently an estimate). Throughout the weekend, there will be different workshops, activities, and opportunities to network with sponsors. A more detailed schedule will be released about a month out from the event! Sign up for our newsletter [LINK] to stay updated! "
+  },
+  {
+    "question": "What kind of projects can I work on?",
+    "answer": "Anything you want, in the past “link example projects”, games and stuff"
+  },
+  {
+    "question": "How do I find a team?/Are there limits on team size?",
+    "answer": "There will be an option for team formation when the event starts! You are also free to attend with a premade team. While there isn’t a limit on team sizes, our prizes are budgeted for teams of up to 5 members. "
+  },
+  {
+    "question": "Who can attend HackBeanpot?",
+    "answer": "HackBeanpot is open to all high school, undergraduate, and graduate school students. You must be 13 years or older to apply. Please note that any student under 18 years old will have to have a form signed by a parent or guardian in order to attend. All attendees must abide by our [Code of Conduct] [LINK]."
   },
   {
     "question": "I don't have a lot of programming experience. Are hackathons for me?",
     "answer": "Yes! People of all experience levels attend HackBeanpot.We have an entire team dedicated to making sure beginner hackers get all the resources they need for attending virtually. If you get stuck, we have mentors to provide assistance. We care much more about fostering a fun hacking environment rather than a competitive one, and our goal is to promote learning in an inclusive community."
   },
   {
-    "question": "How do I apply?",
-    "answer": "Applications for HackBeanpot 2021 will be open from November 15th - January 8th."
+    "question": "How much does it cost? Will there be swag?",
+    "answer": "HackBeanpot is completely free for all our attendees! We will also have free space-themed swag! 👀🚀"
   },
   {
-    "question": "What’s the cost?",
-    "answer": "HackBeanpot is completely free for all our attendees!"
-  },
-  {
-    "question": "What will the schedule be like?",
-    "answer": "The event will start around 7 pm EST on Friday and will go until Sunday 3:30 pm EST (currently an estimate). Throughout the weekend, there will be different workshops, activities, and opportunities to network with sponsors. A more detailed schedule will be released about a month out from the event! Sign up for our <a href=\"https://hackbeanpot.us10.list-manage.com/subscribe/post?u=a98050d47fdae2481521f0474&amp;id=dccd8c8431\" target=\"_blank\" title=\"Newsletter Signup\">newsletter</a> to stay updated!"
-  },
-  {
-    "question": "What will I need for the event?",
-    "answer": "Your computer, a comfy place to hack, and fuel for the next 48 hours are all essentials for attending HackBeanpot 2021. (And the adventurous, camping spirit is a big bonus! 🏕️) Stay tuned for a HackBeanpot Survival Guide in your inbox sent out closer to the event."
-  },
-  {
-    "question": "Will there be swag?",
-    "answer": "Yes! Our swag team is hard at work coming up with some bean-tastic swag for our attendees. Swag will be shipped out to hackers prior to the event, but please keep in mind that due to potential delays in shipping time it is not guaranteed your swag will arrive beforehand. Unfortunately, we are only shipping inside of the United States at this time."
-  },
-  {
-    "question": "What platforms will be used at the event?",
-    "answer": "Slack and Zoom will be the main forms of communication during the event. We are currently exploring other supplemental platforms to use alongside these two to make our event as fun and interactive as possible! Please note that the age requirements for these platforms are at least 16 years of age without guardian permission. Stay tuned for more information through our socials and newsletter."
-  },
-  {
-    "question": "Are there limits on team size?",
-    "answer": "No limits! You may work by yourself or with a team. However, prizes are budgeted for teams of 5 or less so we recommend at most 5 members per team."
+    "question": "What will I need to bring?",
+    "answer": "Your computer, a comfy place to hack, and fuel for the next 48 hours are all essentials for attending HackBeanpot 2022. (And the adventurous, camping spirit is a big bonus! 🚀) Stay tuned for a HackBeanpot Survival Guide in your inbox sent out closer to the event."
   }
 ]

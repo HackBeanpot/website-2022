@@ -14,7 +14,16 @@ const masonryOptions = {
 
 const FAQItems = props => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
-  const childElements = FAQs.map((FAQ, index) => [
+  const firstColumn = FAQs.slice(0,6).map((FAQ, index) => [
+    <FAQItem
+      question={FAQ.question}
+      answer={FAQ.answer}
+      selectedQuestion={selectedQuestion}
+      setSelectedQuestion={setSelectedQuestion}
+    />
+  ]);
+
+  const secondColumn = FAQs.slice(6, FAQs.length).map((FAQ, index) => [
     <FAQItem
       question={FAQ.question}
       answer={FAQ.answer}
@@ -31,8 +40,8 @@ const FAQItems = props => {
     <div>
       <div className="faq-container">
         <div className="faq-columns-container">
-        <div className="faq-column1"> {childElements}</div>
-        <div className="faq-column2"> {childElements}</div>
+        <div className="faq-column1"> {firstColumn}</div>
+        <div className="faq-column2"> {secondColumn}</div>
         </div>
 
       </div>
