@@ -33,17 +33,12 @@ const FAQItems = props => {
   ]);
 
   return (
-    // <div className="faq-columns-container">
-    //   <div className="faq-column1"> {childElements}</div>
-    //   <div className="faq-column2"> {childElements}</div>
-    // </div>
     <div>
       <div className="faq-container">
         <div className="faq-columns-container">
         <div className="faq-column1"> {firstColumn}</div>
         <div className="faq-column2"> {secondColumn}</div>
         </div>
-
       </div>
     </div>
   );
