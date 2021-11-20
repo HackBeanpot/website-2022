@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   
   return <div className={`parent ${isDarkTheme ? "" : "light"}`}>
     <Helmet
-      title="HackBeanpot 2021"
+      title="HackBeanpot 2022"
       meta={[
         {
           name: 'description',

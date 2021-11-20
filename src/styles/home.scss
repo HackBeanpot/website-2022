@@ -225,18 +225,33 @@
 }
 
 .faq-columns-container {
+  display: block;
+  @media (min-width: $md) {
   display: flex;
+  }
 }
 
 .faq-column1 {
-margin-left: 400px;
-  
+  width: 100%;
+  @media (min-width: $sm) {
+    margin-left: 100px;
+  }
+  @media (min-width: $md) {
+    margin-left: 100px;
+  }
+  @media (min-width: $lg) {
+    margin-left: 130px;
+  }
+  @media (min-width: $xl) {
+    margin-left: 150px;
+  }
 }
 .faq-column2 {
-
+width: 100%;
 }
 .faq__title {
   @include h2-text($white);
+  width: 100%;
 }
 
 .faq__cta-group {
