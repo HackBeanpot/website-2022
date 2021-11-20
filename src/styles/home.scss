@@ -270,8 +270,7 @@ margin-left: 40px;
 }
 }
 .faq__title {
-  @include h2-text($white);
-  width: 100%;
+  @include h1-text;
 }
 
 .faq__cta-group {
