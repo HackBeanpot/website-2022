@@ -1,6 +1,6 @@
 .faq-columns-container {
   display: block;
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     display: flex;
   }
 }
@@ -40,6 +40,6 @@
     margin-left: 80px;
   }
   @media (min-width: $md) {
-    margin-left: 0;
+    margin-left: 100px;
   }
 }
