@@ -157,21 +157,21 @@
 }
 
 .covid__container {
-  height: 900px;
+  height: 1600px;
   @media (min-width: $xxs) {
-    height: 700px;
+    height: 1300px;
   }
   @media (min-width: $xs) {
-    height: 600px;
+    height: 1100px;
   }
   @media (min-width: $sm) {
-    height: 680px;
+    height: 1100px;
   }
   @media (min-width: $md) {
     margin-top: 40px;
   }
   @media (min-width: $lg) {
-    height: 800px;
+    height:1100px;
   }
   @media (min-width: $xl) {
     height: 1000px;
