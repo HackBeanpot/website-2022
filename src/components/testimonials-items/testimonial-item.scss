@@ -1,0 +1,19 @@
+.testimonials-item-container {
+  display: flex;
+  border: 3px solid #A0B2EF;
+  width: 80%;
+}
+
+.testimonials-item-text-container {
+  text-align: left;
+}
+
+.testimonials-item-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.testimonials-item-author {
+  @include h4-text;
+}
