@@ -1,31 +1,31 @@
 import React from 'react';
 import TestimonialsItem from '../testimonials-items/testimonial-item';
-import Growth from '../../images/growth.jpg';
-import Exploration from '../../images/exploration.jpg';
-import Community from '../../images/community.jpg';
-import Carousel from 'react-elastic-carousel';
+import BenHenderson from '../../images/ben-henderson.jpg';
+import AlbertZhang from '../../images/albert-zhang.jpg';
+import OnotinaImoudu from '../../images/onotina-imoudu.jpg';
+import Anonymous from '../../images/anonymous.jpg';
 
 const testimonialInfo = [
   {
-    img: Exploration,
+    img: BenHenderson,
     author: 'Ben Henderson',
     description:
       ' It was my first Hackathon, and I had a really great time - if you\'ve never done one before, this is a great choice. Really good environment for people who want to learn something new, meet new people, and/or challenge themselves. It\'s basically what you make of it, and there was plenty of support available if you have no idea what you\'re doing.'
   },
   {
-    img: Community,
+    img: AlbertZhang,
     author: 'Albert Zhang',
     description:
       'This was my second hackathon ever and it was a lot of fun! The mentors were super helpful, and I was able to play around with Tensorflow, which is something I\'ve never done before.'
   },
   {
-    img: Growth,
+    img: OnotinaImoudu,
     author: 'Onotina Imoudu',
     description:
       'This was my first hackathon and I am definitely attending next year!!! Hackbeanpot is a must attend for anyone who has a passion or wants to get their feet wet in design or coding. And we had a zoom-ba session!! A zumba class on zoom, it was really fun, I was sweaty and out of breath.'
   },
   {
-    img: Growth,
+    img: Anonymous,
     author: 'Anonymous',
     description:
       'HackBeanpot is an awesome way to get introduced to the world of Hackathons, and everyone here is just excited for you to learn.'

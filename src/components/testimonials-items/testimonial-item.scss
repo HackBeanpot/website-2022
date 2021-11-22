@@ -1,7 +1,8 @@
 .testimonials-item-container {
   display: flex;
-  border: 3px solid #A0B2EF;
+  border: 3px solid $blue-grey;
   width: 80%;
+  background-color: #1B365D;
 }
 
 .testimonials-item-text-container {
@@ -12,6 +13,8 @@
   width: 230px;
   height: 230px;
   border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 20px rgba(217, 168, 255, 0.5));
 }
 
 .testimonials-item-author {
