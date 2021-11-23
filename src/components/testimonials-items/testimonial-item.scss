@@ -2,8 +2,12 @@
   display: flex;
   border: 3px solid $blue-grey;
   width: 70%;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
+  background: rgba(27, 54, 93, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
 }
 
 .testimonials-item-text-container {
