@@ -9,7 +9,6 @@ import ContactMoonFaded from '../../images/svg-2022/contact-moon-faded';
 
 const FAQ = () => (
     <section id="faq" className="faq">
-  
         <div className="faq-container">
             <h2 className="faq__title">FAQ</h2>
             <FAQItems />
