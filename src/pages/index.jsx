@@ -16,6 +16,7 @@ const App = () => {
         <ThemeAnnouncement />
         <About />
         <CovidPrecautions />
+        <FAQ />
         {/* <Testimonials /> */}
         {/*
          <FAQ />
