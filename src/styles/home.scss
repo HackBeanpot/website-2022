@@ -232,27 +232,27 @@
 // ---------------------------------------------------------------------------
 
 .faq {
-  height: 1600px;
+  height: 2100px;
   @media (min-width: $xxs) {
-    height: 1500px;
+    height: 2100px;
   }
   @media (min-width: $xs) {
-    height: 1400px;
+    height: 1800px;
   }
   @media (min-width: $sm) {
-    height: 1300px;
+    height: 1650px;
   }
   @media (min-width: $md) {
-    height: 1200px;
+    height: 1550px;
   }
   @media (min-width: $lg) {
-    height: 1300px;
+    height: 1750px;
   }
   @media (min-width: $xl) {
-    height: 1400px;
+    height: 1600px;
   }
   @media (min-width: $xxl) {
-    height: 1300px;
+    height: 1400px;
   }
 }
 
