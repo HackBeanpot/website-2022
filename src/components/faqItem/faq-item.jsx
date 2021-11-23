@@ -9,9 +9,9 @@ const FAQItem = ({
   const isSelected = selectedQuestion === question;
   return (
     <div className="faq-item">
-      <p className="faq-item__question">
+      <p className="faq-item__question" onClick={() => setSelectedQuestion(question)} >
         {question + ' '}
-        <PurplePlusSign onClick={() => setSelectedQuestion(question)} />
+        <PurplePlusSign/>
       </p>
       <div className="purple-line" />
       {isSelected && (

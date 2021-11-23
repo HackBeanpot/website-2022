@@ -6,7 +6,8 @@
   
   .faq-item__question {
     @include h3-text;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
   }
   
   .faq-item__answer {

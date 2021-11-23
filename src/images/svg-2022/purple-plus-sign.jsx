@@ -2,6 +2,7 @@ import React from 'react';
 
 const PurplePlusSign = ({onClick}) => (
   <svg
+  className="purple-plus-sign"
     width="27"
     height="27"
     viewBox="0 0 27 27"
