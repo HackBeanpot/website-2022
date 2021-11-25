@@ -179,7 +179,6 @@
 
 .contact-moon-faded {
   position: absolute;
-
   width: 3.5em;
   display: none;
   @media (min-width: $sm) {
@@ -202,4 +201,41 @@
     top: 1100px;
     right: 300px;
   }
+}
+
+
+.testimonials-mars-dim {
+
+}
+
+.testimonials-mercury-dim {
+  
+}
+
+.testimonials-neptune-dim {
+  
+}
+
+.testimonials-venus-dim {
+  
+}
+
+.testimonials-mars-bright {
+
+}
+
+.testimonials-mercury-bright {
+  
+}
+
+.testimonials-neptune-bright {
+  
+}
+
+.testimonials-venus-bright {
+  
+}
+
+.testimonials__planet {
+  margin: 10px;
 }

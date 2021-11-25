@@ -4,6 +4,10 @@ import BenHenderson from '../../images/ben-henderson.jpg';
 import AlbertZhang from '../../images/albert-zhang.jpg';
 import OnotinaImoudu from '../../images/onotina-imoudu.jpg';
 import Anonymous from '../../images/anonymous.jpg';
+import TestimonialsMarsDim from '../../images/svg-2022/testimonials-mars-dim';
+import TestimonialsMercuryDim from '../../images/svg-2022/testimonials-mercury-dim';
+import TestimonialsNeptuneDim from '../../images/svg-2022/testimonials-neptune-dim';
+import TestimonialsVenusDim from '../../images/svg-2022/testimonials-venus-dim';
 
 const testimonialInfo = [
   {
@@ -45,7 +49,12 @@ const Testimonials = props => {
     <div id="testimonials" className="testimonials__container">
           <h2 className="testimonials__title">Testimonials</h2>
       <div className="testimonials__box">{testimonialChildren}</div>
-      // another div for checking out archive
+      <div className="planet_selection_container">
+        <TestimonialsMercuryDim className="testimonials__planet"/>
+        <TestimonialsVenusDim className="testimonials__planet"/>
+        <TestimonialsNeptuneDim className="testimonials__planet"/>
+        <TestimonialsMarsDim className="testimonials__planet"/>
+      </div>
     </div>
   );
 };
