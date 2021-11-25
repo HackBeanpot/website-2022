@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TestimonialsVenusDim = () => (
+const TestimonialsVenusDim = ({setSelected}) => (
   <svg
     className="testimonials-venus-dim testimonials__planet"
     width="52"
@@ -8,6 +8,7 @@ const TestimonialsVenusDim = () => (
     viewBox="0 0 52 52"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    onClick={setSelected}
   >
     <g clip-path="url(#clip0_451:2086)">
       <path

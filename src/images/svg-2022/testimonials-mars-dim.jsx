@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TestimonialsMarsDim = () => (
+const TestimonialsMarsDim = ({setSelected}) => (
   <svg
     className="testimonials-mars-dim testimonials__planet"
     width="52"
@@ -8,6 +8,7 @@ const TestimonialsMarsDim = () => (
     viewBox="0 0 52 52"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    onClick={setSelected}
   >
     <g clip-path="url(#clip0_451:1508)">
       <path
