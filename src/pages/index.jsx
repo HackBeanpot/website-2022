@@ -18,6 +18,7 @@ const App = () => {
         <About />
         <CovidPrecautions />
         <FAQ />
+        <Team />
         {/* <Testimonials /> */}
         {/*
          <FAQ />

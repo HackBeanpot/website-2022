@@ -1,6 +1,8 @@
 import React from 'react';
+import SecondaryCta from '../secondary-cta';
 
 const team = () => (
+    
     <div className="container">
         <div className="theme__content-wrapper">
             <div className="theme__content">
@@ -11,6 +13,7 @@ const team = () => (
                 <p className="theme__description">
                     The HackBeanpot Core Team has been hard at work bringing HackBeanpot 2022 to a galaxy near you! We are a group of 22 driven students from universities in the Boston area who aim to make technical experience and knowledge accessible to anyone who’s interested.
                 </p>
+                <SecondaryCta link="mailto:team@hackbeanpot.com" textDescription="Contact us" />
             </div>
         </div>
     </div>

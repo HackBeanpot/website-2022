@@ -10,7 +10,7 @@ import 'styles/main.scss';
 // Shows the header and footer on every page
 const Layout = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-  
+
   return <div className={`parent ${isDarkTheme ? "" : "light"}`}>
     <Helmet
       title="HackBeanpot 2022"
