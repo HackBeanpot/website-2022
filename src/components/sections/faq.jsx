@@ -2,7 +2,6 @@ import React from 'react';
 import PrimaryCta from '../primary-cta';
 import FAQItems from 'components/faqItems/faq-items';
 import FaqMercury from '../../images/svg-2022/faq-mercury';
-import FaqUranusFaded from '../../images/svg-2022/faq-uranus-faded';
 import ContactAstronaut from '../../images/svg-2022/contact-astronaut';
 import ContactJupiterFaded from '../../images/svg-2022/contact-jupiter-faded';
 import ContactMoonFaded from '../../images/svg-2022/contact-moon-faded';
