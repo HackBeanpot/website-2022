@@ -1,17 +1,19 @@
 .testimonials-item-container {
   display: flex;
   border: 3px solid $blue-grey;
-  width: 70%;
-  height: 300px;
+  width: 80%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(27, 54, 93, 0.1);
   backdrop-filter: blur(50px);
   border-radius: 10px;
+  align-items: center;
 }
 
 .testimonials-item-text-container {
   text-align: left;
+  width: 65%;
 }
 
 .testimonials-item-img {
@@ -20,6 +22,8 @@
   border-radius: 50%;
   object-fit: cover;
   filter: drop-shadow(0px 0px 20px rgba(217, 168, 255, 0.5));
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .testimonials-item-author {
