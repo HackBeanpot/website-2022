@@ -167,7 +167,7 @@
     height:900px;
   }
   @media (min-width: $xl) {
-    height: 1000px;
+    height: 850px;
     margin-top: 110px;
   }
 }
@@ -203,7 +203,7 @@
       margin-bottom: 0px;
     }
     @media (min-width: $lg) {
-    padding-bottom: 40px;
+      padding-bottom: 40px;
     }
   }
 
@@ -216,40 +216,69 @@
     align-self: center;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Testimonials
+// ---------------------------------------------------------------------------
+.testimonials {
+  text-align: center;
+  margin: 0 auto;
+  &__desktop {
+    
+  }
+}
 // ---------------------------------------------------------------------------
 // FAQ
 // ---------------------------------------------------------------------------
 
 .faq {
-  @include green-gradient-bg;
-  @include top-padding;
-  @include bottom-padding;
+  height: 2100px;
+  @media (min-width: $xxs) {
+    height: 2100px;
+  }
+  @media (min-width: $xs) {
+    height: 1800px;
+  }
+  @media (min-width: $sm) {
+    height: 1650px;
+  }
+  @media (min-width: $md) {
+    height: 1550px;
+  }
+  @media (min-width: $lg) {
+    height: 1750px;
+  }
+  @media (min-width: $xl) {
+    height: 1600px;
+  }
+  @media (min-width: $xxl) {
+    height: 1400px;
+  }
 }
 
 .faq__title {
-  @include h2-text($white);
+  @include h1-text;
+  text-align: center;
+  margin: 200px 0 60px 0;
+
 }
 
 .faq__cta-group {
   text-align: center;
+  margin-top: 100px;
 }
 
 .faq__cta-label {
-  @include body-text;
-  font-weight: 700;
+  @include h2-text;
   margin-bottom: 30px;
+  line-height: 2em;
+  @media (min-width: $md) {
+    line-height: 2.5em;
+  }
 }
 
 .faq__cta {
   @include primary-cta;
-}
-
-.faq__footsteps {
-  float: right;
-
-  @media (max-width: $lg) {
-    display: none;
-  }
 }
 
 // ---------------------------------------------------------------------------
