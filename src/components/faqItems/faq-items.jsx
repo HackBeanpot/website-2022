@@ -1,38 +1,34 @@
-import React from 'react';
-import Masonry from 'react-masonry-component'; // https://github.com/eiriklv/react-masonry-component
+import React, { useState } from 'react';
 import FAQs from 'data/faqs.json';
-
-import LeafNode from 'images/svg/leaf-node.jsx';
-
-const masonryOptions = {
-  columnWidth: '.faq-sizer',
-  gutter: '.faq-gutter-sizer', // Horizontal margin for masonry columns
-  itemSelector: '.faq-item',
-  percentPosition: true
-};
+import FAQItem from '../faqItem/faq-item';
 
 const FAQItems = props => {
-  const childElements = FAQs.map((FAQ, index) => [
-    <div key={`faq-sizer-${index}`} className="faq-sizer" />,
-    <div key={`faq-gutter-${index}`} className="faq-gutter-sizer" />,
-    <div key={`faq-item-${index}`} className="faq-item">
-      <span className="faq-item__leaf">
-        <LeafNode />
-      </span>
-      <div>
-        <p className="faq-item__question">{FAQ.question}</p>
-        <div
-          className="faq-item__answer"
-          dangerouslySetInnerHTML={{ __html: FAQ.answer }}
-        />
-      </div>
-    </div>
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const firstColumn = FAQs.slice(0,6).map((FAQ, index) => [
+    <FAQItem
+      question={FAQ.question}
+      answer={FAQ.answer}
+      selectedQuestion={selectedQuestion}
+      setSelectedQuestion={setSelectedQuestion}
+    />
+  ]);
+
+  const secondColumn = FAQs.slice(6, FAQs.length).map((FAQ, index) => [
+    <FAQItem
+      question={FAQ.question}
+      answer={FAQ.answer}
+      selectedQuestion={selectedQuestion}
+      setSelectedQuestion={setSelectedQuestion}
+    />
   ]);
 
   return (
-    <Masonry options={masonryOptions} className="faq-masonry-wrapper">
-      {childElements}
-    </Masonry>
+    <div>
+        <div className="faq-columns-container">
+        <div className="faq-column1"> {firstColumn}</div>
+        <div className="faq-column2"> {secondColumn}</div>
+        </div>
+    </div>
   );
 };
 
