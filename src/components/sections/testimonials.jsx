@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import TestimonialsItem from '../testimonials-items/testimonial-item';
+import PrimaryCta from '../primary-cta';
 import BenHenderson from '../../images/ben-henderson.jpg';
+import FaqUranusFaded from '../../images/svg-2022/faq-uranus-faded';
 import AlbertZhang from '../../images/albert-zhang.jpg';
 import OnotinaImoudu from '../../images/onotina-imoudu.jpg';
 import Anonymous from '../../images/anonymous.jpg';
@@ -76,7 +78,16 @@ const Testimonials = props => {
         {selected.index === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
         {selected.index === TESTIMONIAL_PLANETS.MARS ? <TestimonialsMarsBright className="testimonials__planet" /> : <TestimonialsMarsDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.MARS))}/> }
       </div>
-    </div>
+      <div className="archive__content">
+        <p className="archive__description">
+          Interested in seeing more about our past events and past hacker projects?
+          <br />
+          Check out the HackBeanpot Archive!
+        </p>
+        <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
+      </div>
+      <FaqUranusFaded />
+    </div>    
   );
 };
 

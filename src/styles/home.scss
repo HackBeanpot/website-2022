@@ -227,9 +227,23 @@
 }
 
 .testimonials__box {
-
-
+  
 }
+
+.archive__content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.archive__description {
+  @include h2-text;
+  margin-bottom: 30px;
+  line-height: 2em;
+  @media (min-width: $md) {
+    line-height: 2.5em;
+  }
+}
+
 .testimonials__title {
   margin-bottom: 50px;
 }
