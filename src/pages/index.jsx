@@ -6,6 +6,7 @@ import FAQ from '../components/sections/faq';
 import About from '../components/sections/about';
 import Sponsors2021 from 'components/sponsors-2021';
 import CovidPrecautions from '../components/sections/covid-precautions';
+import LaunchSequence from '../components/sections/launch-sequence';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <ThemeAnnouncement />
         <About />
         <CovidPrecautions />
+        <LaunchSequence />
         {/* <FAQ />
         <Sponsors2021 /> */}
       </div>
