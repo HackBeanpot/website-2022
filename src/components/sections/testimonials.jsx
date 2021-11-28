@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TestimonialsItem from '../testimonials-items/testimonial-item';
 import PrimaryCta from '../primary-cta';
 import BenHenderson from '../../images/ben-henderson.jpg';
-import FaqUranusFaded from '../../images/svg-2022/faq-uranus-faded';
+import UranusOrbit from '../../images/svg-2022/testimonials-uranusorbit';
 import AlbertZhang from '../../images/albert-zhang.jpg';
 import OnotinaImoudu from '../../images/onotina-imoudu.jpg';
 import Anonymous from '../../images/anonymous.jpg';
@@ -66,7 +66,7 @@ const Testimonials = props => {
   const [selected, setSelected] = useState(testimonialInfo[0]);
 
   return (
-    <div id="testimonials" className="testimonials__container">
+    <section id="testimonials" className="testimonials__container">
       <h2 className="testimonials__title">Testimonials</h2>
       <div className="testimonials__box">
         <TestimonialsItem item={selected} />
@@ -86,8 +86,8 @@ const Testimonials = props => {
         </p>
         <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
       </div>
-      <FaqUranusFaded />
-    </div>    
+      <UranusOrbit />
+    </section>    
   );
 };
 

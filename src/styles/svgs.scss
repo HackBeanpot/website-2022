@@ -241,6 +241,25 @@
   
 }
 
+.testimonials-uranus-orbit {
+  position: absolute;
+  @media (min-width: $xxxl) {
+    left: 450px;
+  }
+  @media (min-width: $xxl) {
+    left: 300px;
+  }
+  @media (min-width: $xl) {
+    left: 250px;
+  }
+  @media (min-width: $lg) {
+    left: 50px;
+  }
+  @media (max-width: $lg) {
+    left: 0px;
+  }
+}
+
 .testimonials__planet {
   margin: 10px;
 }
