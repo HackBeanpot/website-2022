@@ -224,6 +224,9 @@
   text-align: center;
   height: 1000px;
   padding-top: 130px;
+  @media (min-width: $xl) {
+    padding-top: 250px;
+  }
 }
 
 .testimonials__box {

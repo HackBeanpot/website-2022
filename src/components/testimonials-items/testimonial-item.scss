@@ -21,6 +21,9 @@
   @media (max-width: $xs) {
     height: 550px;
   }
+  @media (max-width: $xxs) {
+    height: 700px;
+  }
 }
 
 .testimonials-item-text-container {
