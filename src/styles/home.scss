@@ -272,20 +272,31 @@
   }
   
   .launch__countdown{
-    font-size: 72px;
-    // @include h1-text;
+    @media (min-width: $sm) {
+      font-size: 72px;
+    }
+    font-size: 40px;
     margin-top: 0.32em;
     margin-bottom: 0.04em;
     line-height: 1.0;
   }
   
   .launch__labels {
-    display: fiex;
+    display: inline-block;
     flex-basis: flex;
-    //float: center;
-    // width: 200px;
   }
-  
+
+  li {
+    @media (min-width: $sm) {
+      padding-left: 2.2em;
+      padding-right: 1.3em; 
+      font-size: 20px;
+    }
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1.5em;
+    padding-right: 0.3em;
+  }
   
   .launch__cta-container {
     display: flex;

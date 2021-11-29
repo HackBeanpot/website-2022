@@ -4,12 +4,16 @@ import CtaRocketship from '../images/svg-2022/cta-rocketship';
 
 const SecondaryCta = ({textDescription}) => {
     const [message, setMessage] = useState('');
-    const [link, setLink] = useState('');
 
     const clicked = async e => {
         e.preventDefault();
         setMessage('Copied the HBP website to clipboard!');
-        setLink(link);
+        const el = document.createElement('input');
+        el.value = window.location.href;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
     }
     return (
         <div>

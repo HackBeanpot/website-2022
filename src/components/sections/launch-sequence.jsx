@@ -28,12 +28,11 @@ const LaunchSequence = () => (
           renderer = {time}
           />
           </h1>        
-        <p className="launch__labels">
-            days     hours     minutes
-        </p>
+        <ul className="launch__labels">
+            <li>days</li>     <li>hours</li>     <li>minutes</li>
+        </ul>
         <div className="launch__cta-container">
           <SecondaryCta
-            link="https://hackbeanpot.com/"
             textDescription="Share with your friends"
           />
       </div>
