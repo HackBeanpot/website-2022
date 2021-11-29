@@ -256,7 +256,10 @@
     left: 50px;
   }
   @media (max-width: $lg) {
-    left: 0px;
+    left: -50px;
+  }
+  @media (max-width: $sm) {
+    left: -150px;
   }
 }
 
