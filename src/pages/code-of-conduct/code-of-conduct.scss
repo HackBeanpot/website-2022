@@ -28,7 +28,7 @@
 .coc__body {
   @include margins;
   @include body-text;
-
+  color: $hbp-navy;
   @media (min-width: $md) {
     @include right-padding;
     @include left-padding;
@@ -37,4 +37,5 @@
 
 .coc__subheading {
   @include h3-text;
+  color: $hbp-navy;
 }

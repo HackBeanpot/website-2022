@@ -131,3 +131,75 @@
     top: 550px;
   }
 }
+
+.purple-plus-sign {
+  float: right;
+}
+
+.faq-mercury {
+  position: absolute;
+  top: -150px;
+  right: 30px;
+}
+
+.contact-astronaut {
+  display: none;
+  z-index: 0;
+  position: absolute;
+  width: 15em;
+  @media (min-width: $xl) {
+    display: block;
+    width: 18em;
+    top: 700px;
+    right: -40px;
+  }
+  @media (min-width: $xxl) {
+    top: 750px;
+    right: -40px;
+  }
+}
+
+.contact-jupiter-faded {
+  position: absolute;
+  left: -40px;
+  top: 1700px;
+  width: 6em;
+  @media (min-width: $xxs) {
+    top: 1500px;
+  }
+  @media (min-width: $sm) {
+    top: 1250px;
+  }
+  @media (min-width: $lg) {
+    left: -40px;
+    top: 900px;
+    width: 8em;
+  }
+}
+
+.contact-moon-faded {
+  position: absolute;
+
+  width: 3.5em;
+  display: none;
+  @media (min-width: $sm) {
+    right: 200px;
+    top: 1400px;
+  }
+  @media (min-width: $md) {
+    right: 300px;
+  }
+  @media (min-width: $lg) {
+    display: block;
+    right: 300px;
+  }
+  @media (min-width: $xl) {
+    width: 10em;
+    right: 450px;
+    top: 1100px;
+  }
+  @media (min-width: $xxl) {
+    top: 1100px;
+    right: 300px;
+  }
+}
