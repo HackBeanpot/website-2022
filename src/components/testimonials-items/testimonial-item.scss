@@ -49,6 +49,14 @@
   @media (max-width: $md) {
     display: none;
   }
+  @media (min-width: $md) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media (min-width: $xl) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   @media (min-width: $xxl) {
     margin-left: 60px;
     margin-right: 60px;
