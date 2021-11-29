@@ -2,7 +2,7 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import SecondaryCta from '../secondary-cta';
 
-const hbpStartDate = new Date('2/8/2022, 19:00:00 ').getTime();
+const hbpStartDate = new Date('12/31/2021, 23:59:59').getTime();
 let today = new Date();
 today = Date.now();
 const diff = hbpStartDate - today;
@@ -22,7 +22,7 @@ const LaunchSequence = () => (
   <div className="container ">
     <div id="launch-sequence" className="launch__sequence">
       <div className="launch__content">
-        <a className="launch__header">Launch Sequence Initating In</a>
+        <a className="launch__header">2022 Applications Close In</a>
         <h1 className="launch__countdown">
           <Countdown date={Date.now() + diff} 
           renderer = {time}
