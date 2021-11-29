@@ -1,6 +1,6 @@
 import React from 'react';
 import Countdown from 'react-countdown';
-import PrimaryCta from '../primary-cta';
+import SecondaryCta from '../secondary-cta';
 
 const hbpStartDate = new Date('2/8/2022, 19:00:00 ').getTime();
 let today = new Date();
@@ -32,8 +32,8 @@ const LaunchSequence = () => (
             days     hours     minutes
         </p>
         <div className="launch__cta-container">
-          <PrimaryCta
-            link="https://hackbeanpot.us10.list-manage.com/subscribe?u=a98050d47fdae2481521f0474&id=dccd8c8431"
+          <SecondaryCta
+            link="https://hackbeanpot.com/"
             textDescription="Share with your friends"
           />
       </div>
@@ -43,5 +43,3 @@ const LaunchSequence = () => (
 );
 
 export default LaunchSequence;
-
-// <Countdown date={hbpStartDate.getTime() - today.getTime()} />
