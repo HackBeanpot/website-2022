@@ -46,6 +46,14 @@
   @media (max-width: $md) {
     display: none;
   }
+  @media (min-width: $xxl) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  @media (min-width: $xxxl) {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
 }
 
 .testimonials-item-author {
