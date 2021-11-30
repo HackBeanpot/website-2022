@@ -261,36 +261,30 @@
 
 .faq {
   height: 2100px;
-  padding-top: 400px;
+  padding-top: 200px;
   @media (min-width: $xl) {
     padding-top: 300px;
   }
-  @media (max-width: $md) {
-    padding-top: 400px;
-  }
-  @media (max-width: $xxs) {
-    padding-top: 600px;
-  }
   @media (min-width: $xxs) {
-    height: 2100px;
+    height: 2000px;
   }
   @media (min-width: $xs) {
     height: 1800px;
   }
   @media (min-width: $sm) {
-    height: 1650px;
+    height: 1800px;
   }
   @media (min-width: $md) {
-    height: 1550px;
+    height: 1700px;
   }
   @media (min-width: $lg) {
     height: 1750px;
   }
   @media (min-width: $xl) {
-    height: 1600px;
+    height: 1700px;
   }
   @media (min-width: $xxl) {
-    height: 1400px;
+    height: 1600px;
   }
 }
 
