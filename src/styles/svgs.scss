@@ -234,5 +234,8 @@
 }
 
 .testimonials__planet {
-  margin: 10px;
+  margin: 5px;
+  @media (min-width: $xxs) {
+    margin: 10px;
+  }
 }
