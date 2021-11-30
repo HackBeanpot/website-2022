@@ -169,7 +169,7 @@
     margin-top: 40px;
   }
   @media (min-width: $lg) {
-    height:900px;
+    height: 900px;
   }
   @media (min-width: $xl) {
     height: 850px;
@@ -229,7 +229,6 @@
   text-align: center;
   margin: 0 auto;
   &__desktop {
-    
   }
 }
 // ---------------------------------------------------------------------------
@@ -265,7 +264,6 @@
   @include h1-text;
   text-align: center;
   margin: 200px 0 60px 0;
-
 }
 
 .faq__cta-group {
@@ -318,6 +316,45 @@
     object-fit: contain;
     height: 100%;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Team
+// ---------------------------------------------------------------------------
+.team__container {
+  height: 1000px;
+  @media (min-width: $lg) {
+    height: 830px;
+  }
+  @media (min-width: $xl) {
+    height: 2000px;
+  }
+}
+
+.team__content-wrapper {
+  display: flex;
+}
+
+.team__content {
+}
+
+.team__header {
+  @include h4-text;
+  color: $pale-yellow !important;
+}
+
+.team__space-jam {
+  @include h1-text;
+}
+
+.team__description {
+  margin-top: 30px;
+}
+
+.team__picture {
+  width: 620px;
+  height: 370px;
+  object-fit: cover;
 }
 
 // ---------------------------------------------------------------------------
