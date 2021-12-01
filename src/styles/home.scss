@@ -336,6 +336,14 @@
 }
 
 .team__content {
+  width: 100%;
+  margin: 130px 0 0 0;
+  @media (min-width: $xl) {
+    width: 56%;
+  }
+  @media (min-width: $xxl) {
+    margin: 130px 0 0 -100px;
+  }
 }
 
 .team__header {
@@ -355,6 +363,7 @@
   width: 620px;
   height: 370px;
   object-fit: cover;
+  margin: 150px -100px 150px 200px;
 }
 
 // ---------------------------------------------------------------------------
