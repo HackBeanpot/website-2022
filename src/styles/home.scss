@@ -287,6 +287,7 @@
 
 
   .launch__content {
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -297,12 +298,14 @@
   
   .launch__header {
     @include h4-text;
+    text-align: center;
     color: $pale-yellow !important;
   }
   
   .launch__countdown{
+    text-align: center;
     @media (min-width: $sm) {
-      font-size: 72px;
+      font-size: 60px;
     }
     font-size: 40px;
     margin-top: 0.32em;
@@ -315,10 +318,10 @@
     flex-basis: flex;
   }
 
-  li {
+  .launch_time {
     @media (min-width: $sm) {
-      padding-left: 2.5em;
-      padding-right: 1.6em; 
+      padding-left: 2.1em;
+      padding-right: 0.6em; 
       font-size: 20px;
     }
     display: inline-block;
@@ -334,20 +337,14 @@
       margin-top: 2.4em;
       display: block;
     }
+    //@include primary-cta;
     margin-bottom: 6.6em;
   }
 
   .launch-button {
-    color: #ffffff;
-    background-color: #4366e1;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
-    padding: 12px 35px;
-    border-radius: 50px;
+    @include primary-cta;
   }
-  .launch-copy {
-    font-size: 12px;
-  }
+
 
 
 

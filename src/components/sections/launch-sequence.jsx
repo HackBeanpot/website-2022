@@ -1,22 +1,15 @@
 import React from 'react';
 import Countdown from 'react-countdown';
-import SecondaryCta from '../secondary-cta';
+import PrimaryCta from '../primary-cta';
 
 const hbpStartDate = new Date('12/31/2021, 23:59:59').getTime();
 let today = new Date();
 today = Date.now();
 const diff = hbpStartDate - today;
 
-const time = ({days, hours, minutes}) => {
-  var minutePadding = "";
-  var hourPadding = ""
-  if (minutes < 10) {
-    minutePadding = 0;
-  }
-  if(hours < 10) {
-    hourPadding = 0;
-  }
-  return <span>{days} : {hourPadding}{hours} : {minutePadding}{minutes} </span>;
+const time = ({days, hours, minutes, seconds}) => {
+
+  return <span> {days} : {hours.toString().padStart(2, 0)} : {minutes.toString().padStart(2, 0)} : {seconds.toString().padStart(2, 0)} </span>;
 }
 const LaunchSequence = () => (
   <div className="container ">
@@ -29,12 +22,14 @@ const LaunchSequence = () => (
           />
           </h1>        
         <ul className="launch__labels">
-            <li>days</li>     <li>hours</li>     <li>minutes</li>
+            <li className= "launch_time">days</li>
+            <li className= "launch_time">hours</li>
+            <li className= "launch_time">minutes</li>
+            <li className= "launch_time">seconds</li>
         </ul>
         <div className="launch__cta-container">
-          <SecondaryCta
-            textDescription="Share with your friends"
-          />
+          <PrimaryCta
+            textDescription="Share with your friends"/>
       </div>
     </div>
   </div>
