@@ -28,28 +28,28 @@ const testimonialInfo = [
     author: 'Ben Henderson',
     description:
       " It was my first Hackathon, and I had a really great time - if you've never done one before, this is a great choice. Really good environment for people who want to learn something new, meet new people, and/or challenge themselves. It's basically what you make of it, and there was plenty of support available if you have no idea what you're doing.",
-    index: TESTIMONIAL_PLANETS.MERCURY
+    type: TESTIMONIAL_PLANETS.MERCURY
   },
   {
     img: AlbertZhang,
     author: 'Albert Zhang',
     description:
       "This was my second hackathon ever and it was a lot of fun! The mentors were super helpful, and I was able to play around with Tensorflow, which is something I've never done before.",
-    index: TESTIMONIAL_PLANETS.VENUS
+    type: TESTIMONIAL_PLANETS.VENUS
   },
   {
     img: OnotinaImoudu,
     author: 'Onotina Imoudu',
     description:
       'This was my first hackathon and I am definitely attending next year!!! Hackbeanpot is a must attend for anyone who has a passion or wants to get their feet wet in design or coding. And we had a zoom-ba session!! A zumba class on zoom, it was really fun, I was sweaty and out of breath.',
-    index: TESTIMONIAL_PLANETS.NEPTUNE
+    type: TESTIMONIAL_PLANETS.NEPTUNE
   },
   {
     img: Anonymous,
     author: 'Anonymous',
     description:
       'HackBeanpot is an awesome way to get introduced to the world of Hackathons, and everyone here is just excited for you to learn.',
-    index: TESTIMONIAL_PLANETS.MARS
+    type: TESTIMONIAL_PLANETS.MARS
   }
 ];
 
@@ -72,10 +72,10 @@ const Testimonials = props => {
         <TestimonialsItem item={selected} />
       </div>
       <div className="planet_selection_container">
-        {selected.index === TESTIMONIAL_PLANETS.MERCURY ? <TestimonialsMercuryBright className="testimonials__planet" /> : <TestimonialsMercuryDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.MERCURY))}/> }
-        {selected.index === TESTIMONIAL_PLANETS.VENUS ? <TestimonialsVenusBright className="testimonials__planet" /> : <TestimonialsVenusDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.VENUS))}/> }
-        {selected.index === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
-        {selected.index === TESTIMONIAL_PLANETS.MARS ? <TestimonialsMarsBright className="testimonials__planet" /> : <TestimonialsMarsDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.MARS))}/> }
+        {selected.type === TESTIMONIAL_PLANETS.MERCURY ? <TestimonialsMercuryBright className="testimonials__planet" /> : <TestimonialsMercuryDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.MERCURY))}/> }
+        {selected.type === TESTIMONIAL_PLANETS.VENUS ? <TestimonialsVenusBright className="testimonials__planet" /> : <TestimonialsVenusDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.VENUS))}/> }
+        {selected.type === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
+        {selected.type === TESTIMONIAL_PLANETS.MARS ? <TestimonialsMarsBright className="testimonials__planet" /> : <TestimonialsMarsDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.MARS))}/> }
       </div>
       <div className="archive__content">
         <p className="archive__description">
