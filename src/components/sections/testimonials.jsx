@@ -72,7 +72,6 @@ const Testimonials = props => {
         <TestimonialsItem item={selected} />
       </div>
       <div className="planet_selection_container">
-        {console.log(selected.index)}
         {selected.index === TESTIMONIAL_PLANETS.MERCURY ? <TestimonialsMercuryBright className="testimonials__planet" /> : <TestimonialsMercuryDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.MERCURY))}/> }
         {selected.index === TESTIMONIAL_PLANETS.VENUS ? <TestimonialsVenusBright className="testimonials__planet" /> : <TestimonialsVenusDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.VENUS))}/> }
         {selected.index === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.index === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
