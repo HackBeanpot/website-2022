@@ -138,8 +138,20 @@
 
 .faq-mercury {
   position: absolute;
-  top: -150px;
-  right: 30px;
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+    top: 150px;
+    right: 100px;
+  }
+  @media (min-width: $xl) {
+    top: -150px;
+    right: 30px;
+  }
+}
+
+.faq-uranus-faded {
+  position: absolute;
 }
 
 .contact-astronaut {
@@ -150,11 +162,7 @@
   @media (min-width: $xl) {
     display: block;
     width: 18em;
-    top: 700px;
-    right: -40px;
-  }
-  @media (min-width: $xxl) {
-    top: 750px;
+    top: 1300px;
     right: -40px;
   }
 }
@@ -179,7 +187,6 @@
 
 .contact-moon-faded {
   position: absolute;
-
   width: 3.5em;
   display: none;
   @media (min-width: $sm) {
@@ -196,10 +203,39 @@
   @media (min-width: $xl) {
     width: 10em;
     right: 450px;
-    top: 1100px;
+    top: 1200px;
   }
   @media (min-width: $xxl) {
-    top: 1100px;
+    top: 1200px;
     right: 300px;
+  }
+}
+
+.testimonials-uranus-orbit {
+  position: absolute;
+  @media (min-width: $xxxl) {
+    left: 450px;
+  }
+  @media (min-width: $xxl) {
+    left: 300px;
+  }
+  @media (min-width: $xl) {
+    left: 250px;
+  }
+  @media (min-width: $lg) {
+    left: 50px;
+  }
+  @media (max-width: $lg) {
+    left: -50px;
+  }
+  @media (max-width: $sm) {
+    left: -150px;
+  }
+}
+
+.testimonials__planet {
+  margin: 5px;
+  @media (min-width: $xxs) {
+    margin: 10px;
   }
 }
