@@ -17,11 +17,10 @@ const App = () => {
         <ThemeAnnouncement />
         <About />
         <CovidPrecautions />
+        <Testimonials />
         <FAQ />
         <Team />
-        {/* <Testimonials /> */}
         {/*
-         <FAQ />
         <Sponsors2021 /> */}
       </div>
     </Layout>
