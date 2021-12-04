@@ -1,16 +1,9 @@
 import React from 'react';
 import CtaRocketship from '../images/svg-2022/cta-rocketship';
+import team from './sections/team';
 
-const SecondaryCta = ({ link, textDescription }) => {
-    return <a
-        href={link}
-        role="button"
-        className="secondary__cta"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        {textDescription}
-    </a>
+const SecondaryCta = ({ textDescription }) => {
+    return <div className="secondary__cta">  {textDescription}</div>
 };
 
 export default SecondaryCta;
