@@ -1,24 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CtaRocketship from '../images/svg-2022/cta-rocketship';
 
 const PrimaryCta = ({ link, textDescription }) => {
+    const [isClicked, setIsClicked] = useState(false);
     if (link == null) {
+        const ctaText = isClicked ? "Copied to clipboard!" : textDescription;
+        const onClick = () => {
+        setIsClicked(true);
+        // second argument is in milliseconds, so 3 * 1000 = 3 seconds
+        // after 3 seconds, setTimeout will call the function you provide
+        setTimeout(() => setIsClicked(false), 3 * 1000);
+        }
+
         const clicked = async e => {
             e.preventDefault();
-            alert("Copied the HBP website to clipboard, please share with your friends!");
+
             const el = document.createElement('input');
             el.value = window.location.href;
             document.body.appendChild(el);
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
-        }
+        } 
+
         return (
             <div>
-                <button onClick={clicked} 
+                <button onClick={clicked, onClick} 
                     className = "launch-button"
                 >
-                    {textDescription} <CtaRocketship />
+                    {ctaText} <CtaRocketship />
                     </button>
                 
             </div>
