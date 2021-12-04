@@ -53,10 +53,9 @@ const testimonialInfo = [
   }
 ];
 
-const Testimonials = props => {
+const Testimonials = () => {
   const testimonialChildren = testimonialInfo.map(info => (
     <TestimonialsItem
-      key={info.author}
       img={info.img}
       author={info.author}
       description={info.description}
@@ -72,6 +71,8 @@ const Testimonials = props => {
         <TestimonialsItem item={selected} />
       </div>
       <div className="planet_selection_container">
+        {/* {TESTIMONIAL_PLANETS.map(testimonial => 
+        <TestimonialsPlanet testimonial={testimonial} selected={selected.type === testimonial.type} setSelected={setSelected} />)} */}
         {selected.type === TESTIMONIAL_PLANETS.MERCURY ? <TestimonialsMercuryBright className="testimonials__planet" /> : <TestimonialsMercuryDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.MERCURY))}/> }
         {selected.type === TESTIMONIAL_PLANETS.VENUS ? <TestimonialsVenusBright className="testimonials__planet" /> : <TestimonialsVenusDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.VENUS))}/> }
         {selected.type === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
