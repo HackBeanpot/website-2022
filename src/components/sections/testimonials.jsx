@@ -54,13 +54,6 @@ const testimonialInfo = [
 ];
 
 const Testimonials = () => {
-  const testimonialChildren = testimonialInfo.map(info => (
-    <TestimonialsItem
-      img={info.img}
-      author={info.author}
-      description={info.description}
-    />
-  ));
 
   const [selected, setSelected] = useState(testimonialInfo[0]);
 
@@ -71,12 +64,8 @@ const Testimonials = () => {
         <TestimonialsItem item={selected} />
       </div>
       <div className="planet_selection_container">
-        {/* {TESTIMONIAL_PLANETS.map(testimonial => 
-        <TestimonialsPlanet testimonial={testimonial} selected={selected.type === testimonial.type} setSelected={setSelected} />)} */}
-        {selected.type === TESTIMONIAL_PLANETS.MERCURY ? <TestimonialsMercuryBright className="testimonials__planet" /> : <TestimonialsMercuryDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.MERCURY))}/> }
-        {selected.type === TESTIMONIAL_PLANETS.VENUS ? <TestimonialsVenusBright className="testimonials__planet" /> : <TestimonialsVenusDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.VENUS))}/> }
-        {selected.type === TESTIMONIAL_PLANETS.NEPTUNE ? <TestimonialsNeptuneBright className="testimonials__planet" /> : <TestimonialsNeptuneDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.NEPTUNE))}/>}
-        {selected.type === TESTIMONIAL_PLANETS.MARS ? <TestimonialsMarsBright className="testimonials__planet" /> : <TestimonialsMarsDim className="testimonials__planet" setSelected={() => setSelected(testimonialInfo.find(curr => curr.type === TESTIMONIAL_PLANETS.MARS))}/> }
+        {testimonialInfo.map(testimonial =>
+          <TestimonialsPlanet testimonial={testimonial} selected={selected.type === testimonial.type} setSelected={setSelected} />)}
       </div>
       <div className="archive__content">
         <p className="archive__description">
@@ -87,8 +76,44 @@ const Testimonials = () => {
         <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
       </div>
       <UranusOrbit />
-    </section>    
+    </section>
   );
 };
+
+const TestimonialsPlanet = ( props ) => {
+  const testimonial = props.testimonial
+  const selected = props.selected
+  const setSelected = props.setSelected
+  if (selected) {
+    const TestimonialsPlanetBright = getTestimonialsPlanetBright(testimonial.type)
+    return <TestimonialsPlanetBright className="testimonials__planet" />
+  }
+  else {
+    const TestimonialsPlanetDim = getTestimonialsPlanetDim(testimonial.type)
+    return <TestimonialsPlanetDim 
+    className="testimonials__planet" 
+    setSelected={() => setSelected(testimonial)} />
+  }
+}
+
+const getTestimonialsPlanetBright = ( type ) => {
+  switch( type ) {
+    case TESTIMONIAL_PLANETS.MARS: return TestimonialsMarsBright
+    case TESTIMONIAL_PLANETS.MERCURY: return TestimonialsMercuryBright 
+    case TESTIMONIAL_PLANETS.NEPTUNE: return TestimonialsNeptuneBright 
+    case TESTIMONIAL_PLANETS.VENUS: return TestimonialsVenusBright 
+    default: throw new Error("Unexpected type: " + type)
+  }
+}
+
+const getTestimonialsPlanetDim = ( type ) => {
+  switch( type ) {
+    case TESTIMONIAL_PLANETS.MARS: return TestimonialsMarsDim 
+    case TESTIMONIAL_PLANETS.MERCURY: return TestimonialsMercuryDim 
+    case TESTIMONIAL_PLANETS.NEPTUNE: return TestimonialsNeptuneDim 
+    case TESTIMONIAL_PLANETS.VENUS: return TestimonialsVenusDim 
+    default: throw new Error("Unexpected type: " + type)
+  }
+}
 
 export default Testimonials;

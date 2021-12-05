@@ -1,13 +1,13 @@
 import React from 'react';
 
-const TestimonialsItem = ({ img, description, author, type }) => {
+const TestimonialsItem = ({ item }) => {
   return (
     <>
       <div className="testimonials-item-container">
-        <img className="testimonials-item-img" src={img} />
+        <img className="testimonials-item-img" src={item.img} />
         <div className="testimonials-item-text-container">
-          <p>{description}</p>
-          <h2 className="testimonials-item-author">{author}</h2>
+          <p>{item.description}</p>
+          <h2 className="testimonials-item-author">{item.author}</h2>
         </div>
       </div>
     </>
