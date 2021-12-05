@@ -366,17 +366,15 @@
   @media (max-width: $lg) {
     display: block;
   }
+
+  @media (min-width: $xxl) {
+    margin: 130px 0 0 -100px;
+  }
 }
 
 .team__content {
   width: 100%;
-  // margin: 130px 0 0 0;
-  // @media (min-width: $xl) {
-  //   width: 56%;
-  // }
-  // @media (min-width: $xxl) {
-  //   margin: 130px 0 0 -100px;
-  // }
+  margin-right: 50px;
 }
 
 .team__header {
@@ -402,10 +400,9 @@
   border-radius: 23px;
   //margin: 130px 0px 0px 0px;
 
-  // @media (max-width: $lg) {
-  //   width: 25%;
-  //   height: 25%;
-  // }
+  @media (min-width: $xxl) {
+    margin-right: -7%;
+  }
 }
 
 // ---------------------------------------------------------------------------
