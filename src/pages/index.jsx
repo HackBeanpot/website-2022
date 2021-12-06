@@ -6,6 +6,7 @@ import FAQ from '../components/sections/faq';
 import About from '../components/sections/about';
 import Sponsors2021 from 'components/sponsors-2021';
 import CovidPrecautions from '../components/sections/covid-precautions';
+import LaunchSequence from '../components/sections/launch-sequence';
 import Testimonials from '../components/sections/testimonials';
 
 const App = () => {
@@ -16,8 +17,11 @@ const App = () => {
         <ThemeAnnouncement />
         <About />
         <CovidPrecautions />
+        <LaunchSequence />
+        {/* <FAQ />
+
+        <Testimonials />
         <FAQ />
-        {/* <Testimonials /> */}
         {/*
          <FAQ />
         <Sponsors2021 /> */}
