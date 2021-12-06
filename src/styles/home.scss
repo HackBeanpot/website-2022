@@ -311,6 +311,73 @@
 }
 
 // ---------------------------------------------------------------------------
+// Launch Sequences
+// ---------------------------------------------------------------------------
+
+
+  .launch__content {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0 40px 0;
+    width: 100%;
+  }
+  
+  
+  .launch__header {
+    @include h4-text;
+    text-align: center;
+    color: $pale-yellow !important;
+  }
+  
+  .launch__countdown{
+    text-align: center;
+    @media (min-width: $sm) {
+      font-size: 60px;
+    }
+    font-size: 40px;
+    margin-top: 0.32em;
+    margin-bottom: 0.04em;
+    line-height: 1.0;
+  }
+  
+  .launch__labels {
+    display: inline-block;
+    flex-basis: flex;
+  }
+
+  .launch_time {
+    @media (min-width: $sm) {
+      padding-left: 2.1em;
+      padding-right: 0.6em; 
+      font-size: 20px;
+    }
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1.5em;
+    padding-right: 0.3em;
+  }
+  
+  .launch__cta-container {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $sm) {
+      margin-top: 2.4em;
+      display: block;
+    }
+    //@include primary-cta;
+    margin-bottom: 6.6em;
+  }
+
+  .launch-button {
+    @include primary-cta;
+  }
+
+
+
+
+// ---------------------------------------------------------------------------
 // Sponsors
 // ---------------------------------------------------------------------------
 
