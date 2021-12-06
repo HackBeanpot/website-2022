@@ -220,39 +220,68 @@
 // ---------------------------------------------------------------------------
 // Testimonials
 // ---------------------------------------------------------------------------
-.testimonials {
+.testimonials__container {
   text-align: center;
-  margin: 0 auto;
-  &__desktop {
-    
+  height: 1000px;
+  padding-top: 130px;
+  @media (min-width: $xl) {
+    padding-top: 250px;
   }
 }
+
+.archive__content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.archive__description {
+  @include h2-text;
+  margin-bottom: 30px;
+  line-height: 2em;
+  @media (min-width: $md) {
+    line-height: 2.5em;
+  }
+}
+
+.testimonials__title {
+  margin-bottom: 50px;
+}
+
+.planet_selection_container {
+  margin-top: 60px;
+}
+
 // ---------------------------------------------------------------------------
 // FAQ
 // ---------------------------------------------------------------------------
 
 .faq {
-  height: 2100px;
+  height: 2800px;
+  padding-top: 400px;
+  z-index: 0;
   @media (min-width: $xxs) {
-    height: 2100px;
+    padding-top: 200px;
+    height: 2500px;
   }
   @media (min-width: $xs) {
-    height: 1800px;
+    height: 2400px;
   }
   @media (min-width: $sm) {
-    height: 1650px;
+    padding-top: 100px;
+    height: 2000px;
   }
   @media (min-width: $md) {
-    height: 1550px;
+    padding-top: 200px;
+    height: 2000px;
   }
   @media (min-width: $lg) {
-    height: 1750px;
+    height: 2150px;
   }
   @media (min-width: $xl) {
-    height: 1600px;
+    height: 2000px;
   }
   @media (min-width: $xxl) {
-    height: 1400px;
+    height: 1800px;
   }
 }
 

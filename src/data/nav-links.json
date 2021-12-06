@@ -10,5 +10,9 @@
   {
     "name": "FAQ",
     "path": "/#faq"
+  },
+  {
+    "name": "Testimonials",
+    "path": "/#testimonials"
   }
 ]
