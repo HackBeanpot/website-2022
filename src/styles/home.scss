@@ -429,14 +429,17 @@
     display: block;
   }
 
-  @media (min-width: $xxl) {
-    margin: 130px 0 0 -100px;
-  }
+  // @media (min-width: $xxl) {
+  //   margin: 130px 0 0 -100px;
+  // }
 }
 
 .team__content {
   width: 100%;
   margin-right: 50px;
+  @media (min-width: $xxl) {
+    margin-right: 20px;
+  }
 }
 
 .team__header {
@@ -462,9 +465,9 @@
   border-radius: 23px;
   //margin: 130px 0px 0px 0px;
 
-  @media (min-width: $xxl) {
-    margin-right: -7%;
-  }
+  // @media (min-width: $xxl) {
+  //   margin-right: -80px;
+  // }
 }
 
 .team__small-teams-buttons {

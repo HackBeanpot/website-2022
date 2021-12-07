@@ -33,7 +33,7 @@ const LaunchSequence = () => (
       </div>
     </div>
   </div>
-</div>
+  </div>
 );
 
 export default LaunchSequence;
