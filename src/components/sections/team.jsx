@@ -3,7 +3,6 @@ import SecondaryCta from '../secondary-cta';
 import TeamPicture from '../../images/team-picture.jpeg'
 const Team = () => {
     const [smallTeamClicked, setSmallTeamClicked] = useState('Leadership')
-    const allSmallTeams = ['Leadership', 'Design', 'Tech', 'Social/Outreach', 'Sponsorship']
     return (
         // <div className="container">
         <div className="team__container">
@@ -22,7 +21,8 @@ const Team = () => {
             </div>
             <div className="team__small-teams">
                 <div className="team__small-teams-buttons">
-                    {SmallTeams(smallTeamClicked)}
+                    {RenderSmallTeamButtons(setSmallTeamClicked)}
+                    {RenderTeamClicked(smallTeamClicked)}
                 </div>
             </div>
         </div>
@@ -30,14 +30,20 @@ const Team = () => {
     );
 }
 
-const SmallTeams = (smallTeamClicked) => {
+const RenderSmallTeamButtons = (setSmallTeamClicked) => {
     const allSmallTeams = ['Leadership', 'Design', 'Tech', 'Social/Outreach', 'Sponsorship']
     return (
         allSmallTeams.map(smallTeam =>
-            <SecondaryCta textDescription={smallTeam} />
+            <div onClick={() => setSmallTeamClicked(smallTeam)}>
+                <SecondaryCta textDescription={smallTeam} />
+            </div>
         ));
 
-    // TODO: wrap SecondaryCta in a div that has onClick={() => set(smallTeamClicked) OR call function to refresh small teams directly
+}
+
+// TODO: change RenderTeamClicked to render images of team
+const RenderTeamClicked = (smallTeam) => {
+    return (<div>{smallTeam}</div>);
 }
 
 export default Team;
