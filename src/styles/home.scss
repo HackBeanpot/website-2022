@@ -280,6 +280,47 @@
 .faq__cta {
   @include primary-cta;
 }
+// ---------------------------------------------------------------------------
+// Sponsorship
+// ---------------------------------------------------------------------------
+  .sponsorship_container {
+    padding-top: 150px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sponsorship_content {
+    width: 100%;
+    padding-bottom: 200px;
+  }
+
+  .sponsorship__title {
+    text-align: center;
+    @include h1-text
+  }
+  .sponsorship__cta_container {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .sponsorship__cta_group {
+    text-align: center;
+    width: 100%;
+  }
+
+  .sponsorship__cta_label {
+    @include h2-text;
+    margin-left: auto;
+    margin-right: auto;  
+    text-align: center;
+     width: 630px;
+    margin-bottom: 30px;
+    line-height: 1.4em;
+    @media (min-width: $md) {
+      line-height: 1.6em;
+    }
+  }
 
 // ---------------------------------------------------------------------------
 // Launch Sequences
