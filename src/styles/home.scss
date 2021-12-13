@@ -415,13 +415,21 @@
 // ---------------------------------------------------------------------------
 .team__container {
   height: 1000px;
-  @media (min-width: $xxl) {
-    max-width: 1340px;
+  @media (min-width: $lg) {
+    max-width: 720px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $xxl) {
+    max-width: 1340px;
   }
 }
 
@@ -434,7 +442,7 @@
 
 .team__content-wrapper {
   display: flex;
-  @media (max-width: $lg) {
+  @media (max-width: 1199px) {
     display: block;
   }
 
@@ -477,6 +485,12 @@
   // @media (min-width: $xxl) {
   //   margin-right: -80px;
   // }
+}
+
+.team__small-teams {
+  @media (max-width: 1199px) {
+    display: None;
+  }
 }
 
 .team__small-teams-buttons {
