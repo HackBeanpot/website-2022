@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import SecondaryCta from '../secondary-cta';
-import TeamPicture from '../../images/team-picture.jpeg'
+import TeamPicture from '../../images/team-2022/team-picture.jpeg'
 
 const smallTeamInfo = [
     {
         teamName: "Leadership",
-        teamPictures: []
+        teamPictures: [<img className='team__team-member-portrait' src={'../../images/team-2022/Cari.JPG'} />]
     },
     {
         teamName: "Design",
@@ -29,7 +29,7 @@ const smallTeamInfo = [
 const Team = () => {
     const [smallTeamClicked, setSmallTeamClicked] = useState({
         teamName: "Leadership",
-        teamPictures: []
+        teamPictures: [<img className='team__team-member-portrait' src={'../../images/team-2022/Cari.JPG'} />]
     })
     return (
         <div className="team__container">
@@ -64,13 +64,22 @@ const RenderSmallTeamButtons = (setSmallTeamClicked) => {
             <div onClick={() => setSmallTeamClicked(smallTeam)}>
                 <SecondaryCta textDescription={smallTeam.teamName} />
             </div>
-        ));
+        )
+    );
 
 }
 
 // TODO: change RenderTeamClicked to render images of team
 const RenderTeamClicked = (smallTeam) => {
-    return (<div>{smallTeam.teamName}</div>);
+    return (
+        //className='team__team-member-portrait'
+        <img src={'../../images/team-2022/Cari.JPG'} />
+    );
+    // return (
+    //     smallTeam.teamPictures.map(picture => <div>
+    //         picture
+    //     </div>)
+    // );
 }
 
 export default Team;

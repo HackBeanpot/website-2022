@@ -496,6 +496,12 @@
 //   display: flex-end;
 // }
 
+// Individual team member picture
+.team__team-member-portrait {
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 50%;
+}
 // ---------------------------------------------------------------------------
 // Animations
 // ---------------------------------------------------------------------------
