@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollYPosition } from 'react-use-scroll-position';
+import SocialLinks from 'data/social-links.json';
 
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from '../data/nav-links.json';
@@ -13,7 +14,7 @@ const Nav = ({ setIsDarkTheme }) => {
     <nav
       className={`nav ${hasScrolled ? 'scrolled' : ''}`}
     >
-      <DynamicLink to="/" className="nav__logo">
+      <DynamicLink to="/  " className="nav__logo">
         <LogoIcon />
       </DynamicLink>
       <ul className="nav__list">
@@ -33,6 +34,18 @@ const Nav = ({ setIsDarkTheme }) => {
       >
         <LightDarkModeToggle />
       </div>
+      <ul className="social-links">
+          {SocialLinks.map((item, index) => {
+            return (
+              <li key={`social-link-${index}`}>
+                <DynamicLink to={item.link} className="nav__social-link">
+                  <i className={`mdi mdi-36px ${item.iconClass}`} />
+                </DynamicLink>
+              </li>
+            );
+          })}
+      </ul>
+        
     </nav>
   );
 };
