@@ -1,27 +1,30 @@
 import React, { useState } from 'react';
 import SecondaryCta from '../secondary-cta';
 import TeamPicture from '../../images/team-2022/team-picture.jpeg'
+import CariPicture from '../../images/team-2022/Cari.jpeg'
+import SamaPicture from '../../images/team-2022/Sama.jpeg'
+
 
 const smallTeamInfo = [
     {
         teamName: "Leadership",
-        teamPictures: [<img className='team__team-member-portrait' src={'../../images/team-2022/Cari.JPG'} />]
+        teamMembers: [{name: "Cari Liu", picture: CariPicture, description: "President" } ]
     },
     {
         teamName: "Design",
-        teamPictures: []
+        teamMembers: []
     },
     {
         teamName: "Tech",
-        teamPictures: []
+        teamMembers: []
     },
     {
         teamName: "Social/Outreach",
-        teamPictures: []
+        teamMembers: []
     },
     {
         teamName: "Sponsorship",
-        teamPictures: []
+        teamMembers: []
     }
 ]
 
@@ -73,13 +76,24 @@ const RenderSmallTeamButtons = (setSmallTeamClicked) => {
 const RenderTeamClicked = (smallTeam) => {
     return (
         //className='team__team-member-portrait'
-        <img src={'../../images/team-2022/Cari.JPG'} />
+        // <img className='team__picture' src={TeamPicture} />
+        <img className='team__team-member-portrait' src={CariPicture} />
     );
     // return (
     //     smallTeam.teamPictures.map(picture => <div>
     //         picture
     //     </div>)
     // );
+}
+
+const RenderIndividaulTeamMember = (memberPicture, memberName, memberDescription) => {
+    return (
+        <div>
+            <img className='team__team-member-portrait' src={memberPicture} />
+            <div>{memberName}</div>
+            <div>{memberDescription}</div>
+        </div>
+    );
 }
 
 export default Team;
