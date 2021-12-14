@@ -415,7 +415,28 @@
 // ---------------------------------------------------------------------------
 .team__container {
   height: 1000px;
-  @media (min-width: $lg) {
+
+  @media (max-width: 599px) {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  // @media (min-width: $lg) and () {
+
+  @media (min-width: $sm) {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $md) {
     max-width: 720px;
     width: 100%;
     padding-right: 15px;
