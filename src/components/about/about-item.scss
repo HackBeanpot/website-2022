@@ -12,7 +12,6 @@
 
 .about-item-img {
   object-fit: cover;
-  filter: drop-shadow(0px 0px 20px rgba(217, 168, 255, 0.5));
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -42,4 +41,12 @@
     width: 350px;
     height: 350px;
   }
+}
+
+.img-normal {
+  filter: drop-shadow(0px 0px 20px rgba(217, 168, 255, 0.5));
+}
+
+.img-hover {
+  filter: drop-shadow(0px 0px 35px rgba(217, 168, 255, 0.5));
 }
