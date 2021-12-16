@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const AboutItem = ({ img, title, description }) => {
   return (
