@@ -14,9 +14,11 @@ const Sponsors2022 = () => (
         <h1 className = "sponsorship__title">
           2022 Sponsors
         </h1>
-        <SecondaryCta textDescription = "Galaxy Level" />
-        <SecondaryCta textDescription = "Nebulae Level" />
-        <SecondaryCta textDescription = "Planetary Level" />
+        <div className = "sponsorship_labels">
+          <SecondaryCta textDescription = "Galaxy Level" />
+          <SecondaryCta textDescription = "Nebulae Level" />
+          <SecondaryCta textDescription = "Planetary Level" />
+        </div>
       </div>
       <div className= "sponsorship__cta_group">
         <p class = "sponsorship__cta_label">

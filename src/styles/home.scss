@@ -289,9 +289,9 @@
     width: 100%;
   }
 
-  .sponsorship_content {
+  .sponsorship__content {
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 
   .sponsorship__title {
@@ -303,11 +303,21 @@
     width: 100%;
     margin-top: 100px;
   }
+  
+  .sponsorship_labels {
+    text-align: center;
+    width: 100%;
+  }
+  .secondary__cta {
+    @include secondary_cta;
+    margin-top: 10px;
+  }
 
   .sponsorship__cta_group {
     text-align: center;
     width: 100%;
   }
+
 
   .sponsorship__cta_label {
     @include h2-text;
