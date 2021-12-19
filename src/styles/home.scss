@@ -47,10 +47,8 @@
   margin-top: 10px;
   width: 215px;
   height: 57px;
-  // @media (min-width: $xxl) {
-  //   width: 238px;
-  //   height: 57px;
-  // }
+  display: flex;
+  justify-content: center;
 }
 
 // ---------------------------------------------------------------------------
