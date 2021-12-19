@@ -19,7 +19,6 @@ const Welcome = () => (
         link="https://apply.hackbeanpot.com"
         textDescription="Applications are now open"
       />
-      <SecondaryCta textDescription={"hello"} />
     </div>
     <SpaceJamMars />
     <SpaceJamSaturnOrbit />
