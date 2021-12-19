@@ -8,7 +8,7 @@ import SamaPicture from '../../images/team-2022/Sama.jpeg'
 const smallTeamInfo = [
     {
         teamName: "Leadership",
-        teamMembers: [{name: "Cari Liu", picture: CariPicture, description: "President" } ]
+        teamMembers: [{ name: "Cari Liu", picture: CariPicture, description: "President" }]
     },
     {
         teamName: "Design",
@@ -30,10 +30,7 @@ const smallTeamInfo = [
 
 
 const Team = () => {
-    const [smallTeamClicked, setSmallTeamClicked] = useState({
-        teamName: "Leadership",
-        teamPictures: [<img className='team__team-member-portrait' src={'../../images/team-2022/Cari.JPG'} />]
-    })
+    const [smallTeamClicked, setSmallTeamClicked] = useState(smallTeamInfo[0])
     return (
         <div className="team__container">
             <div className="team__content-wrapper">
@@ -74,24 +71,25 @@ const RenderSmallTeamButtons = (setSmallTeamClicked) => {
 
 // TODO: change RenderTeamClicked to render images of team
 const RenderTeamClicked = (smallTeam) => {
-    return (
-        //className='team__team-member-portrait'
-        // <img className='team__picture' src={TeamPicture} />
-        <img className='team__team-member-portrait' src={CariPicture} />
-    );
     // return (
-    //     smallTeam.teamPictures.map(picture => <div>
-    //         picture
-    //     </div>)
+    //     //className='team__team-member-portrait'
+    //     // <img className='team__picture' src={TeamPicture} />
+    //     <img className='team__team-member-portrait' src={CariPicture} />
     // );
+    return (
+        smallTeam.teamMembers.map(teamMember =>
+            RenderIndividaulTeamMember(teamMember.picture, teamMember.name, teamMember.description))
+    );
 }
 
 const RenderIndividaulTeamMember = (memberPicture, memberName, memberDescription) => {
     return (
         <div>
-            <img className='team__team-member-portrait' src={memberPicture} />
-            <div>{memberName}</div>
-            <div>{memberDescription}</div>
+            <div>
+                <img className='team__team-member-portrait' src={memberPicture} />
+                <div>{memberName}</div>
+                <div>{memberDescription}</div>
+            </div>
         </div>
     );
 }

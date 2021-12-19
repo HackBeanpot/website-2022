@@ -498,9 +498,13 @@
   justify-content: space-between;
 }
 
-// .team__small-team-clicked {
-//   display: flex-end;
-// }
+.team__small-team-clicked {
+  // margin-top: 0px;
+  // align-content: flex-end;
+  // flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+}
 
 // Individual team member picture
 .team__team-member-portrait {
