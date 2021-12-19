@@ -45,12 +45,8 @@
 .secondary__cta {
   @include secondary-cta;
   margin-top: 10px;
-  width: 238px;
+  width: 215px;
   height: 57px;
-  // @media (min-width: $xxl) {
-  //   width: 238px;
-  //   height: 57px;
-  // }
 }
 
 // ---------------------------------------------------------------------------
