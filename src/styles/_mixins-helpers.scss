@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------
 
 @mixin primary-cta {
-  @include body-text; 
+  @include body-text;
   @include drop-shadow;
   background-color: #4366e1;
   padding: 12px 35px;
@@ -27,7 +27,7 @@
   @include body-text;
   font-weight: 700;
   padding: 12px 35px;
-  border: 3px $hbp-navy solid;
+  border: 3px solid #a0b2ef;
   border-radius: 50px;
   transition: background-color 0.2s ease;
 

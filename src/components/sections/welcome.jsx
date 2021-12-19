@@ -5,6 +5,7 @@ import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit';
 import SpaceJamEarth from '../../images/svg-2022/space-jam-earth';
 import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune';
 import PrimaryCta from '../primary-cta';
+import SecondaryCta from '../secondary-cta';
 
 const Welcome = () => (
   <div className="header__container">
@@ -18,6 +19,7 @@ const Welcome = () => (
         link="https://apply.hackbeanpot.com"
         textDescription="Applications are now open"
       />
+      <SecondaryCta textDescription={"hello"} />
     </div>
     <SpaceJamMars />
     <SpaceJamSaturnOrbit />
