@@ -77,6 +77,43 @@ const smallTeamInfo = [
     }
 ];
 
+// Render clickable buttons to render each small team
+const RenderSmallTeamButtons = setSmallTeamClicked => {
+    return smallTeamInfo.map(smallTeam => (
+        <div className="team__small-teams-single-button" onClick={() => setSmallTeamClicked(smallTeam)}>
+            <SecondaryCta textDescription={smallTeam.teamName} />
+        </div >
+    ));
+};
+
+// Renders current team clicked (if no team has been clicked leadership is shown by default)
+const RenderTeamClicked = smallTeam => {
+    return smallTeam.teamMembers.map(teamMember =>
+        RenderIndividaulTeamMember(
+            teamMember.picture,
+            teamMember.name,
+            teamMember.description
+        )
+    );
+};
+
+// Renders each individual team meber of the current team clicked (if no team has been clicked leadership is shown by default)
+const RenderIndividaulTeamMember = (
+    memberPicture,
+    memberName,
+    memberDescription
+) => {
+    return (
+        <div className="team__team-member-container">
+            <img className="team__team-member-portrait" src={memberPicture} />
+            {/* TODO change font size */}
+            {/* style={{ textAlign: 'center' }} */}
+            <div>{memberName}</div>
+            <div style={{ fontSize: '18px' }}>{memberDescription}</div>
+        </div>
+    );
+};
+
 const Team = () => {
     const [smallTeamClicked, setSmallTeamClicked] = useState(smallTeamInfo[0]);
     return (
@@ -104,41 +141,6 @@ const Team = () => {
                     {RenderTeamClicked(smallTeamClicked)}
                 </div>
             </div>
-        </div>
-        // </div>
-    );
-};
-
-const RenderSmallTeamButtons = setSmallTeamClicked => {
-    return smallTeamInfo.map(smallTeam => (
-        <div onClick={() => setSmallTeamClicked(smallTeam)}>
-            <SecondaryCta textDescription={smallTeam.teamName} />
-        </div>
-    ));
-};
-
-// TODO: change RenderTeamClicked to render images of team
-const RenderTeamClicked = smallTeam => {
-    return smallTeam.teamMembers.map(teamMember =>
-        RenderIndividaulTeamMember(
-            teamMember.picture,
-            teamMember.name,
-            teamMember.description
-        )
-    );
-};
-
-const RenderIndividaulTeamMember = (
-    memberPicture,
-    memberName,
-    memberDescription
-) => {
-    return (
-        <div className="team__team-member-container">
-            <img className="team__team-member-portrait" src={memberPicture} />
-            {/* TODO change font size */}
-            <div>{memberName}</div>
-            <div>{memberDescription}</div>
         </div>
     );
 };

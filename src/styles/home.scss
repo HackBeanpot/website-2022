@@ -494,9 +494,16 @@
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  @media (max-width: 1399px) {
+    justify-content: space-between;
+  }
 }
 
+.team__small-teams-single-button {
+  @media (min-width: 1400px) {
+    margin-right: 2%;
+  }
+}
 // Individual team member information which includes:
 // 1. picture
 // 2. name
@@ -505,12 +512,10 @@
   display: flex;
   flex-direction: column;
   margin-right: 3%;
+  align-items: center;
 }
 
 .team__small-team-clicked {
-  // margin-top: 0px;
-  // align-content: flex-end;
-  // flex-direction: row;
   display: flex;
   justify-content: flex-start;
 }
@@ -521,6 +526,7 @@
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 // ---------------------------------------------------------------------------
 // Animations
