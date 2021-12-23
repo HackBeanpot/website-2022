@@ -497,6 +497,16 @@
   justify-content: space-between;
 }
 
+// Individual team member information which includes:
+// 1. picture
+// 2. name
+// 3. title
+.team__team-member-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+}
+
 .team__small-team-clicked {
   // margin-top: 0px;
   // align-content: flex-end;
@@ -507,8 +517,8 @@
 
 // Individual team member picture
 .team__team-member-portrait {
-  max-width: 140px;
-  max-height: 140px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
 }
