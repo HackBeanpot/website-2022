@@ -270,27 +270,27 @@
   z-index: 0;
   @media (min-width: $xxs) {
     padding-top: 200px;
-    height: 2500px;
+    height: 2000px;
   }
   @media (min-width: $xs) {
-    height: 2400px;
+    height: 2000px;
   }
   @media (min-width: $sm) {
     padding-top: 100px;
-    height: 2000px;
+    height: 1750px;
   }
   @media (min-width: $md) {
     padding-top: 200px;
-    height: 2000px;
+    height: 1900px;
   }
   @media (min-width: $lg) {
-    height: 2150px;
+    height: 1900px;
   }
   @media (min-width: $xl) {
     height: 1800px;
   }
   @media (min-width: $xxl) {
-    height: 1700px;
+    height: 1600px;
   }
 }
 
@@ -419,6 +419,10 @@
 // ---------------------------------------------------------------------------
 .team__container {
   height: 800px;
+
+  @media (min-width: $xl) and (max-width: 1399px) {
+    height: 1000px;
+  }
 
   @media (min-width: $xxs) {
     width: 100%;

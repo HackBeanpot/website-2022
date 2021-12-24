@@ -109,8 +109,6 @@ const RenderIndividaulTeamMember = (
     return (
         <div className="team__team-member-container">
             <img className="team__team-member-portrait" src={memberPicture} />
-            {/* TODO change font size */}
-            {/* style={{ textAlign: 'center' }} */}
             <div>{memberName}</div>
             <div style={{ fontSize: '18px' }}>{memberDescription}</div>
         </div>
