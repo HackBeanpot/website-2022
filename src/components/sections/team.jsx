@@ -22,6 +22,8 @@ import CindyPicture from '../../images/team-2022/Cindy.jpeg';
 import KiminPicture from '../../images/team-2022/Kimin.jpeg';
 import LeviPicture from '../../images/team-2022/Levi.jpeg';
 import SreyaPicture from '../../images/team-2022/Sreya.jpeg';
+import DaniaPicture from '../../images/team-2022/Dania.jpeg';
+
 
 const smallTeamInfo = [
     {
@@ -53,7 +55,8 @@ const smallTeamInfo = [
             { name: 'Daniel Wang', picture: DanielPicture, description: '' },
             { name: 'Jamie Lin', picture: JamiePicture, description: '' },
             { name: 'Jess Su', picture: JessPicture, description: '' },
-            { name: 'Karen Li', picture: KarenPicture, description: '' }
+            { name: 'Karen Li', picture: KarenPicture, description: '' },
+            { name: 'Dania Alnahdi', picture: DaniaPicture, description: '' }
         ]
     },
     {

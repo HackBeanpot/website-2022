@@ -513,11 +513,13 @@
   flex-direction: column;
   margin-right: 3%;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .team__small-team-clicked {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 // Individual team member picture
@@ -526,7 +528,7 @@
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 // ---------------------------------------------------------------------------
 // Animations
