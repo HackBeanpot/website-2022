@@ -20,8 +20,8 @@ const App = () => {
         <CovidPrecautions />
         <Testimonials />
         <FAQ />
-        <LaunchSequence />
         <Team />
+        <LaunchSequence />
         {/* <Sponsors2021 /> */}
       </div>
     </Layout>
