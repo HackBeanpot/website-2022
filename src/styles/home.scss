@@ -420,6 +420,10 @@
 .team__container {
   height: 800px;
 
+  @media (max-width: $xxs) {
+    padding: 0px 15px;
+  }
+
   @media (min-width: $xl) and (max-width: 1399px) {
     height: 1000px;
   }
