@@ -84,8 +84,10 @@ const smallTeamInfo = [
 const RenderSmallTeamButtons = setSmallTeamClicked => {
     return smallTeamInfo.map(smallTeam => (
         <div className="team__small-teams-single-button" onClick={() => setSmallTeamClicked(smallTeam)}>
-            <SecondaryCta textDescription={smallTeam.teamName} />
-        </div >
+            <div style={{ cursor: 'pointer' }}>
+                <SecondaryCta textDescription={smallTeam.teamName} />
+            </div>
+        </div>
     ));
 };
 
