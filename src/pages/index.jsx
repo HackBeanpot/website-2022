@@ -8,6 +8,7 @@ import Sponsors2021 from 'components/sponsors-2021';
 import CovidPrecautions from '../components/sections/covid-precautions';
 import LaunchSequence from '../components/sections/launch-sequence';
 import Testimonials from '../components/sections/testimonials';
+import Team from '../components/sections/team';
 
 const App = () => {
   return (
@@ -19,8 +20,8 @@ const App = () => {
         <CovidPrecautions />
         <Testimonials />
         <FAQ />
+        <Team />
         <LaunchSequence />
-
         {/* <Sponsors2021 /> */}
       </div>
     </Layout>

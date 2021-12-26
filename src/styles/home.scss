@@ -270,27 +270,27 @@
   z-index: 0;
   @media (min-width: $xxs) {
     padding-top: 200px;
-    height: 2500px;
+    height: 2000px;
   }
   @media (min-width: $xs) {
-    height: 2400px;
+    height: 2000px;
   }
   @media (min-width: $sm) {
     padding-top: 100px;
-    height: 2000px;
+    height: 1750px;
   }
   @media (min-width: $md) {
     padding-top: 200px;
-    height: 2000px;
+    height: 1900px;
   }
   @media (min-width: $lg) {
-    height: 2150px;
+    height: 1900px;
   }
   @media (min-width: $xl) {
-    height: 2000px;
+    height: 1800px;
   }
   @media (min-width: $xxl) {
-    height: 1800px;
+    height: 1600px;
   }
 }
 
@@ -414,6 +414,130 @@
   }
 }
 
+// ---------------------------------------------------------------------------
+// Team
+// ---------------------------------------------------------------------------
+.team__container {
+  height: 800px;
+
+  @media (max-width: $xxs) {
+    padding: 0px 15px;
+  }
+
+  @media (min-width: $xl) and (max-width: 1399px) {
+    height: 1000px;
+  }
+
+  @media (min-width: $xxs) {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $xxl) {
+    max-width: 1340px;
+  }
+}
+
+.team__content-wrapper {
+  display: flex;
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.team__content {
+  width: 100%;
+  margin-right: 50px;
+  @media (min-width: $xxl) {
+    margin-right: 20px;
+  }
+}
+
+.team__header {
+  @include h4-text;
+  color: $pale-yellow !important;
+}
+
+.team__space-jam {
+  @include h1-text;
+}
+
+.team__description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.team__picture {
+  max-width: 620px;
+  width: 100%;
+  max-height: 370px;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 20px rgba(160, 178, 239, 0.25));
+  border-radius: 23px;
+}
+
+.team__small-teams {
+  @media (max-width: 1199px) {
+    display: None;
+  }
+}
+
+.team__small-teams-buttons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  @media (max-width: 1399px) {
+    justify-content: space-between;
+  }
+}
+
+.team__small-teams-single-button {
+  @media (min-width: 1400px) {
+    margin-right: 2%;
+  }
+}
+// Individual team member information which includes:
+// 1. picture
+// 2. name
+// 3. title
+.team__team-member-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.team__small-team-clicked {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+// Individual team member picture
+.team__team-member-portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 // ---------------------------------------------------------------------------
 // Animations
 // ---------------------------------------------------------------------------
