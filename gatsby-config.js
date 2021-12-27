@@ -25,5 +25,24 @@ module.exports = {
           endpoint: "https://hackbeanpot.us10.list-manage.com/subscribe/post?u=a98050d47fdae2481521f0474&amp;id=dccd8c8431", // string; add your MC list endpoint here; see instructions below
       },
     },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          transformOptions: {
+            fit: "cover",
+            cropFocus: "centre",
+          }
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    }
   ]
 };

@@ -56,6 +56,7 @@
 // ---------------------------------------------------------------------------
 
 .theme-announcement {
+  position: relative;
   height: 1000px;
   @media (min-width: $lg) {
     height: 830px;
@@ -159,6 +160,7 @@
 }
 
 .covid__container {
+  position: relative;
   height: 1600px;
   @media (min-width: $xxs) {
     height: 1300px;
@@ -265,6 +267,7 @@
 // ---------------------------------------------------------------------------
 
 .faq {
+  position: relative;
   height: 2800px;
   padding-top: 400px;
   z-index: 0;
@@ -418,14 +421,8 @@
 // Team
 // ---------------------------------------------------------------------------
 .team__container {
-  height: 800px;
-
   @media (max-width: $xxs) {
-    padding: 0px 15px;
-  }
-
-  @media (min-width: $xl) and (max-width: 1399px) {
-    height: 1000px;
+    padding: 0 15px;
   }
 
   @media (min-width: $xxs) {
@@ -531,7 +528,7 @@
 }
 
 // Individual team member picture
-.team__team-member-portrait {
+.team__member-picture {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -558,5 +555,6 @@
 // Other
 
 .home {
+  position: relative;
   overflow-x: hidden;
 }
