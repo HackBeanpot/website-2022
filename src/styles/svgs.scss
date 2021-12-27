@@ -70,6 +70,7 @@
   right: 200px;
   top: -80px;
   width: 2.5em;
+  height: 90px;
   display: none;
   @media (min-width: $sm) {
     width: 3em;
@@ -88,6 +89,7 @@
   right: -100px;
   top: -200px;
   width: 14em;
+  height: 494px;
   @media (min-width: $sm) {
     top: -180px;
     width: 18em;
@@ -204,6 +206,7 @@
 .contact-moon-faded {
   position: absolute;
   width: 3.5em;
+  height: 106px;
   display: none;
   @media (min-width: $sm) {
     right: 200px;
