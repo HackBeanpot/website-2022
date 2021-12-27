@@ -4,7 +4,6 @@ import Footer from '../components/footer';
 import Nav from '../components/nav';
 import NavMobile from '../components/nav-mobile';
 import favicon from '../pages/favicon.png';
-import '../../node_modules/@mdi/font/css/materialdesignicons.min.css';
 import 'styles/main.scss';
 
 // Shows the header and footer on every page

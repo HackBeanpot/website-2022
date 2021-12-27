@@ -5,7 +5,6 @@
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "prod": "gatsby serve",
   "dependencies": {
-    "@mdi/font": "^4.9.95",
     "flickity": "^2.2.1",
     "gatsby": "^4.4.0",
     "gatsby-plugin-google-analytics": "^4.4.0",
@@ -16,7 +15,6 @@
     "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-plugin-sitemap": "^5.4.0",
     "gatsby-source-filesystem": "^4.4.0",
-    "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-countdown": "^2.3.2",
@@ -46,6 +44,7 @@
     "bootstrap": "^4.5.3",
     "gatsby-plugin-sass": "^5.4.0",
     "prettier": "^1.18.2",
-    "resolve-url-loader": "^3.1.2"
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.45.1"
   }
 }

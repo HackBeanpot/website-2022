@@ -17,7 +17,7 @@ const LaunchSequence = () => (
   <div className="container ">
     <div id="launch-sequence" className="launch__sequence">
       <div className="launch__content">
-        <a className="launch__header">2022 Applications Close In</a>
+        <div className="launch__header">2022 Applications Close In</div>
         <h1 className="launch__countdown">
           <Countdown date={Date.now() + diff} 
           renderer = {time}

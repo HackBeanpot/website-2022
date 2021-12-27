@@ -3,7 +3,7 @@ import { useScrollYPosition } from 'react-use-scroll-position';
 
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from '../data/nav-links.json';
-import LightDarkModeToggle from '../images/svg-2022/light-dark-mode-toggle';
+import LightDarkModeToggle from '../images/svg-2022/light-dark-mode-toggle.svg';
 import LogoIcon from '../images/svg-2022/logo-icon-white.jsx';
 
 const Nav = ({ setIsDarkTheme }) => {
@@ -27,12 +27,12 @@ const Nav = ({ setIsDarkTheme }) => {
           );
         })}
       </ul>
-      <div
+      <button
         className="light-dark-toggle"
         onClick={() => setIsDarkTheme(isDarkTheme => !isDarkTheme)}
       >
-        <LightDarkModeToggle />
-      </div>
+        <img src={LightDarkModeToggle} alt='light and dark mode toggle' />
+      </button>
     </nav>
   );
 };

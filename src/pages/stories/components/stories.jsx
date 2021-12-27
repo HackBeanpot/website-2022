@@ -19,22 +19,22 @@ class Stories extends React.Component {
 
       return (
         <div key={`stories-${index}`} style={{ width: '33%', bottom: bottom }}>
-          <div
+          <button
             className={
               (this.state.currentQuote === index
                 ? 'stories-circles__img-container selected '
                 : '') + 'stories-circles__img-container center'
             }
+            onClick={() => {
+              this.setState({ currentQuote: index });
+            }}
           >
             <img
               className="stories-circles__img"
               src={Quotes[index].imgSrc}
               alt={Quotes[index].attribution}
-              onClick={() => {
-                this.setState({ currentQuote: index });
-              }}
             />
-          </div>
+          </button>
         </div>
       );
     });

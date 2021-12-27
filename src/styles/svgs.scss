@@ -1,5 +1,6 @@
 .space-jam-title {
   width: 100%;
+  height: 257px;
 }
 
 .space-jam-saturn-orbit {
@@ -7,6 +8,7 @@
   right: -120px;
   width: 10em;
   top: -20px;
+  height: 430px;
   @media (min-width: $sm) {
     right: -70px;
   }
@@ -24,6 +26,7 @@
   position: absolute;
   top: 670px;
   display: none;
+  height: 141px;
   @media (min-width: $xl) {
     display: block;
     width: 22em;
@@ -35,6 +38,7 @@
   position: absolute;
   top: 120px;
   display: none;
+  height: 130px;
   @media (min-width: $xl) {
     display: block;
     width: 22em;
@@ -47,6 +51,7 @@
   top: 440px;
   left: -60px;
   width: 13em;
+  height: 371px;
   @media (min-width: $sm) {
     width: 20em;
     top: 470px;
@@ -65,6 +70,7 @@
   right: 200px;
   top: -80px;
   width: 2.5em;
+  height: 90px;
   display: none;
   @media (min-width: $sm) {
     width: 3em;
@@ -83,6 +89,7 @@
   right: -100px;
   top: -200px;
   width: 14em;
+  height: 494px;
   @media (min-width: $sm) {
     top: -180px;
     width: 18em;
@@ -97,6 +104,8 @@
 .covid-astronaut-purple {
   position: absolute;
   display: none;
+  height: 309px;
+  width: 466px;
   @media (min-width: $xl) {
     top: 110px;
     left: -200px;
@@ -113,6 +122,8 @@
   top: 380px;
   left: 40px;
   display: none;
+  width: 441px;
+  height: 493px;
   @media (min-width: $xl) {
     display: block;
   }
@@ -123,6 +134,8 @@
   left: -130px;
   top: 580px;
   display: none;
+  width: 129px;
+  height: 130px;
   @media (min-width: $xl) {
     display: block;
   }
@@ -133,12 +146,15 @@
 }
 
 .purple-plus-sign {
-  float: right;
+  height: 27px;
+  width: 27px;
 }
 
 .faq-mercury {
   position: absolute;
   display: none;
+  width: 132px;
+  height: 133px;
   @media (min-width: $md) {
     display: block;
     top: 150px;
@@ -165,14 +181,15 @@
     top: 1300px;
     right: -40px;
   }
-  
+
 }
 
 .contact-jupiter-faded {
   position: absolute;
   left: -40px;
   top: 1700px;
-  width: 6em;
+  width: 160px;
+  height: 148px;
   @media (min-width: $xxs) {
     top: 1500px;
   }
@@ -189,6 +206,7 @@
 .contact-moon-faded {
   position: absolute;
   width: 3.5em;
+  height: 106px;
   display: none;
   @media (min-width: $sm) {
     right: 200px;
@@ -214,6 +232,8 @@
 
 .testimonials-uranus-orbit {
   position: absolute;
+  width: 266px;
+  height: 256px;
   @media (min-width: $xxxl) {
     left: 450px;
   }
@@ -241,6 +261,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
   &--dim {
     padding: 11px;
   }

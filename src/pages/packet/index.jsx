@@ -10,7 +10,7 @@ import WhiteLogo from '../../images/svg/moon-logo.svg'
 import FooterArrow from '../../images/svg/packet-footer-arrow.svg'
 import '../../styles/main.scss';
 
-export default () => (
+const SponsorPacketPage = () => (
   <SponsorPacket />
 )
 
@@ -71,10 +71,10 @@ const PacketFooter = ({ build, engage, network, isMobile }) => {
               </div>
               <div className='send-selection-div'>
                 <div className='get-in-touch-text'>Let's get in touch!</div>
-                <div className='send-selection-button' onClick={openMailClient}>
+                <button className='send-selection-button' onClick={openMailClient}>
                   Send us your selection
                   {!isMobile && <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>}
-                </div>
+                </button>
               </div>
             </Card.Body>
           </Accordion.Collapse>
@@ -182,3 +182,4 @@ const SponsorPacket = () => {
   );
 }
 
+export default SponsorPacketPage;

@@ -1,13 +1,13 @@
 import React from 'react';
-import CovidAstronautPurple from '../../images/svg-2022/covid-astronaut-purple';
-import CovidAstronautRed from '../../images/svg-2022/covid-astronaut-red';
-import CovidEarth from '../../images/svg-2022/covid-earth';
+import CovidAstronautPurple from '../../images/svg-2022/covid-astronaut-purple.svg';
+import CovidAstronautRed from '../../images/svg-2022/covid-astronaut-red.svg';
+import CovidEarth from '../../images/svg-2022/covid-earth.svg';
 
 const CovidPrecautions = () => (
   <div className="container ">
     <div id="covid-safety" className="covid__container">
       <div className="covid__content">
-        <a className="covid__header">Covid Precautions</a>
+        <div className="covid__header">Covid Precautions</div>
         <h2 className="covid__space-jam">Safety First!</h2>
         <p className="covid__description">
           For the foreseeable future, HackBeanpot is planning to be an in-person
@@ -31,9 +31,9 @@ const CovidPrecautions = () => (
           we'd love to hear from you otherwise!
         </p>
       </div>
-      <CovidAstronautPurple />
-      <CovidAstronautRed />
-      <CovidEarth />
+      <img className="covid-astronaut-purple" src={CovidAstronautPurple} alt="a floating purple astronaut" />
+      <img className="covid-astronaut-red" src={CovidAstronautRed} alt={"a floating red astronaut"} />
+      <img className="covid-earth" src={CovidEarth} alt="earth" />
     </div>
   </div>
 );

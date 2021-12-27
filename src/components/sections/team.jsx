@@ -88,7 +88,7 @@ const Team = () => {
     <div className='team__container'>
       <div className='team__content-wrapper'>
         <div className='team__content'>
-          <a className='theme__header'>OUR TEAM</a>
+          <div className='theme__header'>OUR TEAM</div>
           <h2 className='team__space-jam'>
             Meet this years captains behind HackBeanpot!
           </h2>
@@ -116,17 +116,17 @@ const Team = () => {
 // Render clickable buttons to render each small team
 const SmallTeamButtons = ({ setSmallTeamClicked }) => {
   return smallTeamInfo.map(smallTeam => (
-    <div className='team__small-teams-single-button' onClick={() => setSmallTeamClicked(smallTeam)}>
+    <button key={smallTeam.teamName} className='team__small-teams-single-button' onClick={() => setSmallTeamClicked(smallTeam)}>
       <div style={{ cursor: 'pointer' }}>
         <SecondaryCta textDescription={smallTeam.teamName} />
       </div>
-    </div>
+    </button>
   ));
 };
 
 // Renders current team clicked (if no team has been clicked leadership is shown by default)
 const SmallTeam = ({ smallTeam }) => {
-  return smallTeam.teamMembers.map(teamMember => <TeamMember teamMember={teamMember} />);
+  return smallTeam.teamMembers.map(teamMember => <TeamMember key={teamMember.name} teamMember={teamMember} />);
 };
 
 // Renders each individual team meber of the current team clicked (if no team has been clicked leadership is shown by default)

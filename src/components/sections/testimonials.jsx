@@ -76,7 +76,7 @@ const Testimonials = () => {
         </p>
         <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
       </div>
-      <img className="testimonials-item-img" src={UranusOrbit} alt='uranus orbit' />
+      <img className="testimonials-uranus-orbit" src={UranusOrbit} alt='uranus orbit' />
     </section>
   );
 };
@@ -87,9 +87,9 @@ const TestimonialsPlanet = ({ testimonial, selected, setSelected }) => {
       <TestimonialsPlanetBright type={testimonial.type} />
     </div>
   }
-  return <div onClick={() => setSelected(testimonial)} className="testimonials__planet--dim">
+  return <button onClick={() => setSelected(testimonial)} className="testimonials__planet--dim">
     <TestimonialsPlanetDim type={testimonial.type} />
-  </div>
+  </button>
 }
 
 const TestimonialsPlanetBright = ({ type }) => {
