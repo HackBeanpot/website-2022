@@ -4,9 +4,9 @@ import PrimaryCta from '../primary-cta';
 
 // create a date using JSON format so that we are compatible with most platforms
 // to update, paste and edit the following in your browser:
-// JSON.stringify(new Date("Thu Jan 14 2021 20:59:59 GMT-0800 (Pacific Standard Time)"))
-const applicationCloseDate = new Date("2021-01-15T04:59:59.000Z").getTime();
-let today = Date.now();
+// JSON.stringify(new Date('1/14/2022 23:59:59 GMT-0500 (Easter Daylight Time)'))
+const applicationCloseDate = new Date('2022-01-15T04:59:59.000Z').getTime();
+const today = (new Date()).getTime();
 const diff = applicationCloseDate - today;
 
 const time = ({days, hours, minutes, seconds}) => {
