@@ -2,7 +2,10 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import PrimaryCta from '../primary-cta';
 
-const applicationCloseDate = new Date('1/14/2021 23:59:59 GMT-0500 (Eastern Daylight Time)').getTime();
+// create a date using JSON format so that we are compatible with most platforms
+// to update, paste and edit the following in your browser:
+// JSON.stringify(new Date("Thu Jan 14 2021 20:59:59 GMT-0800 (Pacific Standard Time)"))
+const applicationCloseDate = new Date("2021-01-15T04:59:59.000Z").getTime();
 let today = Date.now();
 const diff = applicationCloseDate - today;
 
