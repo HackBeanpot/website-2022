@@ -2,14 +2,13 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import PrimaryCta from '../primary-cta';
 
-const hbpStartDate = new Date('12/31/2021, 23:59:59').getTime();
-let today = new Date();
-today = Date.now();
-const diff = hbpStartDate - today;
+const applicationCloseDate = new Date('1/14/2021 23:59:59 GMT-0500 (Eastern Daylight Time)').getTime();
+let today = Date.now();
+const diff = applicationCloseDate - today;
 
 const time = ({days, hours, minutes, seconds}) => {
 
-  return <span> {days} : {hours.toString().padStart(2, 0)} : {minutes.toString().padStart(2, 0)} : {seconds.toString().padStart(2, 0)} </span>;
+  return <span> {days} : {hours.toString().padStart(2, '0')} : {minutes.toString().padStart(2, '0')} : {seconds.toString().padStart(2, '0')} </span>;
 }
 const LaunchSequence = () => (
   <div className="container ">
