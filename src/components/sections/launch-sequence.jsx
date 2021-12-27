@@ -2,14 +2,16 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import PrimaryCta from '../primary-cta';
 
-const hbpStartDate = new Date('12/31/2021, 23:59:59').getTime();
-let today = new Date();
-today = Date.now();
-const diff = hbpStartDate - today;
+// create a date using JSON format so that we are compatible with most platforms
+// to update, paste and edit the following in your browser:
+// JSON.stringify(new Date('1/14/2022 23:59:59 GMT-0500 (Easter Daylight Time)'))
+const applicationCloseDate = new Date('2022-01-15T04:59:59.000Z').getTime();
+const today = (new Date()).getTime();
+const diff = applicationCloseDate - today;
 
 const time = ({days, hours, minutes, seconds}) => {
 
-  return <span> {days} : {hours.toString().padStart(2, 0)} : {minutes.toString().padStart(2, 0)} : {seconds.toString().padStart(2, 0)} </span>;
+  return <span> {days} : {hours.toString().padStart(2, '0')} : {minutes.toString().padStart(2, '0')} : {seconds.toString().padStart(2, '0')} </span>;
 }
 const LaunchSequence = () => (
   <div className="container ">
