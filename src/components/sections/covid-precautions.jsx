@@ -7,7 +7,7 @@ const CovidPrecautions = () => (
   <div className="container ">
     <div id="covid-safety" className="covid__container">
       <div className="covid__content">
-        <a className="covid__header">Covid Precautions</a>
+        <div className="covid__header">Covid Precautions</div>
         <h2 className="covid__space-jam">Safety First!</h2>
         <p className="covid__description">
           For the foreseeable future, HackBeanpot is planning to be an in-person

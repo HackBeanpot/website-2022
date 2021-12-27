@@ -6,7 +6,7 @@ import TeamNameLeaf from 'images/svg/team-name-leaf.jsx';
 import TeamLeafPattern from 'images/svg/team-leaf-pattern.jsx';
 import TeamBadgeLeaf from 'images/svg/team-badge-leaf.jsx';
 
-export default () => (
+const TeamPage = () => (
   <Layout>
     <Team />
   </Layout>
@@ -315,3 +315,5 @@ const Team = () => {
     </div>
   );
 };
+
+export default TeamPage;

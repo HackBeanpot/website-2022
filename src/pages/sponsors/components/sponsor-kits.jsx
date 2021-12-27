@@ -1,17 +1,9 @@
 import React from 'react';
-import Flickity from 'react-flickity-component';
 
 import KitContent from 'data/sponsor-kit-content.json';
 import EngagementIcon from 'images/svg/engagement-icon';
 import InnovationIcon from 'images/svg/innovation-icon';
 import RecruitmentIcon from 'images/svg/recruitment-icon';
-
-const flickityOptions = {
-  wrapAround: false,
-  prevNextButtons: true,
-  pageDots: true,
-  adaptiveHeight: true
-};
 
 const Kit = props => {
   let icon;
@@ -34,19 +26,19 @@ const Kit = props => {
   );
 };
 
-const SponsorKitsMobile = () => {
-  if (typeof window !== 'undefined') {
-    return (
-      <Flickity className={'sponsor-kits-carousel'} options={flickityOptions}>
-        {KitContent.map((content, index) => (
-          <Kit key={`sponsor-kit-${index}`} content={content} />
-        ))}
-      </Flickity>
-    );
-  } else {
-    return null;
-  }
-};
+// const SponsorKitsMobile = () => {
+//   if (typeof window !== 'undefined') {
+//     return (
+//       <Flickity className={'sponsor-kits-carousel'} options={flickityOptions}>
+//         {KitContent.map((content, index) => (
+//           <Kit key={`sponsor-kit-${index}`} content={content} />
+//         ))}
+//       </Flickity>
+//     );
+//   } else {
+//     return null;
+//   }
+// };
 
 const SponsorKits = () => {
   return (

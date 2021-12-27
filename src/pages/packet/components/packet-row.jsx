@@ -25,9 +25,9 @@ const PackageRow = ({ trail, build, engage, network, removeOptionChecked, setTra
             <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
             {`Select your ${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
           </div>
-          <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
+          <button className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
             Clear selection
-          </div>
+          </button>
         </div>
         <div className={`${trail}-row`}> { row } </div>
       </div>

@@ -87,9 +87,9 @@ const TestimonialsPlanet = ({ testimonial, selected, setSelected }) => {
       <TestimonialsPlanetBright type={testimonial.type} />
     </div>
   }
-  return <div onClick={() => setSelected(testimonial)} className="testimonials__planet--dim">
+  return <button onClick={() => setSelected(testimonial)} className="testimonials__planet--dim">
     <TestimonialsPlanetDim type={testimonial.type} />
-  </div>
+  </button>
 }
 
 const TestimonialsPlanetBright = ({ type }) => {

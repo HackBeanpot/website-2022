@@ -8,6 +8,10 @@
     @include h3-text;
     margin-bottom: 40px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
   
   .faq-item__answer {

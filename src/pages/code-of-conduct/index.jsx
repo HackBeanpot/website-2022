@@ -3,7 +3,7 @@ import Layout from '../../components/layout';
 
 import BasicLeaf from 'images/svg/basic-leaf';
 
-export default () => (
+const CodeOfConductPage = () => (
   <Layout>
     <CodeOfConduct />
   </Layout>
@@ -64,3 +64,5 @@ const CodeOfConduct = () => (
     </div>
   </div>
 );
+
+export default CodeOfConductPage;

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import DynamicLink from 'components/dynamic-link';
 
-export default () => (
+const FourOhFour = () => (
   <Layout>
     <NotFoundPage />
   </Layout>
@@ -19,3 +19,5 @@ const NotFoundPage = () => (
     </DynamicLink>
   </div>
 );
+
+export default FourOhFour;

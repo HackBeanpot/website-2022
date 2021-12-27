@@ -8,7 +8,7 @@ const ThemeAnnouncement = () => (
     <div className="container">
       <div className="theme__content-wrapper">
         <div className="theme__content">
-          <a className="theme__header">Blast off!</a>
+          <div className="theme__header">Blast off!</div>
           <h2 className="theme__space-jam">
             Explore the stars with us at <br /> our 10th annual event!
           </h2>

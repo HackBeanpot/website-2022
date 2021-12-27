@@ -6,7 +6,7 @@ import Sponsors2021 from 'components/sponsors-2021';
 import SponsorshipVines from 'images/svg/sponsorship-vines';
 import SponsorsLeafPattern from 'images/sponsors-leaf-pattern.png';
 
-export default () => (
+const Sponsors = () => (
   <Layout>
     <SponsorsPage />
   </Layout>
@@ -94,3 +94,5 @@ class SponsorsPage extends React.Component {
     );
   }
 }
+
+export default Sponsors;

@@ -7,7 +7,7 @@ import DynamicLink from '../../components/dynamic-link';
 
 import StoriesPattern from 'images/stories-leaf-pattern.png';
 
-export default () => (
+const StoriesExport = () => (
   <Layout>
     <StoriesPage />
   </Layout>
@@ -75,3 +75,5 @@ const StoriesPage = () => {
     </div>
   );
 };
+
+export default StoriesExport;
