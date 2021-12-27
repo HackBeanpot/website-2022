@@ -37,6 +37,11 @@
   }
 }
 
+.cta-rocketship {
+  height: 24px;
+  width: 24px;
+}
+
 .header__cta {
   @include primary-cta;
   margin-top: 10px;

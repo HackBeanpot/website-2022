@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CtaRocketship from '../images/svg-2022/cta-rocketship';
+import CtaRocketship from '../images/svg-2022/cta-rocketship.svg';
 
 const PrimaryCta = ({ link, textDescription }) => {
     const [isClicked, setIsClicked] = useState(false);
@@ -26,7 +26,7 @@ const PrimaryCta = ({ link, textDescription }) => {
                 <button onClick={onClick} 
                     className = "launch-button"
                 >
-                    {ctaText} <CtaRocketship />
+                    {ctaText} <img className="cta-rocketship" src={CtaRocketship} alt="a small rocketship" />
                     </button>
                 
             </div>
@@ -40,7 +40,7 @@ const PrimaryCta = ({ link, textDescription }) => {
         target="_blank"
         rel="noopener noreferrer"
     >
-        {textDescription} <CtaRocketship />
+        {textDescription} <img className="cta-rocketship" src={CtaRocketship} alt="a small rocketship" />
     </a>
     }
 };

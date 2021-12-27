@@ -1,5 +1,6 @@
 .space-jam-title {
   width: 100%;
+  height: 257px;
 }
 
 .space-jam-saturn-orbit {
@@ -7,6 +8,7 @@
   right: -120px;
   width: 10em;
   top: -20px;
+  height: 430px;
   @media (min-width: $sm) {
     right: -70px;
   }
@@ -24,6 +26,7 @@
   position: absolute;
   top: 670px;
   display: none;
+  height: 141px;
   @media (min-width: $xl) {
     display: block;
     width: 22em;
@@ -35,6 +38,7 @@
   position: absolute;
   top: 120px;
   display: none;
+  height: 130px;
   @media (min-width: $xl) {
     display: block;
     width: 22em;
@@ -47,6 +51,7 @@
   top: 440px;
   left: -60px;
   width: 13em;
+  height: 371px;
   @media (min-width: $sm) {
     width: 20em;
     top: 470px;
@@ -165,7 +170,7 @@
     top: 1300px;
     right: -40px;
   }
-  
+
 }
 
 .contact-jupiter-faded {
