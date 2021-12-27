@@ -56,6 +56,7 @@
 // ---------------------------------------------------------------------------
 
 .theme-announcement {
+  position: relative;
   height: 1000px;
   @media (min-width: $lg) {
     height: 830px;
@@ -159,6 +160,7 @@
 }
 
 .covid__container {
+  position: relative;
   height: 1600px;
   @media (min-width: $xxs) {
     height: 1300px;
@@ -265,6 +267,7 @@
 // ---------------------------------------------------------------------------
 
 .faq {
+  position: relative;
   height: 2800px;
   padding-top: 400px;
   z-index: 0;
