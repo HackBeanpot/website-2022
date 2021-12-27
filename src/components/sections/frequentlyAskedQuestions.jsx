@@ -1,10 +1,10 @@
 import React from 'react';
 import PrimaryCta from '../primary-cta';
 import FrequentlyAskedQuestionsItems from 'components/faqItems/faq-items';
-import FaqMercury from '../../images/svg-2022/faq-mercury';
-import ContactAstronaut from '../../images/svg-2022/contact-astronaut';
-import ContactJupiterFaded from '../../images/svg-2022/contact-jupiter-faded';
-import ContactMoonFaded from '../../images/svg-2022/contact-moon-faded';
+import FaqMercury from '../../images/svg-2022/faq-mercury.svg';
+import ContactAstronaut from '../../images/svg-2022/contact-astronaut.svg';
+import ContactJupiterFaded from '../../images/svg-2022/contact-jupiter-faded.svg';
+import ContactMoonFaded from '../../images/svg-2022/contact-moon-faded.svg';
 
 const FrequentlyAskedQuestions = () => (
     <section id="faq" className="faq">
@@ -16,10 +16,10 @@ const FrequentlyAskedQuestions = () => (
                 <PrimaryCta link="mailto:team@hackbeanpot.com" textDescription="Contact us" />
             </div>
         </div>
-        <FaqMercury />
-        <ContactAstronaut />
-        <ContactJupiterFaded />
-        <ContactMoonFaded />
+        <img className="faq-mercury" src={FaqMercury} alt="planet mercury" />
+        <img className="contact-astronaut" src={ContactAstronaut} alt="floating astronaut" />
+        <img className="contact-jupiter-faded" src={ContactJupiterFaded} alt="planet jupiter, but a bit faded" />
+        <img className="contact-moon-faded" src={ContactMoonFaded} alt="the moon, but a bit faded" />
     </section>
 );
 

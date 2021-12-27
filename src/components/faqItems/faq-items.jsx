@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import FAQs from 'data/faqs.json';
 import FAQItem from '../faqItem/faq-item';
 
-const FAQItems = props => {
+const FAQItems = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
-  const firstColumn = FAQs.slice(0,6).map((FAQ, index) => [
+  const firstColumn = FAQs.slice(0,6).map((FAQ) => [
     <FAQItem
+      key={FAQ.question}
       question={FAQ.question}
       answer={FAQ.answer}
       selectedQuestion={selectedQuestion}
@@ -13,8 +14,9 @@ const FAQItems = props => {
     />
   ]);
 
-  const secondColumn = FAQs.slice(6, FAQs.length).map((FAQ, index) => [
+  const secondColumn = FAQs.slice(6, FAQs.length).map((FAQ) => [
     <FAQItem
+      key={FAQ.question}
       question={FAQ.question}
       answer={FAQ.answer}
       selectedQuestion={selectedQuestion}

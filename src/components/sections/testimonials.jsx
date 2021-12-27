@@ -76,7 +76,7 @@ const Testimonials = () => {
         </p>
         <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
       </div>
-      <img className="testimonials-item-img" src={UranusOrbit} alt='uranus orbit' />
+      <img className="testimonials-uranus-orbit" src={UranusOrbit} alt='uranus orbit' />
     </section>
   );
 };

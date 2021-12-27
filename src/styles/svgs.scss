@@ -102,6 +102,8 @@
 .covid-astronaut-purple {
   position: absolute;
   display: none;
+  height: 309px;
+  width: 466px;
   @media (min-width: $xl) {
     top: 110px;
     left: -200px;
@@ -118,6 +120,8 @@
   top: 380px;
   left: 40px;
   display: none;
+  width: 441px;
+  height: 493px;
   @media (min-width: $xl) {
     display: block;
   }
@@ -128,6 +132,8 @@
   left: -130px;
   top: 580px;
   display: none;
+  width: 129px;
+  height: 130px;
   @media (min-width: $xl) {
     display: block;
   }
@@ -138,12 +144,15 @@
 }
 
 .purple-plus-sign {
-  float: right;
+  height: 27px;
+  width: 27px;
 }
 
 .faq-mercury {
   position: absolute;
   display: none;
+  width: 132px;
+  height: 133px;
   @media (min-width: $md) {
     display: block;
     top: 150px;
@@ -177,7 +186,8 @@
   position: absolute;
   left: -40px;
   top: 1700px;
-  width: 6em;
+  width: 160px;
+  height: 148px;
   @media (min-width: $xxs) {
     top: 1500px;
   }
@@ -219,6 +229,8 @@
 
 .testimonials-uranus-orbit {
   position: absolute;
+  width: 266px;
+  height: 256px;
   @media (min-width: $xxxl) {
     left: 450px;
   }
@@ -246,6 +258,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
   &--dim {
     padding: 11px;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
-import BlastoffNeptune from '../../images/svg-2022/blastoff-neptune';
-import BlastoffAstronaut from '../../images/svg-2022/blastoff-astronaut';
+import BlastoffNeptune from '../../images/svg-2022/blastoff-neptune.svg';
+import BlastoffAstronaut from '../../images/svg-2022/blastoff-astronaut.svg';
 import PrimaryCta from '../primary-cta';
 
 const ThemeAnnouncement = () => (
@@ -38,8 +38,8 @@ const ThemeAnnouncement = () => (
         </div>
       </div>
     </div>
-    <BlastoffNeptune />
-    <BlastoffAstronaut />
+    <img className="blastoff-neptune" src={BlastoffNeptune} alt="neptune" />
+    <img className="blastoff-astronaut" src={BlastoffAstronaut} alt="a floating astronaut" />
   </section>
 );
 
