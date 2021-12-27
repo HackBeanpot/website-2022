@@ -116,7 +116,7 @@ const Team = () => {
 // Render clickable buttons to render each small team
 const SmallTeamButtons = ({ setSmallTeamClicked }) => {
   return smallTeamInfo.map(smallTeam => (
-    <button className='team__small-teams-single-button' onClick={() => setSmallTeamClicked(smallTeam)}>
+    <button key={smallTeam.teamName} className='team__small-teams-single-button' onClick={() => setSmallTeamClicked(smallTeam)}>
       <div style={{ cursor: 'pointer' }}>
         <SecondaryCta textDescription={smallTeam.teamName} />
       </div>
@@ -126,7 +126,7 @@ const SmallTeamButtons = ({ setSmallTeamClicked }) => {
 
 // Renders current team clicked (if no team has been clicked leadership is shown by default)
 const SmallTeam = ({ smallTeam }) => {
-  return smallTeam.teamMembers.map(teamMember => <TeamMember teamMember={teamMember} />);
+  return smallTeam.teamMembers.map(teamMember => <TeamMember key={teamMember.name} teamMember={teamMember} />);
 };
 
 // Renders each individual team meber of the current team clicked (if no team has been clicked leadership is shown by default)
