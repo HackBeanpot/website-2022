@@ -235,9 +235,13 @@
 }
 
 .testimonials__planet {
-  margin: 5px;
+  width: 74px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  @media (min-width: $xxs) {
-    margin: 10px;
+  &--dim {
+    padding: 11px;
   }
 }
