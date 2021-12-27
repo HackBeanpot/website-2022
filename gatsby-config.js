@@ -26,7 +26,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          transformOptions: {
+            fit: "cover",
+            cropFocus: "centre",
+          }
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
