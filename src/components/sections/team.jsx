@@ -2,30 +2,29 @@ import React, { useState } from 'react';
 import SecondaryCta from '../secondary-cta';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const TeamPicture = <StaticImage src='../../images/team-2022/team-picture.jpeg'
-                                 alt='picture of the HackBeanpot Core team' />;
-const CariPicture = <StaticImage src='../../images/team-2022/Cari.jpeg' alt='picture of Cari' width={140} height={140} layout="fixed"/>;
-const SamaPicture = <StaticImage src='../../images/team-2022/Sama.jpeg' alt='picture of Sama' width={140} height={140} layout="fixed"/>;
-const ShinePicture = <StaticImage src='../../images/team-2022/Shine.jpeg' alt='picture of Shine' width={140} height={140} layout="fixed"/>;
-const JaimePicture = <StaticImage src='../../images/team-2022/Jaime.jpeg' alt='picture of Jaime' width={140} height={140} layout="fixed"/>;
-const ShaniaPicture = <StaticImage src='../../images/team-2022/Shania.jpeg' alt='picture of Shania' width={140} height={140} layout="fixed"/>;
-const OnotinaPicture = <StaticImage src='../../images/team-2022/Onotina.jpeg' alt='picture of Onotina' width={140} height={140} layout="fixed"/>;
-const SpencerPicture = <StaticImage src='../../images/team-2022/Spencer.jpeg' alt='picture of Spencer' width={140} height={140} layout="fixed"/>;
-const AlexPicture = <StaticImage src='../../images/team-2022/Alex.jpeg' alt='picture of Alex' width={140} height={140} layout="fixed"/>;
-const JudyPicture = <StaticImage src='../../images/team-2022/Judy.jpeg' alt='picture of Judy' width={140} height={140} layout="fixed"/>;
-const DanielPicture = <StaticImage src='../../images/team-2022/Daniel.jpeg' alt='picture of Daniel' width={140} height={140} layout="fixed"/>;
-const JessPicture = <StaticImage src='../../images/team-2022/Jess.jpeg' alt='picture of Jess' width={140} height={140} layout="fixed"/>;
-const JamiePicture = <StaticImage src='../../images/team-2022/Jamie L.jpeg' alt='picture of Jamie' width={140} height={140} layout="fixed"/>;
-const KarenPicture = <StaticImage src='../../images/team-2022/Karen.jpeg' alt='picture of Karen' width={140} height={140} layout="fixed"/>;
-const GauriPicture = <StaticImage src='../../images/team-2022/Gauri.jpeg' alt='picture of Gauri' width={140} height={140} layout="fixed"/>;
-const DavidPicture = <StaticImage src='../../images/team-2022/David.jpeg' alt='picture of David' width={140} height={140} layout="fixed"/>;
-const BaydenPicture = <StaticImage src='../../images/team-2022/Bayden.jpeg' alt='picture of Bayden' width={140} height={140} layout="fixed"/>;
-const AnikaPicture = <StaticImage src='../../images/team-2022/Anika.jpeg' alt='picture of Anika' width={140} height={140} layout="fixed"/>;
-const CindyPicture = <StaticImage src='../../images/team-2022/Cindy.jpeg' alt='picture of Cindy' width={140} height={140} layout="fixed"/>;
-const KiminPicture = <StaticImage src='../../images/team-2022/Kimin.jpeg' alt='picture of Kimin' width={140} height={140} layout="fixed"/>;
-const LeviPicture = <StaticImage src='../../images/team-2022/Levi.jpeg' alt='picture of Levi' width={140} height={140} layout="fixed"/>;
-const SreyaPicture = <StaticImage src='../../images/team-2022/Sreya.jpeg' alt='picture of Sreya' width={140} height={140} layout="fixed"/>;
-const DaniaPicture = <StaticImage src='../../images/team-2022/Dania.jpeg' alt='picture of Dania' width={140} height={140} layout="fixed"/>;
+const TeamPicture = <StaticImage src='../../images/team-2022/team-picture.jpeg' alt='picture of the HackBeanpot Core team' />;
+const CariPicture = <StaticImage src='../../images/team-2022/Cari.jpeg' alt='picture of Cari' width={140} height={140} layout="fixed" className="team__member-picture" transformOptions={{fit: "cover", cropFocus: "attention"}}/>;
+const SamaPicture = <StaticImage src='../../images/team-2022/Sama.jpeg' alt='picture of Sama' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const ShinePicture = <StaticImage src='../../images/team-2022/Shine.jpeg' alt='picture of Shine' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const JaimePicture = <StaticImage src='../../images/team-2022/Jaime.jpeg' alt='picture of Jaime' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const ShaniaPicture = <StaticImage src='../../images/team-2022/Shania.jpeg' alt='picture of Shania' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const OnotinaPicture = <StaticImage src='../../images/team-2022/Onotina.jpeg' alt='picture of Onotina' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const SpencerPicture = <StaticImage src='../../images/team-2022/Spencer.jpeg' alt='picture of Spencer' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const AlexPicture = <StaticImage src='../../images/team-2022/Alex.jpeg' alt='picture of Alex' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const JudyPicture = <StaticImage src='../../images/team-2022/Judy.jpeg' alt='picture of Judy' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const DanielPicture = <StaticImage src='../../images/team-2022/Daniel.jpeg' alt='picture of Daniel' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const JessPicture = <StaticImage src='../../images/team-2022/Jess.jpeg' alt='picture of Jess' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const JamiePicture = <StaticImage src='../../images/team-2022/Jamie L.jpeg' alt='picture of Jamie' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const KarenPicture = <StaticImage src='../../images/team-2022/Karen.jpeg' alt='picture of Karen' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const GauriPicture = <StaticImage src='../../images/team-2022/Gauri.jpeg' alt='picture of Gauri' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const DavidPicture = <StaticImage src='../../images/team-2022/David.jpeg' alt='picture of David' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const BaydenPicture = <StaticImage src='../../images/team-2022/Bayden.jpeg' alt='picture of Bayden' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const AnikaPicture = <StaticImage src='../../images/team-2022/Anika.jpeg' alt='picture of Anika' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const CindyPicture = <StaticImage src='../../images/team-2022/Cindy.jpeg' alt='picture of Cindy' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const KiminPicture = <StaticImage src='../../images/team-2022/Kimin.jpeg' alt='picture of Kimin' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const LeviPicture = <StaticImage src='../../images/team-2022/Levi.jpeg' alt='picture of Levi' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const SreyaPicture = <StaticImage src='../../images/team-2022/Sreya.jpeg' alt='picture of Sreya' width={140} height={140} layout="fixed" className="team__member-picture" />;
+const DaniaPicture = <StaticImage src='../../images/team-2022/Dania.jpeg' alt='picture of Dania' width={140} height={140} layout="fixed" className="team__member-picture" />;
 
 
 const smallTeamInfo = [
