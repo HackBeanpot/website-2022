@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import TestimonialsItem from '../testimonials-items/testimonial-item';
 import PrimaryCta from '../primary-cta';
-import BenHenderson from '../../images/ben-henderson.jpg';
-import UranusOrbit from '../../images/svg-2022/testimonials-uranusorbit';
-import AlbertZhang from '../../images/albert-zhang.jpg';
-import OnotinaImoudu from '../../images/onotina-imoudu.jpg';
-import Anonymous from '../../images/anonymous.jpg';
-import TestimonialsMarsDim from '../../images/svg-2022/testimonials-mars-dim';
-import TestimonialsMarsBright from '../../images/svg-2022/testimonials-mars-bright';
-import TestimonialsMercuryDim from '../../images/svg-2022/testimonials-mercury-dim';
-import TestimonialsMercuryBright from '../../images/svg-2022/testimonials-mercury-bright';
-import TestimonialsNeptuneDim from '../../images/svg-2022/testimonials-neptune-dim';
-import TestimonialsNeptuneBright from '../../images/svg-2022/testimonials-neptune-bright';
-import TestimonialsVenusDim from '../../images/svg-2022/testimonials-venus-dim';
-import TestimonialsVenusBright from '../../images/svg-2022/testimonials-venus-bright';
+import { StaticImage } from 'gatsby-plugin-image';
+import TestimonialsMarsDim from '../../images/svg-2022/testimonials-mars-dim.svg';
+import TestimonialsMercuryDim from '../../images/svg-2022/testimonials-mercury-dim.svg';
+import TestimonialsNeptuneDim from '../../images/svg-2022/testimonials-neptune-dim.svg';
+import TestimonialsVenusDim from '../../images/svg-2022/testimonials-venus-dim.svg';
+import TestimonialsMarsBright from '../../images/svg-2022/testimonials-mars-bright.svg';
+import TestimonialsMercuryBright from '../../images/svg-2022/testimonials-mercury-bright.svg';
+import TestimonialsNeptuneBright from '../../images/svg-2022/testimonials-neptune-bright.svg';
+import TestimonialsVenusBright from '../../images/svg-2022/testimonials-venus-bright.svg';
+import UranusOrbit from '../../images/svg-2022/testimonials-uranusorbit.svg';
+
+const BenHenderson = <StaticImage className="testimonials-item-img" src='../../images/ben-henderson.jpg' alt='a picture of hackers at HBP 2020' />
+const AlbertZhang = <StaticImage className="testimonials-item-img" src='../../images/albert-zhang.jpg' alt='a picture of hackers at HBP 2020' />
+const OnotinaImoudu = <StaticImage className="testimonials-item-img" src='../../images/onotina-imoudu.jpg' alt='a picture of hackers at HBP 2020' />
+const Anonymous = <StaticImage className="testimonials-item-img" src='../../images/anonymous.jpg' alt='a picture of hackers at HBP 2020' />
 
 const TESTIMONIAL_PLANETS = {
   MERCURY: 'MERCURY',
@@ -54,7 +56,6 @@ const testimonialInfo = [
 ];
 
 const Testimonials = () => {
-
   const [selected, setSelected] = useState(testimonialInfo[0]);
 
   return (
@@ -65,7 +66,7 @@ const Testimonials = () => {
       </div>
       <div className="planet_selection_container">
         {testimonialInfo.map(testimonial =>
-          <TestimonialsPlanet testimonial={testimonial} selected={selected.type === testimonial.type} setSelected={setSelected} />)}
+          <TestimonialsPlanet key={testimonial.type} testimonial={testimonial} selected={selected.type === testimonial.type} setSelected={setSelected} />)}
       </div>
       <div className="archive__content">
         <p className="archive__description">
@@ -75,43 +76,38 @@ const Testimonials = () => {
         </p>
         <PrimaryCta link="https://projects.hackbeanpot.com/" textDescription="Visit archive" />
       </div>
-      <UranusOrbit />
+      <img className="testimonials-item-img" src={UranusOrbit} alt='uranus orbit' />
     </section>
   );
 };
 
-const TestimonialsPlanet = ( props ) => {
-  const testimonial = props.testimonial
-  const selected = props.selected
-  const setSelected = props.setSelected
+const TestimonialsPlanet = ({ testimonial, selected, setSelected }) => {
   if (selected) {
-    const TestimonialsPlanetBright = getTestimonialsPlanetBright(testimonial.type)
-    return <TestimonialsPlanetBright className="testimonials__planet" />
+    return <div className="testimonials__planet">
+      <TestimonialsPlanetBright type={testimonial.type} />
+    </div>
   }
-  else {
-    const TestimonialsPlanetDim = getTestimonialsPlanetDim(testimonial.type)
-    return <TestimonialsPlanetDim 
-    className="testimonials__planet" 
-    setSelected={() => setSelected(testimonial)} />
-  }
+  return <div onClick={() => setSelected(testimonial)} className="testimonials__planet--dim">
+    <TestimonialsPlanetDim type={testimonial.type} />
+  </div>
 }
 
-const getTestimonialsPlanetBright = ( type ) => {
+const TestimonialsPlanetBright = ({ type }) => {
   switch( type ) {
-    case TESTIMONIAL_PLANETS.MARS: return TestimonialsMarsBright
-    case TESTIMONIAL_PLANETS.MERCURY: return TestimonialsMercuryBright 
-    case TESTIMONIAL_PLANETS.NEPTUNE: return TestimonialsNeptuneBright 
-    case TESTIMONIAL_PLANETS.VENUS: return TestimonialsVenusBright 
+    case TESTIMONIAL_PLANETS.MARS: return <img src={TestimonialsMarsBright} alt='mars dim' />
+    case TESTIMONIAL_PLANETS.MERCURY: return <img src={TestimonialsMercuryBright} alt='mercury dim' />
+    case TESTIMONIAL_PLANETS.NEPTUNE: return <img src={TestimonialsNeptuneBright} alt='neptune dim' />
+    case TESTIMONIAL_PLANETS.VENUS: return <img src={TestimonialsVenusBright} alt='venus dim' />
     default: throw new Error("Unexpected type: " + type)
   }
 }
 
-const getTestimonialsPlanetDim = ( type ) => {
+const TestimonialsPlanetDim = ({ type }) => {
   switch( type ) {
-    case TESTIMONIAL_PLANETS.MARS: return TestimonialsMarsDim 
-    case TESTIMONIAL_PLANETS.MERCURY: return TestimonialsMercuryDim 
-    case TESTIMONIAL_PLANETS.NEPTUNE: return TestimonialsNeptuneDim 
-    case TESTIMONIAL_PLANETS.VENUS: return TestimonialsVenusDim 
+    case TESTIMONIAL_PLANETS.MARS: return <img src={TestimonialsMarsDim} alt='mars bright' />
+    case TESTIMONIAL_PLANETS.MERCURY: return <img src={TestimonialsMercuryDim} alt='mercury bright' />
+    case TESTIMONIAL_PLANETS.NEPTUNE: return <img src={TestimonialsNeptuneDim} alt='neptune bright' />
+    case TESTIMONIAL_PLANETS.VENUS: return <img src={TestimonialsVenusDim} alt='venus bright' />
     default: throw new Error("Unexpected type: " + type)
   }
 }

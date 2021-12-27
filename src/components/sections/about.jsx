@@ -1,9 +1,11 @@
 import React from 'react';
 import AboutItem from '../about/about-item';
-import Growth from '../../images/growth.jpg';
-import Exploration from '../../images/exploration.jpg';
-import Community from '../../images/community.jpg';
+import { StaticImage } from 'gatsby-plugin-image';
 import Carousel from 'react-elastic-carousel';
+
+const Exploration = <StaticImage className="about-item-img" src='../../images/exploration.jpg' alt='a mentor teaching a hacker' />
+const Community = <StaticImage className="about-item-img" src='../../images/community.jpg' alt='the HBP 2020 core team' />
+const Growth = <StaticImage className="about-item-img" src='../../images/growth.jpg' alt='a few hackers giving a thumbs up to the camera' />
 
 const aboutInfo = [
   {
@@ -26,7 +28,7 @@ const aboutInfo = [
   }
 ];
 
-const About = props => {
+const About = () => {
   const aboutChildren = aboutInfo.map(info => (
     <AboutItem
       key={info.title}
@@ -40,15 +42,8 @@ const About = props => {
       <h2 className="about__title">HackBeanpot is about...</h2>
       <div className="about__desktop">{aboutChildren}</div>
       <div className="about__mobile">
-        <Carousel itemsToShow={1} itemPadding={[0]}>
-          {aboutInfo.map(info => (
-            <AboutItem
-              key={info.title}
-              img={info.img}
-              title={info.title}
-              description={info.description}
-            />
-          ))}
+        <Carousel itemsToShow={1} itemPadding={[0]} isRTL={false}>
+          {aboutChildren}
         </Carousel>
       </div>
     </div>
