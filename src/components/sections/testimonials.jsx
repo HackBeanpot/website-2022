@@ -6,10 +6,10 @@ import TestimonialsMarsDim from '../../images/svg-2022/testimonials-mars-dim.svg
 import TestimonialsMercuryDim from '../../images/svg-2022/testimonials-mercury-dim.svg';
 import TestimonialsNeptuneDim from '../../images/svg-2022/testimonials-neptune-dim.svg';
 import TestimonialsVenusDim from '../../images/svg-2022/testimonials-venus-dim.svg';
-import TestimonialsMarsBright from '../../images/svg-2022/testimonials-mars-bright.svg';
-import TestimonialsMercuryBright from '../../images/svg-2022/testimonials-mercury-bright.svg';
-import TestimonialsNeptuneBright from '../../images/svg-2022/testimonials-neptune-bright.svg';
-import TestimonialsVenusBright from '../../images/svg-2022/testimonials-venus-bright.svg';
+import TestimonialsMarsBright from '../../images/svg-2022/testimonials-mars-select.svg';
+import TestimonialsMercuryBright from '../../images/svg-2022/testimonials-mercury-select.svg';
+import TestimonialsNeptuneBright from '../../images/svg-2022/testimonials-neptune-select.svg';
+import TestimonialsVenusBright from '../../images/svg-2022/testimonials-venus-select.svg';
 import UranusOrbit from '../../images/svg-2022/testimonials-uranusorbit.svg';
 
 const BenHenderson = <StaticImage className="testimonials-item-img" src='../../images/ben-henderson.jpg' alt='a picture of hackers at HBP 2020' />
