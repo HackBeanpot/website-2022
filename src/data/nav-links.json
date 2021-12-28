@@ -14,5 +14,9 @@
   {
     "name": "Testimonials",
     "path": "/#testimonials"
+  },
+  {
+    "name": "Team",
+    "path": "/#team"
   }
 ]
