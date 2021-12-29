@@ -1,8 +1,9 @@
 name: ci
-# https://docs.github.com/en/actions/reference/events-that-trigger-workflows
-on: [push, deployment, deployment_status]
+# only when Vercel updates deployment status https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+on: deployment_status
 jobs:
   e2e:
+    name: Cypress Tests - ${{ matrix.browser }}
     timeout-minutes: 15
     runs-on: ubuntu-latest
     # only runs this job on successful deploy
