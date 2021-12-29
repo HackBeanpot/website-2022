@@ -1,6 +1,6 @@
 {
   "name": "website-2022",
-  "description": "HackBeanpot Website 2020",
+  "description": "HackBeanpot Website 2022",
   "version": "1.0.0",
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "prod": "gatsby serve",
