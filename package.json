@@ -5,7 +5,7 @@
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "prod": "gatsby serve",
   "dependencies": {
-    "@mdi/font": "^6.5.95",
+    "@mdi/font": "^4.9.95",
     "flickity": "^2.2.1",
     "gatsby": "^4.4.0",
     "gatsby-plugin-google-analytics": "^4.4.0",
