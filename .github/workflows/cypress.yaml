@@ -3,7 +3,6 @@ name: ci
 on: deployment_status
 jobs:
   e2e:
-    name: Cypress Tests - ${{ matrix.browser }}
     timeout-minutes: 15
     runs-on: ubuntu-latest
     # only runs this job on successful deploy
@@ -20,6 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         browser: [ "firefox", "chrome" ]
+    name: Cypress Tests - ${{ matrix.browser }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
