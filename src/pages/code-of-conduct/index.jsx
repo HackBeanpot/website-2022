@@ -14,7 +14,7 @@ const CodeOfConduct = () => (
     <span className="coc__leaf">
       <BasicLeaf />
     </span>
-    <h1 className="coc__heading">HackBeanpot 2021 Code of Conduct</h1>
+    <h1 className="coc__heading">HackBeanpot 2022 Code of Conduct</h1>
     <div className="coc__body">
       <p>
         The HackBeanpot team is dedicated to providing a safe, harassment-free
@@ -31,7 +31,7 @@ const CodeOfConduct = () => (
         Harassment is not tolerated in any part of the hackathon, including
         within our virtual spaces, as a part of hackathon projects created at
         the event, or on social media. Hackathon attendees, sponsors, judges,
-        mentors, organizers, and all other individuals at HackBeanpot 2021 are
+        mentors, organizers, and all other individuals at HackBeanpot 2022 are
         subject to this Code of Conduct.
       </p>
       <p>

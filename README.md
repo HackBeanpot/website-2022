@@ -1,4 +1,4 @@
-## HackBeanpot's website for 2021. 
+## HackBeanpot's website for 2022. 
 
 [<img src="./src/images/svg/powered-by-vercel.svg" alt="Powered by Vercel" width="150"/>](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss)
 
@@ -8,8 +8,8 @@ _Written in React and deployed using [Vercel](https://vercel.com/?utm_source=hac
 
 First and foremost, make sure you have [Node](https://nodejs.org) installed.
 
-`git clone https://github.com/HackBeanpot/website-2021` Clone into this repository.
-`cd website-2021` CD into the new local repo.
+`git clone https://github.com/HackBeanpot/website-2022` Clone into this repository.
+`cd website-2022` CD into the new local repo.
 `npm install` Install dependencies.
 `npm install --global gatsby-cli` Install Gatsby
 `gatsby develop` Launch a hot-reloading dev environment to see the site running on your local!
@@ -65,8 +65,8 @@ But the command to do so is `gatsby build` in the repo's top-level directory. Ke
 ## File Structure
 _Under the src directory…_
 
-* [Components](https://github.com/HackBeanpot/website-2021/tree/master/src/components) - Defines components that will be used in multiple places or throughout the website (like the header or footer).
-* [Data](https://github.com/HackBeanpot/website-2021/tree/master/src/data) - Contains any data that will be used to render elements. GraphQL is configured to automatically fetch data from this folder. For example, names and descriptions of projects are stored in a JSON file in /src/data and used to render project cards on the project page.
-* [Images](https://github.com/HackBeanpot/website-2021/tree/master/src/images) - Contains all image files
-* [Pages](https://github.com/HackBeanpot/website-2021/tree/master/src/pages) - Contains a folder for each page of the website and defines the layout of the pages.
-* [Styles](https://github.com/HackBeanpot/website-2021/tree/master/src/styles) - Contains the majority of our CSS. Styles should be defined here (as opposed to using in-line CSS or defining it in a “styles” section in the HTML) as much as possible.
+* [Components](https://github.com/HackBeanpot/website-2022/tree/master/src/components) - Defines components that will be used in multiple places or throughout the website (like the header or footer).
+* [Data](https://github.com/HackBeanpot/website-2022/tree/master/src/data) - Contains any data that will be used to render elements. GraphQL is configured to automatically fetch data from this folder. For example, names and descriptions of projects are stored in a JSON file in /src/data and used to render project cards on the project page.
+* [Images](https://github.com/HackBeanpot/website-2022/tree/master/src/images) - Contains all image files
+* [Pages](https://github.com/HackBeanpot/website-2022/tree/master/src/pages) - Contains a folder for each page of the website and defines the layout of the pages.
+* [Styles](https://github.com/HackBeanpot/website-2022/tree/master/src/styles) - Contains the majority of our CSS. Styles should be defined here (as opposed to using in-line CSS or defining it in a “styles” section in the HTML) as much as possible.

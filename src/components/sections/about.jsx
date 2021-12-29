@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Carousel from 'react-elastic-carousel';
 
 const Exploration = <StaticImage className="about-item-img" src='../../images/exploration.jpg' alt='a mentor teaching a hacker' />
-const Community = <StaticImage className="about-item-img" src='../../images/community.jpg' alt='the HBP 2020 core team' />
+const Community = <StaticImage className="about-item-img" src='../../images/community.jpg' alt='the HBP 2022 core team' />
 const Growth = <StaticImage className="about-item-img" src='../../images/growth.jpg' alt='a few hackers giving a thumbs up to the camera' />
 
 const aboutInfo = [
