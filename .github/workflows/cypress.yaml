@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     # only runs this job on successful deploy
     if: github.event.deployment_status.state == 'success'
-    container: cypress/browsers:node14.17.0-chrome88-ff89
+    container:
+      image: cypress/browsers:node14.17.0-chrome88-ff89
+      # needed for ff, see https://github.com/marketplace/actions/cypress-io#firefox
+      options: --user 1001
     strategy:
       # when one test fails, DO NOT cancel the other
       # containers, because this will kill Cypress processes
@@ -35,3 +38,4 @@ jobs:
           # Recommended: pass the GitHub token lets this action correctly
           # determine the unique run id necessary to re-run the checks
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
