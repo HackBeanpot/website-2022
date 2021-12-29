@@ -1,7 +1,7 @@
 import React from 'react';
 import CovidAstronautPurple from '../../images/svg-2022/covid-astronaut-purple.svg';
 import CovidAstronautRed from '../../images/svg-2022/covid-astronaut-red.svg';
-import CovidEarth from '../../images/svg-2022/covid-earth.svg';
+import CovidEarth from '../../images/svg-2022/space-jam-earth.svg';
 
 const CovidPrecautions = () => (
   <div className="container ">

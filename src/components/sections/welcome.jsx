@@ -1,9 +1,9 @@
 import React from 'react';
 import SpaceJamTitle from '../../images/svg-2022/space-jam-title.svg';
-import SpaceJamMars from '../../images/svg-2022/space-jam-mars.svg';
+import SpaceJamMars from '../../images/svg-2022/spacejam-mars.svg';
 import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit.svg';
 import SpaceJamEarth from '../../images/svg-2022/space-jam-earth.svg';
-import SpaceJamNeptune from '../../images/svg-2022/space-jam-neptune.svg';
+import SpaceJamNeptune from '../../images/svg-2022/spacejam-neptune.svg';
 import PrimaryCta from '../primary-cta';
 
 const Welcome = () => (

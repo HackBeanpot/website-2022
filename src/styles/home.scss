@@ -43,6 +43,7 @@
 }
 
 .header__cta {
+  position: relative;
   @include primary-cta;
   margin-top: 10px;
 }
@@ -238,7 +239,6 @@
 // ---------------------------------------------------------------------------
 .testimonials__container {
   text-align: center;
-  height: 1000px;
   padding-top: 130px;
   @media (min-width: $xl) {
     padding-top: 250px;

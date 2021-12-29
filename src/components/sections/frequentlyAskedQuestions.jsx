@@ -3,8 +3,8 @@ import PrimaryCta from '../primary-cta';
 import FrequentlyAskedQuestionsItems from 'components/faqItems/faq-items';
 import FaqMercury from '../../images/svg-2022/faq-mercury.svg';
 import ContactAstronaut from '../../images/svg-2022/contact-astronaut.svg';
-import ContactJupiterFaded from '../../images/svg-2022/contact-jupiter-faded.svg';
-import ContactMoonFaded from '../../images/svg-2022/contact-moon-faded.svg';
+import ContactJupiterFaded from '../../images/svg-2022/contact-jupiter-op-50.svg';
+import ContactMoonFaded from '../../images/svg-2022/contact-moon-op-50.svg';
 
 const FrequentlyAskedQuestions = () => (
     <section id="faq" className="faq">

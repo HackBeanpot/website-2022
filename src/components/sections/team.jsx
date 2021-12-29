@@ -85,7 +85,7 @@ const smallTeamInfo = [
 const Team = () => {
   const [smallTeamClicked, setSmallTeamClicked] = useState(smallTeamInfo[0]);
   return (
-    <div className='team__container'>
+    <div className='team__container' id="team">
       <div className='team__content-wrapper'>
         <div className='team__content'>
           <div className='theme__header'>OUR TEAM</div>
