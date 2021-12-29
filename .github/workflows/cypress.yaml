@@ -1,4 +1,4 @@
-name: ci
+name: CI
 # only when Vercel updates deployment status https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 on: deployment_status
 jobs:
