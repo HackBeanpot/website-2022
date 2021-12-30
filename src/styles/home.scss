@@ -277,32 +277,31 @@
 
 .faq {
   position: relative;
-  height: 2800px;
+  height: 3200px;
   padding-top: 400px;
-  z-index: 0;
   @media (min-width: $xxs) {
     padding-top: 200px;
-    height: 2000px;
+    height: 2800px;
   }
   @media (min-width: $xs) {
-    height: 2000px;
+    height: 2600px;
   }
   @media (min-width: $sm) {
     padding-top: 100px;
-    height: 1750px;
+    height: 2100px;
   }
   @media (min-width: $md) {
     padding-top: 200px;
-    height: 1900px;
+    height: 2100px;
   }
   @media (min-width: $lg) {
-    height: 1900px;
+    height: 2400px;
   }
   @media (min-width: $xl) {
-    height: 1800px;
+    height: 2100px;
   }
   @media (min-width: $xxl) {
-    height: 1600px;
+    height: 1900px;
   }
 }
 
