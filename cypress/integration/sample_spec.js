@@ -1,21 +1,12 @@
 describe('Integration test with visual testing', function() {
-  beforeEach(() => {
-    // Needs to be called before cy.route
-    cy.server();
-
-    // Alias request
-    cy.route('GET', '*').as('showAll');
-    cy.visit('/');
-  });
-
   it('Loads the main page', function() {
-    cy.contains('About').click();
-    cy.contains('COVID Safety').click();
-    cy.contains('FAQ').click();
-    cy.contains('Testimonials').click();
-    cy.contains('Team').click();
+    cy.visit('/')
 
-    cy.wait('@showAll');
+    // load all the images by scrolling to the bottom of the page
+    cy.get('.footer').scrollIntoView({ duration: 5000 })
+    // extra time, just to be sure
+    cy.wait(5000);
+
     // Take a snapshot for visual diffing
     cy.percySnapshot('Main page');
   });
