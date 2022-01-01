@@ -10,5 +10,13 @@
   {
     "name": "FAQ",
     "path": "/#faq"
+  },
+  {
+    "name": "Testimonials",
+    "path": "/#testimonials"
+  },
+  {
+    "name": "Sponsors",
+    "path": "/#sponsorship"
   }
 ]

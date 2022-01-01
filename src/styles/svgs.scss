@@ -132,14 +132,96 @@
   }
 }
 
+.sponsors-neptune-faded {
+  position: absolute;
+  left: 62px;
+  top: 210px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+    left: 60px;
+    top: 220px;
+  }
+  // use top only
+}
+
+.sponsors-ufo-faded {
+  position: absolute;
+  top: 700px;
+  left: 116px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+  }
+}
+
+.sponsors-saturn {
+  position: absolute;
+  top: 1250px;
+  right: 5px;
+  display: none;
+  @media (min-width: $lg) {
+    top: 1160px;
+    right: -40px;
+    display: block;
+  }
+  @media (min-width: $xl) {
+    display: block;
+    top: 1210px;
+    right: 3px;
+  }
+}
+
+.sponsors-pluto-faded {
+  position: absolute;
+  display: none;
+  @media (min-width: $lg) {
+    left: 70px;
+    top: 1140px;
+    display: block;
+  }
+  @media (min-width: $xl) {
+    left: 170px;
+    top: 1150px;
+    display: block;
+  }
+  @media (min-width: $xxl) {
+    left: 260px;
+    top: 1160px;
+    display: block;
+  }
+}
+
+.sponsors-venus-faded {
+  position: absolute;
+  top: 450px;
+  right: -15px;
+  display: none;
+  @media (min-width: $xl) {
+    display: block;
+  }
+}
+
 .purple-plus-sign {
   float: right;
 }
 
 .faq-mercury {
   position: absolute;
-  top: -150px;
-  right: 30px;
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+    top: 150px;
+    right: 100px;
+  }
+  @media (min-width: $xl) {
+    top: -150px;
+    right: 30px;
+  }
+}
+
+.faq-uranus-faded {
+  position: absolute;
 }
 
 .contact-astronaut {
@@ -150,11 +232,7 @@
   @media (min-width: $xl) {
     display: block;
     width: 18em;
-    top: 700px;
-    right: -40px;
-  }
-  @media (min-width: $xxl) {
-    top: 750px;
+    top: 1300px;
     right: -40px;
   }
 }
@@ -179,7 +257,6 @@
 
 .contact-moon-faded {
   position: absolute;
-
   width: 3.5em;
   display: none;
   @media (min-width: $sm) {
@@ -196,10 +273,40 @@
   @media (min-width: $xl) {
     width: 10em;
     right: 450px;
-    top: 1100px;
+    top: 1200px;
   }
   @media (min-width: $xxl) {
-    top: 1100px;
+    top: 1200px;
     right: 300px;
+  }
+}
+
+.testimonials-uranus-orbit {
+  position: absolute;
+  @media (min-width: $xxxl) {
+    left: 450px;
+  }
+  @media (min-width: $xxl) {
+    left: 300px;
+  }
+  @media (min-width: $xl) {
+    left: 250px;
+  }
+  @media (min-width: $lg) {
+    left: 50px;
+  }
+  @media (max-width: $lg) {
+    left: -50px;
+  }
+  @media (max-width: $sm) {
+    left: -150px;
+  }
+}
+
+.testimonials__planet {
+  margin: 5px;
+  cursor: pointer;
+  @media (min-width: $xxs) {
+    margin: 10px;
   }
 }

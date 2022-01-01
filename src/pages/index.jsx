@@ -20,11 +20,11 @@ const App = () => {
         <Sponsors2022 />
         <LaunchSequence />
         {/* <FAQ />
+        <Testimonials />
         <FAQ />
-        {/* <Testimonials /> */}
-        {/*
-         <FAQ />
-        <Sponsors2021 /> */}
+        <LaunchSequence />
+
+        {/* <Sponsors2021 /> */}
       </div>
     </Layout>
   );
