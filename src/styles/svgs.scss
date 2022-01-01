@@ -191,6 +191,7 @@
   width: 160px;
   height: 148px;
   filter: brightness(50%);
+  z-index: -10;
   @media (min-width: $xxs) {
     top: 1500px;
   }
@@ -210,6 +211,7 @@
   height: 106px;
   display: none;
   filter: brightness(50%);
+  z-index: -10;
   @media (min-width: $sm) {
     right: 200px;
     top: 1400px;
