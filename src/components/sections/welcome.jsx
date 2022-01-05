@@ -12,7 +12,7 @@ const Welcome = () => (
       <h1 className="header__title">HackBeanpot 2022</h1>
       <img className='space-jam-title' src={SpaceJamTitle} alt="the text 'space jam' with a white halo surrounding it" />
       <h4 className="header__description">
-        Coming to a galaxy near you in February
+        Coming to you virtually February 11th-13th
       </h4>
       <PrimaryCta
         link="https://apply.hackbeanpot.com"
