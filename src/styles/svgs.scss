@@ -101,50 +101,6 @@
   }
 }
 
-.covid-astronaut-purple {
-  position: absolute;
-  display: none;
-  height: 309px;
-  width: 466px;
-  @media (min-width: $xl) {
-    top: 110px;
-    left: -200px;
-    display: block;
-  }
-  @media (min-width: $xxl) {
-    top: 100px;
-    left: -290px;
-  }
-}
-
-.covid-astronaut-red {
-  position: absolute;
-  top: 380px;
-  left: 40px;
-  display: none;
-  width: 441px;
-  height: 493px;
-  @media (min-width: $xl) {
-    display: block;
-  }
-}
-
-.covid-earth {
-  position: absolute;
-  left: -130px;
-  top: 580px;
-  display: none;
-  width: 129px;
-  height: 130px;
-  @media (min-width: $xl) {
-    display: block;
-  }
-  @media (min-width: $xxl) {
-    left: -150px;
-    top: 550px;
-  }
-}
-
 .purple-plus-sign {
   height: 27px;
   width: 27px;
