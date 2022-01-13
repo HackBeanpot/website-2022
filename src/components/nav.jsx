@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollYPosition } from 'react-use-scroll-position';
+import SocialLinks from 'data/social-links.json';
 
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from '../data/nav-links.json';

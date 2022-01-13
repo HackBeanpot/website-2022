@@ -27,6 +27,14 @@
   z-index: 100;
 }
 
+.social-links {
+  top: calc(350px + #{$navbar-height});
+}
+
+.nav__social-link {
+  color: $pale-yellow;
+}
+
 nav.scrolled, .nav, .nav-mobile {
   background: rgba(160, 178, 239, 0.24);
 }
