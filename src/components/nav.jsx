@@ -34,7 +34,7 @@ const Nav = ({ setIsDarkTheme }) => {
       >
         <LightDarkModeToggle />
       </div>
-      <ul className="social-links">
+      <ul className="side__social-links">
           {SocialLinks.map((item, index) => {
             return (
               <li key={`social-link-${index}`}>
