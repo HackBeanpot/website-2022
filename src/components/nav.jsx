@@ -33,6 +33,17 @@ const Nav = ({ setIsDarkTheme }) => {
       >
         <img src={LightDarkModeToggle} alt='light and dark mode toggle' />
       </button>
+      <ul className="social-links">
+          {SocialLinks.map((item, index) => {
+            return (
+              <li key={`social-link-${index}`}>
+                <DynamicLink to={item.link} className="nav__social-link">
+                  <i className={`mdi mdi-36px ${item.iconClass}`} />
+                </DynamicLink>
+              </li>
+            );
+          })}
+      </ul>
     </nav>
   );
 };
