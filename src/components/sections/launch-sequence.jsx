@@ -5,7 +5,7 @@ import PrimaryCta from '../primary-cta';
 // create a date using JSON format so that we are compatible with most platforms
 // to update, paste and edit the following in your browser:
 // JSON.stringify(new Date('1/14/2022 23:59:59 GMT-0500 (Easter Daylight Time)'))
-const applicationCloseDate = new Date('2022-01-15T04:59:59.000Z').getTime();
+const applicationCloseDate = new Date('2022-02-11T04:59:59.000Z').getTime();
 const today = (new Date()).getTime();
 const diff = applicationCloseDate - today;
 
@@ -17,7 +17,7 @@ const LaunchSequence = () => (
   <div className="container ">
     <div id="launch-sequence" className="launch__sequence">
       <div className="launch__content">
-        <div className="launch__header">2022 Applications Close In</div>
+        <div className="launch__header">HackBeanpot 2022 Starts In</div>
         <h1 className="launch__countdown">
           <Countdown date={Date.now() + diff} 
           renderer = {time}
