@@ -4,7 +4,6 @@ import SpaceJamMars from '../../images/svg-2022/spacejam-mars.svg';
 import SpaceJamSaturnOrbit from '../../images/svg-2022/space-jam-saturn-orbit.svg';
 import SpaceJamEarth from '../../images/svg-2022/space-jam-earth.svg';
 import SpaceJamNeptune from '../../images/svg-2022/spacejam-neptune.svg';
-import PrimaryCta from '../primary-cta';
 
 const Welcome = () => (
   <div className="header__container">
@@ -14,10 +13,6 @@ const Welcome = () => (
       <h4 className="header__description">
         Coming to you virtually February 11th-13th
       </h4>
-      <PrimaryCta
-        link="https://apply.hackbeanpot.com"
-        textDescription="Applications are now open"
-      />
     </div>
     <img className="space-jam-mars" src={SpaceJamMars} alt="the planet mars" />
     <img className="space-jam-saturn-orbit" src={SpaceJamSaturnOrbit} alt="the planet saturn" />
