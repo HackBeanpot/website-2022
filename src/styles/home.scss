@@ -32,9 +32,6 @@
   width: 80%;
   text-align: center;
   margin-bottom: 30px;
-  @media (min-width: $sm) {
-    margin-bottom: 0;
-  }
 }
 
 .cta-rocketship {
@@ -45,7 +42,6 @@
 .header__cta {
   position: relative;
   @include primary-cta;
-  margin-top: 10px;
 }
 
 .secondary__cta {
